@@ -8,7 +8,6 @@ import sqlite3
 #files
 from actions import *
 
-x = 2
 ui,_ = loadUiType('test_ui.ui')
 
 class MainApp(QMainWindow, ui):

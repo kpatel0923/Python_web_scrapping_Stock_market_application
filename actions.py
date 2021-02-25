@@ -5,7 +5,6 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 
-test  = 0
 #Used for installing any missing packages
 class Install():
     def main(self):
