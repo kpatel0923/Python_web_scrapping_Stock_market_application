@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="images">
+    <file>arrows_icon_small.png</file>
+    <file>piggy_bank_icon_small.png</file>
+    <file>white_logo_small.png</file>
+    <file>stock_icon_small.png</file>
+    <file>hmm.jpg</file>
+  </qresource>
+</RCC>
