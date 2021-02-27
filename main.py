@@ -3,7 +3,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUiType
-import sqlite3
+import random
 
 #files
 from actions import *
@@ -26,18 +26,15 @@ class MainApp(QMainWindow, ui):
         common_Buttons.signup_screen(self)
 
 
-
-        file = sqlite3.connect("490_database.db")
-        C = file.cursor()
-        C.execute("SELECT * FROM users")
-
-        x = C.fetchall()
-        print(x)
+        #The Login buttoms are listed here
+        login_Buttons.login(self)
+        login_Buttons.reset_pass(self)
 
 
+        #The Sign buttons are listed here
+        sign_Buttons.signup(self)
 
-
-
+        x = random.randint(1000,9999)
 
 def main():
     app = QApplication(sys.argv)

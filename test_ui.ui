@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1396</width>
+    <width>1400</width>
     <height>858</height>
    </rect>
   </property>
@@ -405,7 +405,7 @@ QLineEdit
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">	background:rgba(0,0,0,0.1);
+                 <string notr="true">	background:rgba(0,0,0,0);
 </string>
                 </property>
                 <property name="frameShape">
@@ -416,7 +416,7 @@ QLineEdit
                 </property>
                 <layout class="QGridLayout" name="gridLayout">
                  <item row="0" column="0">
-                  <widget class="QLineEdit" name="lineEdit_username">
+                  <widget class="QLineEdit" name="lineEdit_email">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -436,7 +436,7 @@ border-radius: 12px;
 </string>
                    </property>
                    <property name="placeholderText">
-                    <string>Username</string>
+                    <string>Email</string>
                    </property>
                   </widget>
                  </item>
@@ -655,6 +655,683 @@ QPushButton:hover
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="password_page">
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QFrame" name="frame_12">
+             <property name="styleSheet">
+              <string notr="true">*{
+	font-family:century gothic;
+	fontsize:24px;
+}
+
+QFrame
+{
+	background:rgba(0,0,0,0.2);
+	border-radius:15px;
+	
+	
+}
+
+*{
+	
+}
+
+
+QLabel
+{
+	color:white;
+	background: transparent;
+}
+
+
+
+QLineEdit
+{
+	background:transparent;
+	border:none;
+	color: rgb(15, 15, 15);
+	border-bottom:1px solid  rgb(35, 35, 35);
+}
+
+
+
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_14">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>century gothic</family>
+                  <pointsize>24</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Password reset page</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_13">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>500</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_15">
+                   <property name="maximumSize">
+                    <size>
+                     <width>1000</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">	background:rgba(0,0,0,00);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Enter a valid email address to reset your password</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLineEdit" name="lineEdit_email_3">
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Email</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="btn_send">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(71, 125, 4);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Send Code</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="lbl_pass">
+                   <property name="maximumSize">
+                    <size>
+                     <width>1000</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">	background:rgba(0,0,0,00);
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLineEdit" name="lineEdit_email_5">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Code</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QPushButton" name="btn_back">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	
+	
+	background-color: rgb(191, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Back</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QPushButton" name="btn_send_2">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(71, 125, 4);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Continue</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="password_reset_page">
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <item>
+            <widget class="QFrame" name="frame_14">
+             <property name="styleSheet">
+              <string notr="true">*{
+	font-family:century gothic;
+	fontsize:24px;
+}
+
+QFrame
+{
+	background:rgba(0,0,0,0.2);
+	border-radius:15px;
+	
+	
+}
+
+*{
+	
+}
+
+
+QLabel
+{
+	color:white;
+	background: transparent;
+}
+
+
+
+QLineEdit
+{
+	background:transparent;
+	border:none;
+	color: rgb(15, 15, 15);
+	border-bottom:1px solid  rgb(35, 35, 35);
+}
+
+
+
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_17">
+                <property name="font">
+                 <font>
+                  <family>century gothic</family>
+                  <pointsize>24</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Reset Password</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_15">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>500</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_18">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">	background:rgba(0,0,0,00);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Enter the password to reset</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLineEdit" name="lineEdit_email_4">
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLineEdit" name="lineEdit_password_4">
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Retype Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QPushButton" name="btn_reset">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Reset</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_19">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">	background:rgba(0,0,0,00);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>g</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QPushButton" name="btn_back_2">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	
+	
+	background-color: rgb(191, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Back</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_home_2">
+                <property name="font">
+                 <font>
+                  <family>century gothic</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
          <widget class="QWidget" name="signup_page">
           <layout class="QVBoxLayout" name="verticalLayout_17">
            <item>
@@ -745,7 +1422,7 @@ QLineEdit
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">	background:rgba(0,0,0,0.1);
+                 <string notr="true">	background:rgba(0,0,0,0);
 </string>
                 </property>
                 <property name="frameShape">
@@ -802,7 +1479,7 @@ QLineEdit
                   </widget>
                  </item>
                  <item row="2" column="0">
-                  <widget class="QLineEdit" name="lineEdit_username_4">
+                  <widget class="QLineEdit" name="lineEdit_first">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -827,7 +1504,7 @@ border-radius: 12px;
                   </widget>
                  </item>
                  <item row="3" column="0">
-                  <widget class="QLineEdit" name="lineEdit_username_5">
+                  <widget class="QLineEdit" name="lineEdit_last">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -852,7 +1529,7 @@ border-radius: 12px;
                   </widget>
                  </item>
                  <item row="4" column="0">
-                  <widget class="QLineEdit" name="lineEdit_username_3">
+                  <widget class="QLineEdit" name="lineEdit_email_2">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -877,7 +1554,7 @@ border-radius: 12px;
                   </widget>
                  </item>
                  <item row="5" column="0">
-                  <widget class="QLineEdit" name="lineEdit_password_3">
+                  <widget class="QLineEdit" name="lineEdit_password_2">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -905,7 +1582,7 @@ border-radius: 12px;
                   </widget>
                  </item>
                  <item row="6" column="0">
-                  <widget class="QLineEdit" name="lineEdit_password_4">
+                  <widget class="QLineEdit" name="lineEdit_password_3">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -933,7 +1610,7 @@ border-radius: 12px;
                   </widget>
                  </item>
                  <item row="7" column="0">
-                  <widget class="QPushButton" name="btn_signup_3">
+                  <widget class="QPushButton" name="btn_signup_add">
                    <property name="minimumSize">
                     <size>
                      <width>0</width>
@@ -1053,7 +1730,7 @@ QScrollBar::handle:vertical:hover{
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1360</width>
+                   <width>1364</width>
                    <height>989</height>
                   </rect>
                  </property>
