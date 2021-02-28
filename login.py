@@ -8,7 +8,61 @@ import re
 #files
 import actions
 
+
+class User:
+    def __init__(self, email, first, last, password, age, bills, account_size, goal):
+        self.__email = email
+        self.__first = first
+        self.__last = last
+        self.__password = password
+        self.__age = age
+        self.__bills = bills
+        self.__account_size = account_size
+        self.__goal = goal
+
+    def getEmail(self):
+        return self.__email
+
+    def getFirst(self):
+        return self.__first
+
+    def setFirst(self,new_name):
+        pass
+        # DATABASE(update users set first == {new_name} where email == {self.__email})
+
+    def getLast(self):
+        return self.__last
+
+    def getPassword(self):
+        return self.__password
+
+    def getAge(self):
+        return self.__age
+
+    def getBills(self):
+        return self.__bills
+
+    def getAccount_size(self):
+        return self.__account_size
+
+    def getGoal(self):
+        return self.__goal
+
+    def __str__(self):
+        return f" Email: {self.__email} \
+                  first: {self.__first} \
+                  last:  {self.__last}  \
+                  password: {self.__password} \
+                  age: {self.__age} \
+                  bills: {self.__bills} \
+                  account_size: {self.__account_size} \
+                  goal: {self.__goal} "
+
+
 class Login(QMainWindow):
+
+    current_user = None
+
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)
@@ -16,6 +70,7 @@ class Login(QMainWindow):
     def handleLogin(self):
         email = self.lineEdit_email.text()
         password = self.lineEdit_password.text()
+        person = actions.DATABASE(f"select * from users where email  == '{email}' and password == '{password}'")
 
         if not password.isalnum():
             print("Invalid input(s)")
@@ -23,18 +78,24 @@ class Login(QMainWindow):
         elif not re.search("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" , email):
             print('Invalid input(s)')
 
+        elif not person:
+            print("Invalid login")
+
         else:
-            person = actions.DATABASE(f"select * from users where email  == '{email}' and password == '{password}'")
-            if not person:
-                print("Invalid login")
-            else:
-                print("success")
+            print("success")
+            Login.current_user = User(*person[0])
+            print(Login.current_user)
+
+
+    @staticmethod
+    def getUser(self):
+        return Login.current_user
 
 
 
 
+#  current_user = Login.getUser()
 
+#  DATABASE("update user set age == {10} where email == {current_user.getEmail()}")
 
-    def forgotPassword(self):
-        pass
-
+#  DATABASE("select * from user where bills == {current_user.getBills()} ")

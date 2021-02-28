@@ -225,7 +225,7 @@ QPushButton:hover {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="home_page">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -788,7 +788,7 @@ QLineEdit
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QLineEdit" name="lineEdit_email_3">
+                  <widget class="QLineEdit" name="lineEdit_email_send">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -884,7 +884,7 @@ QPushButton:hover
                   </widget>
                  </item>
                  <item row="4" column="0">
-                  <widget class="QLineEdit" name="lineEdit_email_5">
+                  <widget class="QLineEdit" name="lineEdit_code">
                    <property name="enabled">
                     <bool>false</bool>
                    </property>
@@ -962,7 +962,7 @@ QPushButton:hover
                   </widget>
                  </item>
                  <item row="5" column="0">
-                  <widget class="QPushButton" name="btn_send_2">
+                  <widget class="QPushButton" name="btn_continue">
                    <property name="enabled">
                     <bool>false</bool>
                    </property>
@@ -1144,7 +1144,7 @@ QLineEdit
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QLineEdit" name="lineEdit_email_4">
+                  <widget class="QLineEdit" name="lineEdit_pass">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
@@ -1169,7 +1169,7 @@ border-radius: 12px;
                   </widget>
                  </item>
                  <item row="2" column="0">
-                  <widget class="QLineEdit" name="lineEdit_password_4">
+                  <widget class="QLineEdit" name="lineEdit_pass_2">
                    <property name="maximumSize">
                     <size>
                      <width>500</width>

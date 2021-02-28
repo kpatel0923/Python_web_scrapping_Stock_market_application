@@ -34,13 +34,14 @@ class MainApp(QMainWindow, ui):
         #The Sign buttons are listed here
         sign_Buttons.signup(self)
 
-        x = random.randint(1000,9999)
+
 
 def main():
     app = QApplication(sys.argv)
     window = MainApp()
     window.show()
     app.exec_()
+
 
 if __name__ == '__main__':
     main()

@@ -8,6 +8,7 @@ import sqlite3
 #files
 from login import *
 from signup import *
+from forgot_password import *
 
 
 def DATABASE(query):
@@ -18,7 +19,6 @@ def DATABASE(query):
         file.commit()
         result = C.fetchall()
         return result
-
 
 
 class common_Buttons(QMainWindow):
@@ -53,12 +53,11 @@ class login_Buttons(QMainWindow):
     def reset_pass(self):
         # PAGE home
         self.btn_password.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.password_page))
-        self.btn_send.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.password_reset_page))
+        self.btn_send.clicked.connect(lambda: Password.handleSend(self))
+        self.btn_continue.clicked.connect(lambda: Password.code(self))
         self.btn_back.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.login_page))
         self.btn_back_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.password_page))
         self.btn_reset.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.login_page))
-
-
 
 
 class sign_Buttons(QMainWindow):
