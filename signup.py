@@ -13,11 +13,11 @@ class Signup(QMainWindow):
         self.setupUi(self)
 
     def clear(self):
-        user_first = self.lineEdit_first.clear()
-        user_last = self.lineEdit_last.clear()
-        user_email = self.lineEdit_email_2.clear()
-        user_password = self.lineEdit_password_2.clear()
-        user_retype = self.lineEdit_password_3.clear()
+        self.lineEdit_first.clear()
+        self.lineEdit_last.clear()
+        self.lineEdit_email_2.clear()
+        self.lineEdit_password_2.clear()
+        self.lineEdit_password_3.clear()
 
     def addNewUser(self):
         user_first = self.lineEdit_first.text()

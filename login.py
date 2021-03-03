@@ -67,6 +67,14 @@ class Login(QMainWindow):
         QMainWindow.__init__(self)
         self.setupUi(self)
 
+    def loginPage(self):
+        self.stackedWidget.setCurrentWidget(self.login_page)
+        self.btn_login_signup.setText("Login/Sign up")
+
+    def clear(self):
+        self.lineEdit_email.clear()
+        self.lineEdit_password.clear()
+
     def handleLogin(self):
         email = self.lineEdit_email.text()
         password = self.lineEdit_password.text()
@@ -85,6 +93,9 @@ class Login(QMainWindow):
             print("success")
             Login.current_user = User(*person[0])
             print(Login.current_user)
+            self.stackedWidget.setCurrentWidget(self.user_page)
+            self.btn_login_signup.setText("Logout")
+            Login.clear(self)
 
 
     @staticmethod

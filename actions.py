@@ -32,7 +32,8 @@ class common_Buttons(QMainWindow):
 
     def login_screen(self):
         # PAGE login
-        self.btn_login_signup.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.login_page))
+        self.btn_login_signup.clicked.connect(lambda: Login.loginPage(self))
+
 
     def signup_screen(self):
         # PAGE signup
