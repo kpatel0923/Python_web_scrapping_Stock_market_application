@@ -10,7 +10,7 @@ from login import *
 from signup import *
 from forgot_password import *
 
-x = 6
+
 def DATABASE(query):
 
     with sqlite3.connect("490_database.db") as file:
