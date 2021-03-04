@@ -80,14 +80,3 @@ class Password(QMainWindow):
         x = random.randint(1000, 9999)
         return x
 
-
-
-
-
-
-
-def we():
-    pass
-
-def we2():
-    pass

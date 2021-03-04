@@ -47,13 +47,3 @@ class Signup(QMainWindow):
             Signup.clear(self)
             self.stackedWidget.setCurrentWidget(self.login_page)
             print(all_emails)
-
-
-
-
-
-
-
-
-
-
