@@ -33,7 +33,7 @@ class Signup(QMainWindow):
             print("Invalid input(s) *")
 
         elif not re.search("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" , user_email):
-             print('Email bad')
+            print('Email bad')
 
         elif user_password != user_retype:
             print("Passwords do not match")
@@ -46,6 +46,7 @@ class Signup(QMainWindow):
             actions.DATABASE(f" insert into users (email, first, last, password) values ( '{user_email}' , '{user_first}' , '{user_last}', '{user_password}' )  ")
             Signup.clear(self)
             self.stackedWidget.setCurrentWidget(self.login_page)
+            print(all_emails)
 
 
 

@@ -9,6 +9,7 @@ import sqlite3
 from login import *
 from signup import *
 from forgot_password import *
+import testgraph
 
 
 def DATABASE(query):
@@ -33,6 +34,7 @@ class common_Buttons(QMainWindow):
     def login_screen(self):
         # PAGE login
         self.btn_login_signup.clicked.connect(lambda: Login.loginPage(self))
+        #self.btn_login_signup.clicked.connect(lambda: testgraph.LongAverage())
 
     def signup_screen(self):
         # PAGE signup

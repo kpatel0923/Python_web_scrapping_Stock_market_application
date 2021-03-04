@@ -82,3 +82,12 @@ class Password(QMainWindow):
 
 
 
+
+
+
+
+def we():
+    pass
+
+def we2():
+    pass
