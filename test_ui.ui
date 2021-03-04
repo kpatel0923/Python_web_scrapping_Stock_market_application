@@ -1163,6 +1163,9 @@ border:1px solid  rgb(255, 255, 255);
 border-radius: 12px;
 </string>
                    </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                   </property>
                    <property name="placeholderText">
                     <string>Password</string>
                    </property>
@@ -1192,7 +1195,7 @@ border-radius: 12px;
                     <enum>QLineEdit::Password</enum>
                    </property>
                    <property name="placeholderText">
-                    <string>Retype Password</string>
+                    <string>Confirm Password</string>
                    </property>
                   </widget>
                  </item>
@@ -1730,7 +1733,7 @@ QScrollBar::handle:vertical:hover{
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1364</width>
+                   <width>1113</width>
                    <height>989</height>
                   </rect>
                  </property>

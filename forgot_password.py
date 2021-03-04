@@ -25,7 +25,7 @@ def send_email(code,user_email):
     print("Login success")
     server.sendmail(sender, rec, message)
     print("Email has been sent to ", rec)
-    print(f"The code is: {code}")
+    #print(f"The code is: {code}")
 
 
 class Password(QMainWindow):
@@ -48,17 +48,33 @@ class Password(QMainWindow):
 
         else:
             # Email sender
-            Password.valid_code = self.random_code()
+            Password.valid_code = Password.random_code(self)
             send_email(Password.valid_code, Password.email)
             self.lineEdit_code.setEnabled(True)
             self.btn_continue.setEnabled(True)
 
-
     def code(self):
         code = self.lineEdit_code.text()
         sent_code = Password.valid_code
-        print(f"The code is: {sent_code}")
+        print(f"The code is W: {sent_code}")
+        if code.isalnum:
+            if int(code) != int(sent_code):
+                print("Invalid code")
+            else:
+                self.stackedWidget.setCurrentWidget(self.password_reset_page)
+        else:
+            print("Enter valid code")
 
+    def handleReset(self):
+        password = self.lineEdit_pass
+        confirm_password = self.lineEdit_pass_2
+        print(password, confirm_password)
+
+        if password == confirm_password:
+            actions.DATABASE(f"update users SET password = {password} where email = {Password.email}")
+
+        else:
+            print("Passwords must match")
 
     def random_code(self):
         x = random.randint(1000, 9999)

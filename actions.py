@@ -34,7 +34,6 @@ class common_Buttons(QMainWindow):
         # PAGE login
         self.btn_login_signup.clicked.connect(lambda: Login.loginPage(self))
 
-
     def signup_screen(self):
         # PAGE signup
         self.btn_signup.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.signup_page))
@@ -56,9 +55,11 @@ class login_Buttons(QMainWindow):
         self.btn_password.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.password_page))
         self.btn_send.clicked.connect(lambda: Password.handleSend(self))
         self.btn_continue.clicked.connect(lambda: Password.code(self))
+
+
         self.btn_back.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.login_page))
         self.btn_back_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.password_page))
-        self.btn_reset.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.login_page))
+        self.btn_reset.clicked.connect(lambda: Password.handleReset(self))
 
 
 class sign_Buttons(QMainWindow):
