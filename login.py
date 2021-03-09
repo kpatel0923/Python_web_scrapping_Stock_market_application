@@ -104,7 +104,6 @@ class Login(QMainWindow):
 
 
 
-
 #  current_user = Login.getUser()
 
 #  DATABASE("update user set age == {10} where email == {current_user.getEmail()}")
