@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import *
 import sqlite3
 
 #files
+from quiz import *
 from login import *
 from signup import *
 from forgot_password import *
@@ -72,3 +73,17 @@ class sign_Buttons(QMainWindow):
     def signup(self):
         # PAGE home
         self.btn_signup_add.clicked.connect(lambda: Signup.addNewUser(self))
+
+
+
+
+class quiz_Buttons_actions(QMainWindow):
+    def __init__(self):
+        QMainWindow.__init__(self)
+        self.setupUi(self)
+
+    def navigate(self):
+        # PAGE home
+        quiz_Buttons.quiz_next_screen(self)
+        quiz_Buttons.quiz_back_screen(self)
+        

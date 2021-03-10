@@ -7,6 +7,7 @@ import random
 
 #files
 from actions import *
+from quiz import *
 
 ui,_ = loadUiType('test_ui.ui')
 
@@ -33,6 +34,9 @@ class MainApp(QMainWindow, ui):
 
         #The Sign buttons are listed here
         sign_Buttons.signup(self)
+
+        #These are the quiz buttons
+        quiz_Buttons_actions.navigate(self)
 
 
 

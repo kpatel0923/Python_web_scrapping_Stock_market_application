@@ -225,7 +225,7 @@ QPushButton:hover {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>5</number>
          </property>
          <widget class="QWidget" name="home_page">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -1702,7 +1702,7 @@ QPushButton:hover
                <number>0</number>
               </property>
               <item>
-               <widget class="QStackedWidget" name="stackedWidget_3">
+               <widget class="QStackedWidget" name="stackedWidget_quiz">
                 <property name="currentIndex">
                  <number>0</number>
                 </property>
@@ -1966,7 +1966,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E">
+                         <widget class="QRadioButton" name="Q1_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -1978,7 +1978,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D">
+                         <widget class="QRadioButton" name="Q1_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2002,7 +2002,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B">
+                         <widget class="QRadioButton" name="Q1_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2014,7 +2014,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A">
+                         <widget class="QRadioButton" name="Q1_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2214,7 +2214,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_2">
+                         <widget class="QRadioButton" name="Q2_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2226,7 +2226,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_2">
+                         <widget class="QRadioButton" name="Q2_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2238,7 +2238,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_2">
+                         <widget class="QRadioButton" name="Q2_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2250,7 +2250,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_2">
+                         <widget class="QRadioButton" name="Q2_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2262,7 +2262,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_2">
+                         <widget class="QRadioButton" name="Q2_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2462,7 +2462,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_3">
+                         <widget class="QRadioButton" name="Q3_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2474,7 +2474,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_3">
+                         <widget class="QRadioButton" name="Q3_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2486,7 +2486,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_3">
+                         <widget class="QRadioButton" name="Q3_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2498,7 +2498,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_3">
+                         <widget class="QRadioButton" name="Q3_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2510,7 +2510,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_3">
+                         <widget class="QRadioButton" name="Q3_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2710,7 +2710,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_4">
+                         <widget class="QRadioButton" name="Q4_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2722,7 +2722,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_4">
+                         <widget class="QRadioButton" name="Q4_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2734,7 +2734,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_4">
+                         <widget class="QRadioButton" name="Q4_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2746,7 +2746,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_4">
+                         <widget class="QRadioButton" name="Q4_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2758,7 +2758,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_4">
+                         <widget class="QRadioButton" name="Q4_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2958,7 +2958,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_5">
+                         <widget class="QRadioButton" name="Q5_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2970,7 +2970,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_5">
+                         <widget class="QRadioButton" name="Q5_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2982,7 +2982,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_5">
+                         <widget class="QRadioButton" name="Q5_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -2994,7 +2994,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_5">
+                         <widget class="QRadioButton" name="Q5_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3006,7 +3006,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_5">
+                         <widget class="QRadioButton" name="Q5_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3206,7 +3206,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_6">
+                         <widget class="QRadioButton" name="Q6_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3218,7 +3218,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_6">
+                         <widget class="QRadioButton" name="Q6_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3230,7 +3230,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_6">
+                         <widget class="QRadioButton" name="Q6_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3242,7 +3242,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_6">
+                         <widget class="QRadioButton" name="Q6_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3254,7 +3254,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_6">
+                         <widget class="QRadioButton" name="Q6_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3454,7 +3454,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_7">
+                         <widget class="QRadioButton" name="Q7_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3466,7 +3466,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_7">
+                         <widget class="QRadioButton" name="Q7_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3478,7 +3478,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_7">
+                         <widget class="QRadioButton" name="Q7_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3490,7 +3490,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_7">
+                         <widget class="QRadioButton" name="Q7_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3502,7 +3502,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_7">
+                         <widget class="QRadioButton" name="Q7_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3702,7 +3702,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_9">
+                         <widget class="QRadioButton" name="Q8_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3714,7 +3714,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_9">
+                         <widget class="QRadioButton" name="Q8_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3726,7 +3726,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_9">
+                         <widget class="QRadioButton" name="Q8_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3738,7 +3738,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_9">
+                         <widget class="QRadioButton" name="Q8_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3750,7 +3750,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_9">
+                         <widget class="QRadioButton" name="Q8_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3950,7 +3950,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_10">
+                         <widget class="QRadioButton" name="Q9_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3962,7 +3962,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_10">
+                         <widget class="QRadioButton" name="Q9_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3974,7 +3974,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_10">
+                         <widget class="QRadioButton" name="Q9_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3986,7 +3986,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_10">
+                         <widget class="QRadioButton" name="Q9_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -3998,7 +3998,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_10">
+                         <widget class="QRadioButton" name="Q9_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4198,7 +4198,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_11">
+                         <widget class="QRadioButton" name="Q10_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4210,7 +4210,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_11">
+                         <widget class="QRadioButton" name="Q10_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4222,7 +4222,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_11">
+                         <widget class="QRadioButton" name="Q10_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4234,7 +4234,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_11">
+                         <widget class="QRadioButton" name="Q10_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4246,7 +4246,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_11">
+                         <widget class="QRadioButton" name="Q10_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4446,7 +4446,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_E_12">
+                         <widget class="QRadioButton" name="Q11_A">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4458,7 +4458,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_D_12">
+                         <widget class="QRadioButton" name="Q11_B">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4470,7 +4470,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_C_12">
+                         <widget class="QRadioButton" name="Q11_C">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4482,7 +4482,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_B_12">
+                         <widget class="QRadioButton" name="Q11_D">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
@@ -4494,7 +4494,7 @@ color: rgb(255, 255, 255);</string>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QRadioButton" name="Q1_A_12">
+                         <widget class="QRadioButton" name="Q11_E">
                           <property name="font">
                            <font>
                             <pointsize>11</pointsize>
