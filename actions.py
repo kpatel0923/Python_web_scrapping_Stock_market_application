@@ -10,6 +10,7 @@ from quiz import *
 from login import *
 from signup import *
 from forgot_password import *
+from chart import *
 import testgraph
 
 
@@ -35,11 +36,21 @@ class common_Buttons(QMainWindow):
     def login_screen(self):
         # PAGE login
         self.btn_login_signup.clicked.connect(lambda: Login.loginPage(self))
-        #self.btn_login_signup.clicked.connect(lambda: testgraph.LongAverage())
 
     def signup_screen(self):
         # PAGE signup
         self.btn_signup.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.signup_page))
+
+    def test(self):
+        # Testing the chart
+        self.btn_submit.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
+        self.btn_1D.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1d'))
+        self.btn_1W.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1wk'))
+        self.btn_1M.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1mo'))
+        self.btn_3M.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '3mo'))
+        self.btn_1Y.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
+        self.btn_5Y.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '5y'))
+
 
 
 

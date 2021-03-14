@@ -225,7 +225,7 @@ QPushButton:hover {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>5</number>
+          <number>6</number>
          </property>
          <widget class="QWidget" name="home_page">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -1704,7 +1704,7 @@ QPushButton:hover
               <item>
                <widget class="QStackedWidget" name="stackedWidget_quiz">
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>1</number>
                 </property>
                 <widget class="QWidget" name="page_1">
                  <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -1767,7 +1767,9 @@ QPushButton:hover
                            </font>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true">color: rgb(255, 255, 255);</string>
+                           <string notr="true">color: rgb(255, 255, 255);
+
+background-color: rgb(9, 9, 9);</string>
                           </property>
                           <property name="text">
                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Welcome to the Stock &amp;amp; Budget Planner Quiz! This quiz will estimate &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;your risk tolerance with an eleven question assessment. After &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;answering and submitting your answers, results will return showing &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;whether you are generally conservative, moderate, or aggressive &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;pertaining to your financial habits. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;A maximum score of 47 would indicate you may have aggressive &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;financial tendancies, while receiving 11 points may show a more &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;conservative mindset with your money.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Enjoy! &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -4916,7 +4918,7 @@ QPushButton:hover
                           </property>
                           <layout class="QGridLayout" name="gridLayout_8">
                            <item row="0" column="0" colspan="2">
-                            <widget class="QLineEdit" name="lineEdit_first_2">
+                            <widget class="QLineEdit" name="lineEdit_symbol">
                              <property name="maximumSize">
                               <size>
                                <width>230</width>
@@ -4936,12 +4938,12 @@ border-radius: 12px;
 </string>
                              </property>
                              <property name="placeholderText">
-                              <string>TSLA</string>
+                              <string>Enter Symbol</string>
                              </property>
                             </widget>
                            </item>
                            <item row="1" column="0">
-                            <widget class="QPushButton" name="btn_signup_add_2">
+                            <widget class="QPushButton" name="btn_submit">
                              <property name="minimumSize">
                               <size>
                                <width>100</width>
@@ -5136,7 +5138,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="0" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_6">
+                               <widget class="QPushButton" name="btn_DOW">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5222,7 +5224,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="1" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_7">
+                               <widget class="QPushButton" name="btn_SP">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5308,7 +5310,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="2" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_8">
+                               <widget class="QPushButton" name="btn_NAS">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5394,7 +5396,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="3" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_9">
+                               <widget class="QPushButton" name="btn_RUSS">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5896,6 +5898,267 @@ QPushButton:hover {
                           <property name="frameShadow">
                            <enum>QFrame::Raised</enum>
                           </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_10">
+                           <item>
+                            <widget class="MplWidget" name="MplWidget" native="true">
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(255, 255, 255);</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QFrame" name="frame_66">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_20">
+                              <item>
+                               <widget class="QPushButton" name="btn_1D">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>15</pointsize>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>1D</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btn_1W">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>15</pointsize>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>1W</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btn_1M">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>15</pointsize>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>1M</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btn_3M">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>15</pointsize>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>3M</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btn_1Y">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>15</pointsize>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>1Y</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btn_5Y">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>25</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>50</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>15</pointsize>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>5Y</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
                          </widget>
                         </item>
                         <item>
@@ -6004,6 +6267,14 @@ background-color: rgb(255, 255, 255);
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="test.qrc"/>
  </resources>
