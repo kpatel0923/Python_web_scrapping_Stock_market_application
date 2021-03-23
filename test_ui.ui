@@ -1704,7 +1704,7 @@ QPushButton:hover
               <item>
                <widget class="QStackedWidget" name="stackedWidget_quiz">
                 <property name="currentIndex">
-                 <number>1</number>
+                 <number>12</number>
                 </property>
                 <widget class="QWidget" name="page_1">
                  <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -4981,45 +4981,6 @@ QPushButton:hover
                              </property>
                             </widget>
                            </item>
-                           <item row="1" column="1">
-                            <widget class="QPushButton" name="btn_signup_add_3">
-                             <property name="minimumSize">
-                              <size>
-                               <width>100</width>
-                               <height>25</height>
-                              </size>
-                             </property>
-                             <property name="maximumSize">
-                              <size>
-                               <width>100</width>
-                               <height>16777215</height>
-                              </size>
-                             </property>
-                             <property name="font">
-                              <font>
-                               <family>century gothic</family>
-                               <pointsize>15</pointsize>
-                              </font>
-                             </property>
-                             <property name="styleSheet">
-                              <string notr="true">QPushButton
-{
-	background: transparent;
-	border-radius: 10px;
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(255, 255, 255)
-}
-
-QPushButton:hover
-{
-	background-color: rgb(0, 170, 255);
-}</string>
-                             </property>
-                             <property name="text">
-                              <string>Refresh</string>
-                             </property>
-                            </widget>
-                           </item>
                           </layout>
                          </widget>
                         </item>
@@ -5038,21 +4999,6 @@ QPushButton:hover
                            <enum>QFrame::Raised</enum>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_22">
-                           <property name="spacing">
-                            <number>0</number>
-                           </property>
-                           <property name="leftMargin">
-                            <number>0</number>
-                           </property>
-                           <property name="topMargin">
-                            <number>0</number>
-                           </property>
-                           <property name="rightMargin">
-                            <number>0</number>
-                           </property>
-                           <property name="bottomMargin">
-                            <number>0</number>
-                           </property>
                            <item>
                             <widget class="QLabel" name="label_20">
                              <property name="minimumSize">
@@ -5095,7 +5041,7 @@ QPushButton:hover
                              </property>
                              <layout class="QGridLayout" name="gridLayout_9">
                               <item row="0" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_2">
+                               <widget class="QPushButton" name="btn_DOW">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5137,8 +5083,8 @@ QPushButton:hover {
                                 </property>
                                </widget>
                               </item>
-                              <item row="0" column="1">
-                               <widget class="QPushButton" name="btn_DOW">
+                              <item row="0" column="2">
+                               <widget class="QPushButton" name="btn_DOW_quote">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5180,51 +5126,8 @@ QPushButton:hover {
                                 </property>
                                </widget>
                               </item>
-                              <item row="1" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_4">
-                                <property name="minimumSize">
-                                 <size>
-                                  <width>100</width>
-                                  <height>0</height>
-                                 </size>
-                                </property>
-                                <property name="maximumSize">
-                                 <size>
-                                  <width>100</width>
-                                  <height>16777215</height>
-                                 </size>
-                                </property>
-                                <property name="font">
-                                 <font>
-                                  <family>century gothic</family>
-                                  <pointsize>12</pointsize>
-                                 </font>
-                                </property>
-                                <property name="cursor">
-                                 <cursorShape>PointingHandCursor</cursorShape>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">QPushButton
-{
-	background: transparent;
-	color: rgb(255, 255, 255);
-}
-
-QPushButton:hover {
-	color: rgb(0, 170, 255);
-}
-</string>
-                                </property>
-                                <property name="text">
-                                 <string>S&amp;P 500</string>
-                                </property>
-                                <property name="checkable">
-                                 <bool>false</bool>
-                                </property>
-                               </widget>
-                              </item>
-                              <item row="1" column="1">
-                               <widget class="QPushButton" name="btn_SP">
+                              <item row="1" column="2">
+                               <widget class="QPushButton" name="btn_SP_quote">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5266,8 +5169,51 @@ QPushButton:hover {
                                 </property>
                                </widget>
                               </item>
+                              <item row="1" column="0">
+                               <widget class="QPushButton" name="btn_SP">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>100</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>100</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>12</pointsize>
+                                 </font>
+                                </property>
+                                <property name="cursor">
+                                 <cursorShape>PointingHandCursor</cursorShape>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover {
+	color: rgb(0, 170, 255);
+}
+</string>
+                                </property>
+                                <property name="text">
+                                 <string>S&amp;P 500</string>
+                                </property>
+                                <property name="checkable">
+                                 <bool>false</bool>
+                                </property>
+                               </widget>
+                              </item>
                               <item row="2" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_3">
+                               <widget class="QPushButton" name="btn_NAS">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5309,51 +5255,8 @@ QPushButton:hover {
                                 </property>
                                </widget>
                               </item>
-                              <item row="2" column="1">
-                               <widget class="QPushButton" name="btn_NAS">
-                                <property name="minimumSize">
-                                 <size>
-                                  <width>100</width>
-                                  <height>0</height>
-                                 </size>
-                                </property>
-                                <property name="maximumSize">
-                                 <size>
-                                  <width>100</width>
-                                  <height>16777215</height>
-                                 </size>
-                                </property>
-                                <property name="font">
-                                 <font>
-                                  <family>century gothic</family>
-                                  <pointsize>12</pointsize>
-                                 </font>
-                                </property>
-                                <property name="cursor">
-                                 <cursorShape>PointingHandCursor</cursorShape>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true">QPushButton
-{
-	background: transparent;
-	color: rgb(255, 255, 255);
-}
-
-QPushButton:hover {
-	color: rgb(0, 170, 255);
-}
-</string>
-                                </property>
-                                <property name="text">
-                                 <string>N Points</string>
-                                </property>
-                                <property name="checkable">
-                                 <bool>false</bool>
-                                </property>
-                               </widget>
-                              </item>
                               <item row="3" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_5">
+                               <widget class="QPushButton" name="btn_RUSS">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5395,8 +5298,51 @@ QPushButton:hover {
                                 </property>
                                </widget>
                               </item>
-                              <item row="3" column="1">
-                               <widget class="QPushButton" name="btn_RUSS">
+                              <item row="2" column="2">
+                               <widget class="QPushButton" name="btn_NAS_quote">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>100</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>100</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="font">
+                                 <font>
+                                  <family>century gothic</family>
+                                  <pointsize>12</pointsize>
+                                 </font>
+                                </property>
+                                <property name="cursor">
+                                 <cursorShape>PointingHandCursor</cursorShape>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton
+{
+	background: transparent;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover {
+	color: rgb(0, 170, 255);
+}
+</string>
+                                </property>
+                                <property name="text">
+                                 <string>N Points</string>
+                                </property>
+                                <property name="checkable">
+                                 <bool>false</bool>
+                                </property>
+                               </widget>
+                              </item>
+                              <item row="3" column="2">
+                               <widget class="QPushButton" name="btn_RUSS_quote">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5439,6 +5385,45 @@ QPushButton:hover {
                                </widget>
                               </item>
                              </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_refresh">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>100</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>century gothic</family>
+                               <pointsize>15</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Refresh</string>
+                             </property>
                             </widget>
                            </item>
                           </layout>
@@ -5899,6 +5884,21 @@ QPushButton:hover {
                            <enum>QFrame::Raised</enum>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_10">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
                            <item>
                             <widget class="MplWidget" name="MplWidget" native="true">
                              <property name="styleSheet">
@@ -5913,6 +5913,9 @@ QPushButton:hover {
                                <width>16777215</width>
                                <height>50</height>
                               </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background: rgba(0, 0, 0, 0.0);</string>
                              </property>
                              <property name="frameShape">
                               <enum>QFrame::StyledPanel</enum>

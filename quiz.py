@@ -13,8 +13,6 @@ class quiz_Buttons(QMainWindow):
         self.setupUi(self)
 
 
-
-
     def quiz_next_screen(self):
         # PAGES next
         quiz_Buttons.score_1 = 0
