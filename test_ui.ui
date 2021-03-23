@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1400</width>
+    <width>1394</width>
     <height>858</height>
    </rect>
   </property>
@@ -5033,6 +5033,18 @@ QPushButton:hover
                            </item>
                            <item>
                             <widget class="QFrame" name="frame_23">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                               <horstretch>0</horstretch>
+                               <verstretch>100</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>110</height>
+                              </size>
+                             </property>
                              <property name="frameShape">
                               <enum>QFrame::StyledPanel</enum>
                              </property>
@@ -5119,7 +5131,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>D Points</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5162,7 +5174,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>S Points</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5334,7 +5346,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>N Points</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5377,7 +5389,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>R Points</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
