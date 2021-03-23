@@ -39,4 +39,16 @@ class MatplotlibWidget(QMainWindow):
         self.MplWidget.canvas.draw()
 
 
+    def update_graph_index(self, stockPeriod, stockSymbol):
+        stockTicker = yf.Ticker(stockSymbol)
 
+        df = stockTicker.history(period=stockPeriod)  # Placing stock data into a dataframe
+        data = df['Close']
+
+        chartTitle = stockSymbol
+
+        self.MplWidget.canvas.axes.clear()
+        self.MplWidget.canvas.axes.plot(data)
+
+        self.MplWidget.canvas.axes.set_title(chartTitle.upper())
+        self.MplWidget.canvas.draw()

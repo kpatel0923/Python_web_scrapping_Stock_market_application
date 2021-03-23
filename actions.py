@@ -11,6 +11,7 @@ from login import *
 from signup import *
 from forgot_password import *
 from chart import *
+from indices import *
 import testgraph
 
 
@@ -43,6 +44,7 @@ class common_Buttons(QMainWindow):
 
     def test(self):
         # Testing the chart
+
         self.btn_submit.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
         self.btn_1D.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1d'))
         self.btn_1W.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1wk'))
@@ -51,8 +53,19 @@ class common_Buttons(QMainWindow):
         self.btn_1Y.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
         self.btn_5Y.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '5y'))
 
+        # indices buttons
+
+        self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', 'DJI'))
+        self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^GSPC'))
+        self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^IXIC'))
+        self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^RUT'))
 
 
+
+
+    def refresh(self):
+        # Refreshes the indices quotes
+        self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
 
 
 class login_Buttons(QMainWindow):
