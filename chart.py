@@ -32,6 +32,13 @@ class MatplotlibWidget(QMainWindow):
 
         chartTitle = stockSymbol
 
+        if chartTitle == 'DJI':
+            self.MplWidget.canvas.axes.clear()
+            self.MplWidget.canvas.axes.plot(data)
+
+            self.MplWidget.canvas.axes.set_title(chartTitle.upper())
+            self.MplWidget.canvas.draw()
+
         self.MplWidget.canvas.axes.clear()
         self.MplWidget.canvas.axes.plot(data)
 
