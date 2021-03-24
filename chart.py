@@ -45,7 +45,24 @@ class MatplotlibWidget(QMainWindow):
         self.MplWidget.canvas.axes.set_title(chartTitle.upper())
         self.MplWidget.canvas.draw()
 
-        testgraph.summary(stockSymbol)
+        name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(stockSymbol)
+
+        self.lbl_name.setText(name)
+        self.lbl_exchange.setText(exchange)
+        self.lbl_sector.setText(sector)
+        self.lbl_industry.setText(industry)
+        self.lbl_ask.setText(str(ask))
+        self.lbl_bid.setText(str(bid))
+        self.lbl_open.setText(str(_open))
+        self.lbl_close.setText(str(prevClose))
+        self.lbl_yield.setText(str(divYield))
+        self.lbl_pe.setText(str(forwardPE))
+        self.lbl_tenvol.setText(str(vol_10_days))
+        self.lbl_vol.setText(str(vol))
+        self.lbl_summary.setText(longSummary)
+
+
+
 
 
     def update_graph_index(self, stockPeriod, stockSymbol):

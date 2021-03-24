@@ -73,3 +73,4 @@ def summary(test):
           '\n\n',
           'Sector: ', sector, '\t', 'Industry: ', industry, '\n\n', longSummary)
 
+    return name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary
