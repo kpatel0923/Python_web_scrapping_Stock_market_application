@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import *
-
 from matplotlib.backends.backend_qt5agg import (NavigationToolbar2QT as NavigationToolbar)
-
 import yfinance as yf
+
+import testgraph
 
 class MatplotlibWidget(QMainWindow):
     def __init__(self):
@@ -44,6 +44,8 @@ class MatplotlibWidget(QMainWindow):
 
         self.MplWidget.canvas.axes.set_title(chartTitle.upper())
         self.MplWidget.canvas.draw()
+
+        testgraph.summary(stockSymbol)
 
 
     def update_graph_index(self, stockPeriod, stockSymbol):

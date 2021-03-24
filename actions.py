@@ -65,7 +65,8 @@ class common_Buttons(QMainWindow):
 
     def refresh(self):
         # Refreshes the indices quotes
-        self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
+        # self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
+        self.btn_refresh.clicked.connect(lambda: testgraph.summary())
 
 
 class login_Buttons(QMainWindow):

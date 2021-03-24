@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime
 
+
 "A golden cross is considered a bullish sign; it occurs when the 50-day moving average \
 rises above 200-day moving average. A death cross is considered a bearish sign; it \
 occurs when the 50-day moving average drops below 200-day moving average."
@@ -43,4 +44,32 @@ def LongAverage():
     plt.legend()
     plt.show()
 
+
+def summary(test):
+    symbol = test
+    s = yf.Ticker(symbol)
+
+    name = s.info['shortName']
+    ask = s.info['ask']
+    bid = s.info['bid']
+    vol = s.info['volume']
+    exchange = s.info['exchange']
+
+    _open = s.info['open']
+    prevClose = s.info['previousClose']
+    vol_10_days = s.info['averageVolume10days']
+    divYield = s.info['dividendYield']
+
+    beta = s.info['beta']
+    forwardPE = s.info['forwardPE']
+
+    sector = s.info['sector']
+    industry = s.info['industry']
+    longSummary = s.info['longBusinessSummary']
+
+    print(name, '\t', 'Exchange: ', exchange, '\n\n', 'Ask: ', ask, '\t', 'Bid: ', bid, '\n\n', 'Volume: ', vol,
+          '\t', 'Average 10 Day Volume: ', vol_10_days, '\n\n''Open: ', _open, '\t', 'Previous Close: ',
+          prevClose, '\n\n', 'Dividend Yield: ', divYield, '\t', 'Beta: ', beta, '\t', 'Forward PE: ', forwardPE,
+          '\n\n',
+          'Sector: ', sector, '\t', 'Industry: ', industry, '\n\n', longSummary)
 
