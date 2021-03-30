@@ -80,3 +80,9 @@ class Password(QMainWindow):
         x = random.randint(1000, 9999)
         return x
 
+
+    def screen(self):
+        if self.btn_login_signup.text() == "Logout":
+            self.stackedWidget.setCurrentWidget(self.user_page)
+        else:
+            self.stackedWidget.setCurrentWidget(self.login_page)

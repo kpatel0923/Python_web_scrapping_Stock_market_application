@@ -2,6 +2,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
+from signup import *
 
 
 class quiz_Buttons(QMainWindow):
@@ -42,10 +43,12 @@ class quiz_Buttons(QMainWindow):
         self.btn_Q_10.clicked.connect(lambda: quiz_Buttons.Q_9(self))
         self.btn_Q_11.clicked.connect(lambda: quiz_Buttons.Q_10(self))
         self.btn_result.clicked.connect(lambda: quiz_Buttons.Q_11(self))
+        self.btn_userprofile.clicked.connect(lambda: quiz_Buttons.score(self))
+
 
     def quiz_back_screen(self):
         # PAGES back
-        self.btn_back_quiz.clicked.connect(lambda: self.stackedWidget_quiz.setCurrentWidget(self.signup_page))
+        self.btn_back_quiz.clicked.connect(lambda: quiz_Buttons.screen(self))
         self.btn_back_Q1.clicked.connect(lambda: self.stackedWidget_quiz.setCurrentWidget(self.page_1))
         self.btn_back_Q2.clicked.connect(lambda: self.stackedWidget_quiz.setCurrentWidget(self.Q_1))
         self.btn_back_Q3.clicked.connect(lambda: self.stackedWidget_quiz.setCurrentWidget(self.Q_2))
@@ -57,6 +60,22 @@ class quiz_Buttons(QMainWindow):
         self.btn_back_Q9.clicked.connect(lambda: self.stackedWidget_quiz.setCurrentWidget(self.Q_8))
         self.btn_back_Q10.clicked.connect(lambda: self.stackedWidget_quiz.setCurrentWidget(self.Q_9))
         self.btn_back_Q11.clicked.connect(lambda: self.stackedWidget_quiz.setCurrentWidget(self.Q_10))
+
+
+    def score(self):
+        user_first = self.lineEdit_first.text()
+        user_email = self.lineEdit_email_2.text()
+        print(user_first, user_email)
+        print(quiz_Buttons.total)
+        Signup.clear(self)
+
+
+    def screen(self):
+        if self.btn_login_signup.text() == "Logout":
+            self.stackedWidget.setCurrentWidget(self.user_page)
+        else:
+            self.stackedWidget.setCurrentWidget(self.signup_page)
+
 
     def Q_1(self):
         if self.Q1_A.isChecked():

@@ -81,7 +81,7 @@ class Login(QMainWindow):
         person = actions.DATABASE(f"select * from users where email  == '{email}' and password == '{password}'")
 
         if not password.isalnum():
-            print("Invalid input(s)")
+            print("Invalid input(s)y")
 
         elif not re.search("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" , email):
             print('Invalid input(s)')
@@ -95,6 +95,7 @@ class Login(QMainWindow):
             print(Login.current_user)
             self.stackedWidget.setCurrentWidget(self.user_page)
             self.btn_login_signup.setText("Logout")
+            self.lbl_welcome.setText(f"Welcome: {Login.current_user.getFirst()}")
             Login.clear(self)
 
 

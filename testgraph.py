@@ -67,10 +67,4 @@ def summary(test):
     industry = s.info['industry']
     longSummary = s.info['longBusinessSummary']
 
-    print(name, '\t', 'Exchange: ', exchange, '\n\n', 'Ask: ', ask, '\t', 'Bid: ', bid, '\n\n', 'Volume: ', vol,
-          '\t', 'Average 10 Day Volume: ', vol_10_days, '\n\n''Open: ', _open, '\t', 'Previous Close: ',
-          prevClose, '\n\n', 'Dividend Yield: ', divYield, '\t', 'Beta: ', beta, '\t', 'Forward PE: ', forwardPE,
-          '\n\n',
-          'Sector: ', sector, '\t', 'Industry: ', industry, '\n\n', longSummary)
-
     return name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary

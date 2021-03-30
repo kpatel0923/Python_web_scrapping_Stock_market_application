@@ -48,6 +48,10 @@ class MainApp(QMainWindow, ui):
         quiz_Buttons_actions.navigate(self)
 
 
+        #The navigation buttons
+        user_Buttons_actions.navigate(self)
+
+
 def main():
     app = QApplication(sys.argv)
     window = MainApp()

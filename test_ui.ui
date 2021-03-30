@@ -1704,7 +1704,7 @@ QPushButton:hover
               <item>
                <widget class="QStackedWidget" name="stackedWidget_quiz">
                 <property name="currentIndex">
-                 <number>12</number>
+                 <number>0</number>
                 </property>
                 <widget class="QWidget" name="page_1">
                  <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -4741,7 +4741,7 @@ color: rgb(255, 255, 255);</string>
                        </property>
                        <layout class="QHBoxLayout" name="horizontalLayout_19">
                         <item>
-                         <widget class="QPushButton" name="btn_signup_add_29">
+                         <widget class="QPushButton" name="btn_userprofile">
                           <property name="minimumSize">
                            <size>
                             <width>0</width>
@@ -4850,7 +4850,7 @@ QPushButton:hover
                 <property name="currentIndex">
                  <number>0</number>
                 </property>
-                <widget class="QWidget" name="page">
+                <widget class="QWidget" name="chart_page">
                  <layout class="QHBoxLayout" name="horizontalLayout_5">
                   <item>
                    <widget class="QFrame" name="frame_28">
@@ -6332,6 +6332,9 @@ QPushButton:hover
                                         <pointsize>12</pointsize>
                                        </font>
                                       </property>
+                                      <property name="toolTip">
+                                       <string/>
+                                      </property>
                                       <property name="styleSheet">
                                        <string notr="true">color: rgb(255, 255, 255);
 	background:rgba(0,0,0,0);
@@ -7331,7 +7334,7 @@ QPushButton:hover
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_23">
                       <item>
-                       <widget class="QPushButton" name="btn_submit_4">
+                       <widget class="QPushButton" name="btn_change_password">
                         <property name="minimumSize">
                          <size>
                           <width>250</width>
@@ -7382,7 +7385,7 @@ QPushButton:hover
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_24">
                       <item>
-                       <widget class="QPushButton" name="btn_submit_5">
+                       <widget class="QPushButton" name="btn_personal">
                         <property name="minimumSize">
                          <size>
                           <width>250</width>
@@ -7433,7 +7436,7 @@ QPushButton:hover
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_25">
                       <item>
-                       <widget class="QPushButton" name="btn_submit_6">
+                       <widget class="QPushButton" name="btn_retake">
                         <property name="minimumSize">
                          <size>
                           <width>250</width>
@@ -7540,7 +7543,7 @@ QPushButton:hover
                    <string notr="true"/>
                   </property>
                   <property name="currentIndex">
-                   <number>0</number>
+                   <number>1</number>
                   </property>
                   <widget class="QWidget" name="info_page">
                    <layout class="QVBoxLayout" name="verticalLayout_67">
@@ -7749,7 +7752,7 @@ QPushButton:hover
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_27">
                    <item>
-                    <widget class="QPushButton" name="btn_submit_8">
+                    <widget class="QPushButton" name="btn_back_3">
                      <property name="minimumSize">
                       <size>
                        <width>150</width>
@@ -7791,7 +7794,7 @@ QPushButton:hover
                  </widget>
                 </widget>
                 <widget class="QWidget" name="budget">
-                 <widget class="QPushButton" name="btn_submit_9">
+                 <widget class="QPushButton" name="btn_back_4">
                   <property name="geometry">
                    <rect>
                     <x>10</x>
@@ -8287,6 +8290,67 @@ QPushButton:hover
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_46">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_87">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_29">
+                       <item>
+                        <widget class="QLabel" name="lbl_welcome">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>century gothic</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+	background:rgba(0,0,0,0);
+
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Welcome: </string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
                     <item>
                      <widget class="QFrame" name="frame_67">
                       <property name="frameShape">
@@ -8297,7 +8361,7 @@ QPushButton:hover
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_21">
                        <item>
-                        <widget class="QPushButton" name="btn_submit_2">
+                        <widget class="QPushButton" name="btn_acct_settings">
                          <property name="minimumSize">
                           <size>
                            <width>200</width>
@@ -8348,7 +8412,7 @@ QPushButton:hover
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_22">
                        <item>
-                        <widget class="QPushButton" name="btn_submit_3">
+                        <widget class="QPushButton" name="btn_budget">
                          <property name="minimumSize">
                           <size>
                            <width>200</width>

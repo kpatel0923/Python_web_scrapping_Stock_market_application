@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import *
 
 #files
 import actions
+from quiz import *
 
 class Signup(QMainWindow):
     def __init__(self):
@@ -44,6 +45,10 @@ class Signup(QMainWindow):
         else:
             print('added')
             actions.DATABASE(f" insert into users (email, first, last, password) values ( '{user_email}' , '{user_first}' , '{user_last}', '{user_password}' )  ")
-            Signup.clear(self)
             self.stackedWidget.setCurrentWidget(self.quiz_page)
             print(all_emails)
+
+    def quizScore(self):
+        user_first = self.lineEdit_first.text()
+        print(quiz_Buttons.score())
+

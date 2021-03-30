@@ -12,6 +12,7 @@ from signup import *
 from forgot_password import *
 from chart import *
 from indices import *
+from user import *
 import testgraph
 
 
@@ -61,12 +62,10 @@ class common_Buttons(QMainWindow):
         self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^RUT'))
 
 
-
-
     def refresh(self):
         # Refreshes the indices quotes
-        # self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
-        self.btn_refresh.clicked.connect(lambda: testgraph.summary())
+        self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
+
 
 
 class login_Buttons(QMainWindow):
@@ -85,7 +84,7 @@ class login_Buttons(QMainWindow):
         self.btn_continue.clicked.connect(lambda: Password.code(self))
 
 
-        self.btn_back.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.login_page))
+        self.btn_back.clicked.connect(lambda: Password.screen(self))
         self.btn_back_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.password_page))
         self.btn_reset.clicked.connect(lambda: Password.handleReset(self))
 
@@ -111,4 +110,24 @@ class quiz_Buttons_actions(QMainWindow):
         # PAGE home
         quiz_Buttons.quiz_next_screen(self)
         quiz_Buttons.quiz_back_screen(self)
-        
+
+
+class user_Buttons_actions(QMainWindow):
+    def __init__(self):
+        QMainWindow.__init__(self)
+        self.setupUi(self)
+
+    def navigate(self):
+        # PAGE navigate
+        self.btn_acct_settings.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.user_settings))
+        self.btn_budget.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.budget))
+        self.btn_back_3.clicked.connect(lambda: user_Buttons.back_screen(self))
+        self.btn_back_4.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.chart_page))
+
+        self.btn_personal.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.info_page))
+
+        self.btn_change_password.clicked.connect(lambda: user_Buttons.pass_change(self))
+        self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
+
+
+
