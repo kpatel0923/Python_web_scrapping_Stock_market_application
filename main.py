@@ -50,6 +50,7 @@ class MainApp(QMainWindow, ui):
 
         #The navigation buttons
         user_Buttons_actions.navigate(self)
+        user_Buttons_actions.indicies(self)
         user_Buttons_actions.top_stocks(self)
 
 

@@ -54,20 +54,10 @@ class common_Buttons(QMainWindow):
         self.btn_1Y.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1y'))
         self.btn_5Y.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '5y'))
 
-        # indices buttons
-
-        # self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', 'DJI'))
-        # self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^GSPC'))
-        # self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^IXIC'))
-        # self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^RUT'))
-
 
     def refresh(self):
         # Refreshes the indices quotes
         self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
-
-
-
 
 
 
@@ -87,7 +77,6 @@ class login_Buttons(QMainWindow):
         self.btn_send.clicked.connect(lambda: Password.handleSend(self))
         self.btn_continue.clicked.connect(lambda: Password.code(self))
 
-
         self.btn_back.clicked.connect(lambda: Password.screen(self))
         self.btn_back_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.password_page))
         self.btn_reset.clicked.connect(lambda: Password.handleReset(self))
@@ -101,7 +90,6 @@ class sign_Buttons(QMainWindow):
     def signup(self):
         # PAGE home
         self.btn_signup_add.clicked.connect(lambda: Signup.addNewUser(self))
-
 
 
 
@@ -133,7 +121,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_change_password.clicked.connect(lambda: user_Buttons.pass_change(self))
         self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
 
-    def top_stocks(self):
+    def indicies(self):
         sym = self.btn_DOW.text()
         self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym))
 
@@ -145,3 +133,31 @@ class user_Buttons_actions(QMainWindow):
 
         sym_4 = self.btn_RUSS.text()
         self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_4))
+
+
+    def top_stocks(self):
+        sym_1 = self.btn_1.text()
+        self.btn_1.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_1))
+
+        sym_2 = self.btn_2.text()
+        self.btn_2.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_2))
+
+        sym_3 = self.btn_3.text()
+        self.btn_3.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_3))
+
+        sym_4 = self.btn_4.text()
+        self.btn_4.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_4))
+
+        sym_5 = self.btn_5.text()
+        self.btn_5.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_5))
+
+        sym_6 = self.btn_6.text()
+        self.btn_6.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_6))
+
+        sym_7 = self.btn_7.text()
+        self.btn_7.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_7))
+
+        sym_8 = self.btn_8.text()
+        self.btn_8.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_8))
+
+

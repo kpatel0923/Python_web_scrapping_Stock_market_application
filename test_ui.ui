@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1394</width>
+    <width>1393</width>
     <height>858</height>
    </rect>
   </property>
@@ -5395,7 +5395,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>RUS</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5513,7 +5513,7 @@ QPushButton:hover
                              </property>
                              <layout class="QGridLayout" name="gridLayout_11">
                               <item row="0" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_18">
+                               <widget class="QPushButton" name="btn_1">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5548,7 +5548,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>APPL</string>
+                                 <string>AAPL</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5556,7 +5556,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="0" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_19">
+                               <widget class="QPushButton" name="btn_5">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5591,7 +5591,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>D Points</string>
+                                 <string>ZOM</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5599,7 +5599,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="1" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_20">
+                               <widget class="QPushButton" name="btn_2">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5634,7 +5634,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>S&amp;P 500</string>
+                                 <string>TSLA</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5642,7 +5642,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="1" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_21">
+                               <widget class="QPushButton" name="btn_6">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5677,7 +5677,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>S Points</string>
+                                 <string>UAVS</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5685,7 +5685,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="2" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_22">
+                               <widget class="QPushButton" name="btn_3">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5720,7 +5720,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>Nasdaq</string>
+                                 <string>TWTR</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5728,7 +5728,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="2" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_23">
+                               <widget class="QPushButton" name="btn_7">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5763,7 +5763,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>N Points</string>
+                                 <string>NNDM</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5771,7 +5771,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="3" column="0">
-                               <widget class="QPushButton" name="btn_login_signup_24">
+                               <widget class="QPushButton" name="btn_4">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5806,7 +5806,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>Russell</string>
+                                 <string>GOOG</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5814,7 +5814,7 @@ QPushButton:hover {
                                </widget>
                               </item>
                               <item row="3" column="1">
-                               <widget class="QPushButton" name="btn_login_signup_25">
+                               <widget class="QPushButton" name="btn_8">
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -5849,7 +5849,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>R Points</string>
+                                 <string>WWR</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
