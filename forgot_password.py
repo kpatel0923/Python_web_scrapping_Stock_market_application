@@ -66,8 +66,8 @@ class Password(QMainWindow):
             print("Enter valid code")
 
     def handleReset(self):
-        password = self.lineEdit_pass
-        confirm_password = self.lineEdit_pass_2
+        password = self.lineEdit_pass.text()
+        confirm_password = self.lineEdit_pass_2.text()
         print(password, confirm_password)
 
         if password == confirm_password:

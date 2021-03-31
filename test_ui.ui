@@ -5094,7 +5094,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>DOW </string>
+                                 <string>DJI</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5137,7 +5137,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>....</string>
+                                 <string>DOW</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5180,7 +5180,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>....</string>
+                                 <string>SNP</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5223,7 +5223,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>S&amp;P 500</string>
+                                 <string>^GSPC</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5266,7 +5266,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>Nasdaq</string>
+                                 <string>^IXIC</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5309,7 +5309,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>Russell</string>
+                                 <string>^RUT</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5352,7 +5352,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>....</string>
+                                 <string>NAS</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5395,7 +5395,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>....</string>
+                                 <string>RUS</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -7324,8 +7324,27 @@ QPushButton:hover
                    <enum>QFrame::Raised</enum>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_66">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
                    <item>
                     <widget class="QFrame" name="frame_74">
+                     <property name="styleSheet">
+                      <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                     </property>
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -7377,6 +7396,10 @@ QPushButton:hover
                    </item>
                    <item>
                     <widget class="QFrame" name="frame_75">
+                     <property name="styleSheet">
+                      <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                     </property>
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -7428,6 +7451,10 @@ QPushButton:hover
                    </item>
                    <item>
                     <widget class="QFrame" name="frame_76">
+                     <property name="styleSheet">
+                      <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                     </property>
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -7479,6 +7506,10 @@ QPushButton:hover
                    </item>
                    <item>
                     <widget class="QFrame" name="frame_77">
+                     <property name="styleSheet">
+                      <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                     </property>
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -7540,7 +7571,8 @@ QPushButton:hover
                    </rect>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true"/>
+                   <string notr="true">background:rgba(0,0,0,0);
+</string>
                   </property>
                   <property name="currentIndex">
                    <number>1</number>
@@ -7753,6 +7785,9 @@ QPushButton:hover
                   <layout class="QHBoxLayout" name="horizontalLayout_27">
                    <item>
                     <widget class="QPushButton" name="btn_back_3">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
                      <property name="minimumSize">
                       <size>
                        <width>150</width>

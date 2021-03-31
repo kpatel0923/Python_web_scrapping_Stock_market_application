@@ -47,24 +47,28 @@ class common_Buttons(QMainWindow):
         # Testing the chart
 
         self.btn_submit.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
-        self.btn_1D.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1d'))
-        self.btn_1W.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1wk'))
-        self.btn_1M.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1mo'))
-        self.btn_3M.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '3mo'))
-        self.btn_1Y.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
-        self.btn_5Y.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '5y'))
+        self.btn_1D.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1d'))
+        self.btn_1W.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1wk'))
+        self.btn_1M.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1mo'))
+        self.btn_3M.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '3mo'))
+        self.btn_1Y.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1y'))
+        self.btn_5Y.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '5y'))
 
         # indices buttons
 
-        self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', 'DJI'))
-        self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^GSPC'))
-        self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^IXIC'))
-        self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^RUT'))
+        # self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', 'DJI'))
+        # self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^GSPC'))
+        # self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^IXIC'))
+        # self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_index(self, '1y', '^RUT'))
 
 
     def refresh(self):
         # Refreshes the indices quotes
         self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
+
+
+
+
 
 
 
@@ -129,5 +133,15 @@ class user_Buttons_actions(QMainWindow):
         self.btn_change_password.clicked.connect(lambda: user_Buttons.pass_change(self))
         self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
 
+    def top_stocks(self):
+        sym = self.btn_DOW.text()
+        self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym))
 
+        sym_2 = self.btn_SP.text()
+        self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_2))
 
+        sym_3 = self.btn_NAS.text()
+        self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_3))
+
+        sym_4 = self.btn_RUSS.text()
+        self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_4))
