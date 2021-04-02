@@ -225,7 +225,7 @@ QPushButton:hover {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="home_page">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -1784,6 +1784,12 @@ background-color: rgb(9, 9, 9);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_24">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -1873,36 +1879,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -2032,6 +2008,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_32">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -2121,36 +2103,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_2">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -2280,6 +2232,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_35">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -2369,36 +2327,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_3">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -2528,6 +2456,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_38">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -2617,36 +2551,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_4">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -2776,6 +2680,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_41">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -2865,36 +2775,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_5">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -3024,6 +2904,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_44">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -3113,36 +2999,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_6">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -3272,6 +3128,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_47">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -3361,36 +3223,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_7">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -3520,6 +3352,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_50">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -3609,36 +3447,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_8">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -3768,6 +3576,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_53">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -3857,36 +3671,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_9">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -4016,6 +3800,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_56">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -4105,36 +3895,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_10">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -4264,6 +4024,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_59">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -4353,36 +4119,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_11">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
@@ -4512,6 +4248,12 @@ color: rgb(255, 255, 255);</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_62">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>300</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);</string>
                        </property>
@@ -4601,36 +4343,6 @@ QPushButton:hover
                          </widget>
                         </item>
                        </layout>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLCDNumber" name="lcdNumber_12">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);</string>
-                       </property>
-                       <property name="frameShape">
-                        <enum>QFrame::WinPanel</enum>
-                       </property>
-                       <property name="frameShadow">
-                        <enum>QFrame::Plain</enum>
-                       </property>
-                       <property name="segmentStyle">
-                        <enum>QLCDNumber::Flat</enum>
-                       </property>
-                       <property name="intValue" stdset="0">
-                        <number>0</number>
-                       </property>
                       </widget>
                      </item>
                     </layout>
