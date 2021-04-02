@@ -149,18 +149,3 @@ class MatplotlibWidget(QMainWindow):
                 "<html><head/><body><p><span style=\" color:#000062;\">A sector is one of a few general segments in the economy within which a large group of companies can be categorized. An economy can be broken down into about a dozen sectors, which can describe nearly all of the business activity in that economy.</span></p></body></html>")
             self.lbl_industry.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000047;\">Industry refers to a specific group of companies that operate in a similar business sphere. Essentially, industries are created by breaking down sectors into more defined groupings.Each of the dozen or so sectors will have a varying number of industries, but it can be in the hundreds.</span></p></body></html>")
-
-
- # def update_graph_index(self, stockPeriod, stockSymbol):
-    #     stockTicker = yf.Ticker(stockSymbol)
-    #
-    #     df = stockTicker.history(period=stockPeriod)  # Placing stock data into a dataframe
-    #     data = df['Close']
-    #
-    #     chartTitle = stockSymbol
-    #
-    #     self.MplWidget.canvas.axes.clear()
-    #     self.MplWidget.canvas.axes.plot(data)
-    #
-    #     self.MplWidget.canvas.axes.set_title(chartTitle.upper())
-    #     self.MplWidget.canvas.draw()

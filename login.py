@@ -10,7 +10,7 @@ import actions
 
 
 class User:
-    def __init__(self, email, first, last, password, age, bills, account_size, goal):
+    def __init__(self, email, first, last, password, age, bills, account_size, goal, score):
         self.__email = email
         self.__first = first
         self.__last = last
@@ -19,6 +19,7 @@ class User:
         self.__bills = bills
         self.__account_size = account_size
         self.__goal = goal
+        self.__score = score
 
     def getEmail(self):
         return self.__email
@@ -29,6 +30,12 @@ class User:
     def setFirst(self,new_name):
         pass
         # DATABASE(update users set first == {new_name} where email == {self.__email})
+
+    def setScore(self, score):
+        pass
+
+    def getScore(self):
+        return self.__score
 
     def getLast(self):
         return self.__last
@@ -56,7 +63,8 @@ class User:
                   age: {self.__age} \
                   bills: {self.__bills} \
                   account_size: {self.__account_size} \
-                  goal: {self.__goal} "
+                  goal: {self.__goal} \
+                  score: {self.__score}"
 
 
 class Login(QMainWindow):
@@ -95,7 +103,7 @@ class Login(QMainWindow):
             print(Login.current_user)
             self.stackedWidget.setCurrentWidget(self.user_page)
             self.btn_login_signup.setText("Logout")
-            self.lbl_welcome.setText(f"Welcome: {Login.current_user.getFirst()}")
+            self.lbl_welcome.setText(f"Welcome: {Login.current_user.getFirst(), Login.current_user.getScore()}")
             Login.clear(self)
 
 

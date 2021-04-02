@@ -71,13 +71,18 @@ class Password(QMainWindow):
         print(password, confirm_password)
 
         if password == confirm_password:
-            actions.DATABASE(f"update users SET password = {password} where email = {Password.email}")
+            actions.DATABASE(f"update users set password = '{password}' where email = '{Password.email}' ")
+            if self.btn_login_signup.text() == "Logout":
+                self.stackedWidget.setCurrentWidget(self.user_page)
+            else:
+                self.stackedWidget.setCurrentWidget(self.login_page)
 
         else:
             print("Passwords must match")
 
     def random_code(self):
         x = random.randint(1000, 9999)
+
         return x
 
 

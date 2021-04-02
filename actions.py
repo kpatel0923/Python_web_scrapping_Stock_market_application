@@ -122,17 +122,13 @@ class user_Buttons_actions(QMainWindow):
         self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
 
     def indicies(self):
-        sym = self.btn_DOW.text()
-        self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym))
+        self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, 'DJI'))
 
-        sym_2 = self.btn_SP.text()
-        self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_2))
+        self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^GSPC'))
 
-        sym_3 = self.btn_NAS.text()
-        self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_3))
+        self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^IXIC'))
 
-        sym_4 = self.btn_RUSS.text()
-        self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_4))
+        self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^RUT'))
 
 
     def top_stocks(self):
