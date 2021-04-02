@@ -7721,7 +7721,7 @@ border-radius: 12px;
                         </widget>
                        </item>
                        <item row="4" column="0">
-                        <widget class="QLineEdit" name="lineEdit_email_3">
+                        <widget class="QLineEdit" name="lineEdit_useremail">
                          <property name="maximumSize">
                           <size>
                            <width>500</width>

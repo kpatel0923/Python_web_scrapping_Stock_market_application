@@ -2,6 +2,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
+import actions
 from signup import *
 
 
@@ -63,11 +64,17 @@ class quiz_Buttons(QMainWindow):
 
 
     def score(self):
-        user_first = self.lineEdit_first.text()
-        user_email = self.lineEdit_email_2.text()
-        print(user_first, user_email)
-        print(quiz_Buttons.total)
-        Signup.clear(self)
+        if self.btn_login_signup.text() == "Logout":
+            user_email = self.lineEdit_useremail.text()
+            actions.DATABASE(f"update users set score = '{quiz_Buttons.total}' where email = '{user_email}' ")
+            print(quiz_Buttons.total)
+            self.stackedWidget.setCurrentWidget(self.user_page)
+        else:
+            user_email = self.lineEdit_email_2.text()
+            actions.DATABASE(f"update users set score = '{quiz_Buttons.total}' where email = '{user_email}' ")
+            print(quiz_Buttons.total)
+            Signup.clear(self)
+            self.stackedWidget.setCurrentWidget(self.user_page)
 
 
     def screen(self):
