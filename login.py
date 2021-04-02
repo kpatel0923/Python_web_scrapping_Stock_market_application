@@ -10,7 +10,7 @@ import actions
 
 
 class User:
-    def __init__(self, email, first, last, password, age, bills, account_size, goal, score):
+    def __init__(self, email, first, last, password, age, bills, account_size, goal, score, income, expenses):
         self.__email = email
         self.__first = first
         self.__last = last
@@ -20,6 +20,8 @@ class User:
         self.__account_size = account_size
         self.__goal = goal
         self.__score = score
+        self.__income = income
+        self.__expenses = expenses
 
     def getEmail(self):
         return self.__email
@@ -54,6 +56,12 @@ class User:
 
     def getGoal(self):
         return self.__goal
+
+    def getIncome(self):
+        return self.__income
+
+    def getExpenses(self):
+        return self.__expenses
 
     def __str__(self):
         return f" Email: {self.__email} \
