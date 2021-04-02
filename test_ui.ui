@@ -2175,7 +2175,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>5 years</string>
                           </property>
                          </widget>
                         </item>
@@ -2187,7 +2187,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>10 years</string>
                           </property>
                          </widget>
                         </item>
@@ -2199,7 +2199,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>15 years</string>
                           </property>
                          </widget>
                         </item>
@@ -2211,7 +2211,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>20 years</string>
                           </property>
                          </widget>
                         </item>
@@ -2223,7 +2223,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>60 and over</string>
+                           <string>25 or more years</string>
                           </property>
                          </widget>
                         </item>
@@ -2399,7 +2399,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Buying a house</string>
                           </property>
                          </widget>
                         </item>
@@ -2411,7 +2411,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Paying for college education</string>
                           </property>
                          </widget>
                         </item>
@@ -2423,7 +2423,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>Business investment</string>
                           </property>
                          </widget>
                         </item>
@@ -2435,7 +2435,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>Providing for retirement</string>
                           </property>
                          </widget>
                         </item>
@@ -2623,7 +2623,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Sell the investment so you will not have to worry if it continues to decline</string>
                           </property>
                          </widget>
                         </item>
@@ -2635,7 +2635,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Hold on to it and wait for it to climb back up</string>
                           </property>
                          </widget>
                         </item>
@@ -2647,7 +2647,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>Buy more of the same investment...because at the current lower price, it looks even better than when you bought it</string>
                           </property>
                          </widget>
                         </item>
@@ -2847,7 +2847,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Companies that may make significant technological advances that are still selling at their low initial offering price	</string>
                           </property>
                          </widget>
                         </item>
@@ -2859,7 +2859,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Established, well-known companies that have a potential for continued growth</string>
                           </property>
                          </widget>
                         </item>
@@ -2871,7 +2871,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>'Blue chip' stocks that pay dividends	</string>
                           </property>
                          </widget>
                         </item>
@@ -3071,7 +3071,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Down to $9500 (5% decline)</string>
                           </property>
                          </widget>
                         </item>
@@ -3083,7 +3083,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Down to $9000 (10% decline)</string>
                           </property>
                          </widget>
                         </item>
@@ -3095,7 +3095,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>Down to $8500 (15% decline)</string>
                           </property>
                          </widget>
                         </item>
@@ -3107,7 +3107,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>Down to $8000 (20% decline)</string>
                           </property>
                          </widget>
                         </item>
@@ -3295,7 +3295,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Very comfortable</string>
                           </property>
                          </widget>
                         </item>
@@ -3307,7 +3307,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Comfortable</string>
                           </property>
                          </widget>
                         </item>
@@ -3319,7 +3319,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>Neutral</string>
                           </property>
                          </widget>
                         </item>
@@ -3331,7 +3331,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>Uncomfortable	</string>
                           </property>
                          </widget>
                         </item>
@@ -3343,7 +3343,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>60 and over</string>
+                           <string>Very uncomfortable</string>
                           </property>
                          </widget>
                         </item>
@@ -3519,7 +3519,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Willing to accept a high level of risk in exchange for the potential for growth</string>
                           </property>
                          </widget>
                         </item>
@@ -3531,7 +3531,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Willing to accept a moderate level of risk</string>
                           </property>
                          </widget>
                         </item>
@@ -3543,7 +3543,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>Willing to accept some risk in my investment options</string>
                           </property>
                          </widget>
                         </item>
@@ -3555,7 +3555,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>Willing to accept a little bit of risk in my investment options, but am concerned more with security	</string>
                           </property>
                          </widget>
                         </item>
@@ -3567,7 +3567,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>60 and over</string>
+                           <string>Security is my priority. I am willing to accept only a low level of risk</string>
                           </property>
                          </widget>
                         </item>
@@ -3743,7 +3743,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Strongly agree</string>
                           </property>
                          </widget>
                         </item>
@@ -3755,7 +3755,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Agree</string>
                           </property>
                          </widget>
                         </item>
@@ -3767,7 +3767,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>Neutral</string>
                           </property>
                          </widget>
                         </item>
@@ -3779,7 +3779,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>Disagree</string>
                           </property>
                          </widget>
                         </item>
@@ -3791,7 +3791,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>60 and over</string>
+                           <string>Strongly disagree</string>
                           </property>
                          </widget>
                         </item>
@@ -3967,7 +3967,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>A 5% chance at winning $100,000</string>
                           </property>
                          </widget>
                         </item>
@@ -3979,7 +3979,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>A 25% chance at winning $10,000</string>
                           </property>
                          </widget>
                         </item>
@@ -3991,7 +3991,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>A 50% chance at winning $5,000</string>
                           </property>
                          </widget>
                         </item>
@@ -4003,7 +4003,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>A cash prize of $1,000</string>
                           </property>
                          </widget>
                         </item>
@@ -4191,7 +4191,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>20 - 29</string>
+                           <string>Extend your vacation because this might be your last chance to go.	</string>
                           </property>
                          </widget>
                         </item>
@@ -4203,7 +4203,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>30 - 39</string>
+                           <string>Go as scheduled, reasoning that you need the time to prepare for a job search.</string>
                           </property>
                          </widget>
                         </item>
@@ -4215,7 +4215,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>40 - 49</string>
+                           <string>Take a much more modest vacation.</string>
                           </property>
                          </widget>
                         </item>
@@ -4227,7 +4227,7 @@ color: rgb(255, 255, 255);</string>
                            </font>
                           </property>
                           <property name="text">
-                           <string>50 - 59</string>
+                           <string>Cancel the vacation.</string>
                           </property>
                          </widget>
                         </item>
