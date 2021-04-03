@@ -8040,6 +8040,53 @@ QPushButton:hover
                   </property>
                  </widget>
                 </widget>
+                <widget class="QWidget" name="top">
+                 <widget class="QPushButton" name="btn_back_5">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>150</width>
+                    <height>40</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>15</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt; Back</string>
+                  </property>
+                 </widget>
+                </widget>
                </widget>
               </item>
               <item>

@@ -151,5 +151,3 @@ class user_Buttons_actions(QMainWindow):
 
         sym_8 = self.btn_8.text()
         self.btn_8.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_8))
-
-
