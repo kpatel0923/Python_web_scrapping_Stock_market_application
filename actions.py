@@ -92,7 +92,6 @@ class sign_Buttons(QMainWindow):
         self.btn_signup_add.clicked.connect(lambda: Signup.addNewUser(self))
 
 
-
 class quiz_Buttons_actions(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -123,11 +122,8 @@ class user_Buttons_actions(QMainWindow):
 
     def indicies(self):
         self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, 'DJI'))
-
         self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^GSPC'))
-
         self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^IXIC'))
-
         self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^RUT'))
 
 

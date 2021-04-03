@@ -225,7 +225,7 @@ QPushButton:hover {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>6</number>
          </property>
          <widget class="QWidget" name="home_page">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -2832,7 +2832,7 @@ color: rgb(255, 255, 255);</string>
                            <string notr="true">color: rgb(255, 255, 255);</string>
                           </property>
                           <property name="text">
-                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Question 4:&lt;/p&gt;&lt;p&gt;Assuming you are investing in a stock, which one do you choose?&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Question 5:&lt;/p&gt;&lt;p&gt;Assuming you are investing in a stock, which one do you choose?&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4551,6 +4551,21 @@ QPushButton:hover
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item>
                <widget class="QStackedWidget" name="stackedWidget_2">
                 <property name="minimumSize">
@@ -5217,7 +5232,7 @@ QPushButton:hover
 </string>
                              </property>
                              <property name="text">
-                              <string>Top Srocks</string>
+                              <string>Top Stocks</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignCenter</set>

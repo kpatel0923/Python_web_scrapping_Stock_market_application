@@ -87,7 +87,6 @@ class MatplotlibWidget(QMainWindow):
         self.MplWidget.canvas.draw()
 
 
-
     def update_graph_btn(self, symbol):
         print(symbol)
         self.lineEdit_symbol.setText(symbol)
