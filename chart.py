@@ -148,3 +148,18 @@ class MatplotlibWidget(QMainWindow):
                 "<html><head/><body><p><span style=\" color:#000062;\">A sector is one of a few general segments in the economy within which a large group of companies can be categorized. An economy can be broken down into about a dozen sectors, which can describe nearly all of the business activity in that economy.</span></p></body></html>")
             self.lbl_industry.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000047;\">Industry refers to a specific group of companies that operate in a similar business sphere. Essentially, industries are created by breaking down sectors into more defined groupings.Each of the dozen or so sectors will have a varying number of industries, but it can be in the hundreds.</span></p></body></html>")
+
+        else:
+            self.lbl_name.clear()
+            self.lbl_exchange.clear()
+            self.lbl_sector.clear()
+            self.lbl_industry.clear()
+            self.lbl_ask.clear()
+            self.lbl_bid.clear()
+            self.lbl_open.clear()
+            self.lbl_close.clear()
+            self.lbl_yield.clear()
+            self.lbl_pe.clear()
+            self.lbl_tenvol.clear()
+            self.lbl_vol.clear()
+            self.lbl_summary.clear()
