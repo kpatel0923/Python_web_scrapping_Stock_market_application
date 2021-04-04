@@ -225,7 +225,7 @@ QPushButton:hover {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="home_page">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -2439,18 +2439,6 @@ color: rgb(255, 255, 255);</string>
                           </property>
                          </widget>
                         </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q3_E">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>60 and over</string>
-                          </property>
-                         </widget>
-                        </item>
                        </layout>
                       </widget>
                      </item>
@@ -2651,30 +2639,6 @@ color: rgb(255, 255, 255);</string>
                           </property>
                          </widget>
                         </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q4_D">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>50 - 59</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q4_E">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>60 and over</string>
-                          </property>
-                         </widget>
-                        </item>
                        </layout>
                       </widget>
                      </item>
@@ -2872,30 +2836,6 @@ color: rgb(255, 255, 255);</string>
                           </property>
                           <property name="text">
                            <string>'Blue chip' stocks that pay dividends	</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q5_D">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>50 - 59</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q5_E">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>60 and over</string>
                           </property>
                          </widget>
                         </item>
@@ -3108,18 +3048,6 @@ color: rgb(255, 255, 255);</string>
                           </property>
                           <property name="text">
                            <string>Down to $8000 (20% decline)</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q6_E">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>60 and over</string>
                           </property>
                          </widget>
                         </item>
@@ -4007,18 +3935,6 @@ color: rgb(255, 255, 255);</string>
                           </property>
                          </widget>
                         </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q10_E">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>60 and over</string>
-                          </property>
-                         </widget>
-                        </item>
                        </layout>
                       </widget>
                      </item>
@@ -4228,18 +4144,6 @@ color: rgb(255, 255, 255);</string>
                           </property>
                           <property name="text">
                            <string>Cancel the vacation.</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item>
-                         <widget class="QRadioButton" name="Q11_E">
-                          <property name="font">
-                           <font>
-                            <pointsize>11</pointsize>
-                           </font>
-                          </property>
-                          <property name="text">
-                           <string>60 and over</string>
                           </property>
                          </widget>
                         </item>
@@ -5305,7 +5209,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>AAPL</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5348,7 +5252,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>ZOM</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5391,7 +5295,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>TSLA</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5434,7 +5338,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>UAVS</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5477,7 +5381,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>TWTR</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5520,7 +5424,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>NNDM</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5563,7 +5467,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>GOOG</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -5606,7 +5510,7 @@ QPushButton:hover {
 </string>
                                 </property>
                                 <property name="text">
-                                 <string>WWR</string>
+                                 <string>....</string>
                                 </property>
                                 <property name="checkable">
                                  <bool>false</bool>
@@ -7446,7 +7350,7 @@ QPushButton:hover
 </string>
                   </property>
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>0</number>
                   </property>
                   <widget class="QWidget" name="info_page">
                    <layout class="QVBoxLayout" name="verticalLayout_67">

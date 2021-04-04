@@ -120,6 +120,9 @@ class user_Buttons_actions(QMainWindow):
         self.btn_change_password.clicked.connect(lambda: user_Buttons.pass_change(self))
         self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
 
+        self.btn_refresh_2.clicked.connect(lambda: user_Buttons_budget.getting_stocks(self))
+        self.btn_more.clicked.connect(lambda: user_Buttons_budget.test(self))
+
     def indicies(self):
         self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, 'DJI'))
         self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^GSPC'))
@@ -128,26 +131,5 @@ class user_Buttons_actions(QMainWindow):
 
 
     def top_stocks(self):
-        sym_1 = self.btn_1.text()
-        self.btn_1.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_1))
 
-        sym_2 = self.btn_2.text()
-        self.btn_2.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_2))
-
-        sym_3 = self.btn_3.text()
-        self.btn_3.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_3))
-
-        sym_4 = self.btn_4.text()
-        self.btn_4.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_4))
-
-        sym_5 = self.btn_5.text()
-        self.btn_5.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_5))
-
-        sym_6 = self.btn_6.text()
-        self.btn_6.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_6))
-
-        sym_7 = self.btn_7.text()
-        self.btn_7.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_7))
-
-        sym_8 = self.btn_8.text()
-        self.btn_8.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_8))
+        pass

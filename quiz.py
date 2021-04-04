@@ -66,6 +66,7 @@ class quiz_Buttons(QMainWindow):
             user_email = self.lineEdit_useremail.text()
             actions.DATABASE(f"update users set score = '{quiz_Buttons.total}' where email = '{user_email}' ")
             print(quiz_Buttons.total)
+            self.lineEdit_scoreholder.setText(str(quiz_Buttons.total))
             self.stackedWidget.setCurrentWidget(self.user_page)
         else:
             user_email = self.lineEdit_email_2.text()
@@ -84,156 +85,162 @@ class quiz_Buttons(QMainWindow):
 
     def Q_1(self):
         if self.Q1_A.isChecked():
-            quiz_Buttons.score_1 = 10
+            quiz_Buttons.score_1 = 5
         elif self.Q1_B.isChecked():
-            quiz_Buttons.score_1 = 20
+            quiz_Buttons.score_1 = 4
         elif self.Q1_C.isChecked():
-            quiz_Buttons.score_1 = 30
+            quiz_Buttons.score_1 = 3
         elif self.Q1_D.isChecked():
-            quiz_Buttons.score_1 = 40
+            quiz_Buttons.score_1 = 2
         elif self.Q1_E.isChecked():
-            quiz_Buttons.score_1 = 50
+            quiz_Buttons.score_1 = 1
+        else:
+            quiz_Buttons.score_1 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_2)
         print("1", quiz_Buttons.score_1)
 
     def Q_2(self):
         if self.Q2_A.isChecked():
-            quiz_Buttons.score_2 = 10
+            quiz_Buttons.score_2 = 5
         elif self.Q2_B.isChecked():
-            quiz_Buttons.score_2 = 20
+            quiz_Buttons.score_2 = 4
         elif self.Q2_C.isChecked():
-            quiz_Buttons.score_2 = 30
+            quiz_Buttons.score_2 = 3
         elif self.Q2_D.isChecked():
-            quiz_Buttons.score_2 = 40
+            quiz_Buttons.score_2 = 2
         elif self.Q2_E.isChecked():
-            quiz_Buttons.score_2 = 50
+            quiz_Buttons.score_2 = 1
+        else:
+            quiz_Buttons.score_2 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_3)
         print("2", quiz_Buttons.score_2)
 
 
     def Q_3(self):
         if self.Q3_A.isChecked():
-            quiz_Buttons.score_3 = 10
+            quiz_Buttons.score_3 = 4
         elif self.Q3_B.isChecked():
-            quiz_Buttons.score_3 = 20
+            quiz_Buttons.score_3 = 3
         elif self.Q3_C.isChecked():
-            quiz_Buttons.score_3 = 30
+            quiz_Buttons.score_3 = 2
         elif self.Q3_D.isChecked():
-            quiz_Buttons.score_3 = 40
-        elif self.Q3_E.isChecked():
-            quiz_Buttons.score_3 = 50
+            quiz_Buttons.score_3 = 1
+        else:
+            quiz_Buttons.score_3 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_4)
         print("3", quiz_Buttons.score_3)
 
     def Q_4(self):
         if self.Q4_A.isChecked():
-            quiz_Buttons.score_4 = 10
+            quiz_Buttons.score_4 = 3
         elif self.Q4_B.isChecked():
-            quiz_Buttons.score_4 = 20
+            quiz_Buttons.score_4 = 2
         elif self.Q4_C.isChecked():
-            quiz_Buttons.score_4 = 30
-        elif self.Q4_D.isChecked():
-            quiz_Buttons.score_4 = 40
-        elif self.Q4_E.isChecked():
-            quiz_Buttons.score_4 = 50
+            quiz_Buttons.score_4 = 1
+        else:
+            quiz_Buttons.score_4 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_5)
         print("4", quiz_Buttons.score_4)
 
     def Q_5(self):
         if self.Q5_A.isChecked():
-            quiz_Buttons.score_5 = 10
+            quiz_Buttons.score_5 = 3
         elif self.Q5_B.isChecked():
-            quiz_Buttons.score_5 = 20
+            quiz_Buttons.score_5 = 2
         elif self.Q5_C.isChecked():
-            quiz_Buttons.score_5 = 30
-        elif self.Q5_D.isChecked():
-            quiz_Buttons.score_5 = 40
-        elif self.Q5_E.isChecked():
-            quiz_Buttons.score_5 = 50
+            quiz_Buttons.score_5 = 1
+        else:
+            quiz_Buttons.score_5 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_6)
         print("5", quiz_Buttons.score_5)
 
     def Q_6(self):
         if self.Q6_A.isChecked():
-            quiz_Buttons.score_6 = 10
+            quiz_Buttons.score_6 = 1
         elif self.Q6_B.isChecked():
-            quiz_Buttons.score_6 = 20
+            quiz_Buttons.score_6 = 2
         elif self.Q6_C.isChecked():
-            quiz_Buttons.score_6 = 30
+            quiz_Buttons.score_6 = 3
         elif self.Q6_D.isChecked():
-            quiz_Buttons.score_6 = 40
-        elif self.Q6_E.isChecked():
-            quiz_Buttons.score_6 = 50
+            quiz_Buttons.score_6 = 4
+        else:
+            quiz_Buttons.score_6 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_7)
         print("6", quiz_Buttons.score_6)
 
     def Q_7(self):
         if self.Q7_A.isChecked():
-            quiz_Buttons.score_7 = 10
+            quiz_Buttons.score_7 = 5
         elif self.Q7_B.isChecked():
-            quiz_Buttons.score_7 = 20
+            quiz_Buttons.score_7 = 4
         elif self.Q7_C.isChecked():
-            quiz_Buttons.score_7 = 30
+            quiz_Buttons.score_7 = 3
         elif self.Q7_D.isChecked():
-            quiz_Buttons.score_7 = 40
+            quiz_Buttons.score_7 = 2
         elif self.Q7_E.isChecked():
-            quiz_Buttons.score_7 = 50
+            quiz_Buttons.score_7 = 1
+        else:
+            quiz_Buttons.score_7 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_8)
         print("7", quiz_Buttons.score_7)
 
     def Q_8(self):
         if self.Q8_A.isChecked():
-            quiz_Buttons.score_8 = 10
+            quiz_Buttons.score_8 = 5
         elif self.Q8_B.isChecked():
-            quiz_Buttons.score_8 = 20
+            quiz_Buttons.score_8 = 4
         elif self.Q8_C.isChecked():
-            quiz_Buttons.score_8 = 30
+            quiz_Buttons.score_8 = 3
         elif self.Q8_D.isChecked():
-            quiz_Buttons.score_8 = 40
+            quiz_Buttons.score_8 = 2
         elif self.Q8_E.isChecked():
-            quiz_Buttons.score_8 = 50
+            quiz_Buttons.score_8 = 1
+        else:
+            quiz_Buttons.score_8 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_9)
         print("8", quiz_Buttons.score_8)
 
     def Q_9(self):
         if self.Q9_A.isChecked():
-            quiz_Buttons.score_9 = 10
+            quiz_Buttons.score_9 = 5
         elif self.Q9_B.isChecked():
-            quiz_Buttons.score_9 = 20
+            quiz_Buttons.score_9 = 4
         elif self.Q9_C.isChecked():
-            quiz_Buttons.score_9 = 30
+            quiz_Buttons.score_9 = 3
         elif self.Q9_D.isChecked():
-            quiz_Buttons.score_9 = 40
+            quiz_Buttons.score_9 = 2
         elif self.Q9_E.isChecked():
-            quiz_Buttons.score_9 = 50
+            quiz_Buttons.score_9 = 1
+        else:
+            quiz_Buttons.score_9 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_10)
         print("9", quiz_Buttons.score_9)
 
     def Q_10(self):
         if self.Q10_A.isChecked():
-            quiz_Buttons.score_10 = 10
+            quiz_Buttons.score_10 = 4
         elif self.Q10_B.isChecked():
-            quiz_Buttons.score_10 = 20
+            quiz_Buttons.score_10 = 3
         elif self.Q10_C.isChecked():
-            quiz_Buttons.score_10 = 30
+            quiz_Buttons.score_10 = 2
         elif self.Q10_D.isChecked():
-            quiz_Buttons.score_10 = 40
-        elif self.Q10_E.isChecked():
-            quiz_Buttons.score_10 = 50
+            quiz_Buttons.score_10 = 1
+        else:
+            quiz_Buttons.score_10 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_11)
         print("10", quiz_Buttons.score_10)
 
     def Q_11(self):
         if self.Q11_A.isChecked():
-            quiz_Buttons.score_11 = 10
+            quiz_Buttons.score_11 = 4
         elif self.Q11_B.isChecked():
-            quiz_Buttons.score_11 = 20
+            quiz_Buttons.score_11 = 3
         elif self.Q11_C.isChecked():
-            quiz_Buttons.score_11 = 30
+            quiz_Buttons.score_11 = 2
         elif self.Q11_D.isChecked():
-            quiz_Buttons.score_11 = 40
-        elif self.Q11_E.isChecked():
-            quiz_Buttons.score_11 = 50
+            quiz_Buttons.score_11 = 1
+        else:
+            quiz_Buttons.score_11 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.result)
         print("11", quiz_Buttons.score_11)
 
