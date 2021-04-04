@@ -8295,6 +8295,43 @@ border-radius: 12px;
                    <string>Enter Income</string>
                   </property>
                  </widget>
+                 <widget class="QLineEdit" name="lineEdit_scoreholder">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>200</y>
+                    <width>441</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter Income</string>
+                  </property>
+                 </widget>
                 </widget>
                </widget>
               </item>

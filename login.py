@@ -111,7 +111,9 @@ class Login(QMainWindow):
             print(Login.current_user)
             self.stackedWidget.setCurrentWidget(self.user_page)
             self.btn_login_signup.setText("Logout")
-            self.lineEdit_useremail.setText(Login.current_user.getEmail())
+            self.lineEdit_emailholder.setText(Login.current_user.getEmail())
+            self.lineEdit_scoreholder.setText(str(Login.current_user.getScore()))
+            print("Email: ", self.lineEdit_emailholder.text(), "Score: ", self.lineEdit_scoreholder.text())
             self.lbl_welcome.setText(f"Welcome: {Login.current_user.getFirst(), Login.current_user.getScore()}")
             Login.clear(self)
 

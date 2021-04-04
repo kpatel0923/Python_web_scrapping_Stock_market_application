@@ -27,7 +27,7 @@ class user_Buttons(QMainWindow):
         self.stackedWidget_3.setCurrentWidget(self.page_3)
 
 
-class user_Buttons(QMainWindow):
+class user_Buttons_budget(QMainWindow):
 
     def __init__(self):
         QMainWindow.__init__(self)
@@ -39,7 +39,6 @@ class user_Buttons(QMainWindow):
         secondary = self.lineEdit_secondary.text()
         income = primary + secondary
         self.income.setText(str(income))
-
         actions.DATABASE(f"update users set income = '{income}' where email = '{email}' ")
 
     def expenses(self):
@@ -53,6 +52,9 @@ class user_Buttons(QMainWindow):
 
         expenses = e1 + e2 + e3 + e4 + e5 + e6
         self.expenses.setText(str(expenses))
+        actions.DATABASE(f"update users set expenses = '{expenses}' where email = '{email}' ")
 
+    def getting_stocks(self):
+        score = self.lineEdit_scoreholder.text()
 
 
