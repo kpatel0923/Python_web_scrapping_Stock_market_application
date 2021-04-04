@@ -8,8 +8,6 @@ from signup import *
 
 class quiz_Buttons(QMainWindow):
 
-    TEST = { '10':10 , '20':20 , "blue":10 , "red":20 }
-
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)

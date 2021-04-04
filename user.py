@@ -25,3 +25,34 @@ class user_Buttons(QMainWindow):
     def quiz(self):
         self.stackedWidget.setCurrentWidget(self.quiz_page)
         self.stackedWidget_3.setCurrentWidget(self.page_3)
+
+
+class user_Buttons(QMainWindow):
+
+    def __init__(self):
+        QMainWindow.__init__(self)
+        self.setupUi(self)
+
+    def income(self):
+        email = self.lineEdit_emailholder.text()
+        primary = self.lineEdit_primary.text()
+        secondary = self.lineEdit_secondary.text()
+        income = primary + secondary
+        self.income.setText(str(income))
+
+        actions.DATABASE(f"update users set income = '{income}' where email = '{email}' ")
+
+    def expenses(self):
+        email = self.lineEdit_emailholder.text()
+        e1 = self.lineEdit_rent.text()
+        e2 = self.lineEdit_utilitiestext()
+        e3 = self.lineEdit_groceriestext()
+        e4 = self.lineEdit_insurancetext()
+        e5 = self.lineEdit_entertainmenttext()
+        e6 = self.lineEdit_othertext()
+
+        expenses = e1 + e2 + e3 + e4 + e5 + e6
+        self.expenses.setText(str(expenses))
+
+
+
