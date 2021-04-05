@@ -62,8 +62,30 @@ class user_Buttons_budget(QMainWindow):
 
         if score >= 11 and score <= 23:
             print("Conservative")
+            URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mega,geo_usa&o=-change")
+            lis = testgraph.screener_1(URL)
+            self.btn_1.setText(lis[0])
+            self.btn_2.setText(lis[1])
+            self.btn_3.setText(lis[2])
+            self.btn_4.setText(lis[3])
+            self.btn_5.setText(lis[4])
+            self.btn_6.setText(lis[5])
+            self.btn_7.setText(lis[6])
+            self.btn_8.setText(lis[7])
+
         elif score >= 24 and score <= 34:
             print("Moderate")
+            URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mid,geo_usa&o=-change")
+            lis = testgraph.screener_1(URL)
+            self.btn_1.setText(lis[0])
+            self.btn_2.setText(lis[1])
+            self.btn_3.setText(lis[2])
+            self.btn_4.setText(lis[3])
+            self.btn_5.setText(lis[4])
+            self.btn_6.setText(lis[5])
+            self.btn_7.setText(lis[6])
+            self.btn_8.setText(lis[7])
+
         elif score >= 35 and score <= 47:
             URL = ("https://finviz.com/screener.ashx?v=111&f=cap_micro,geo_usa,sh_relvol_o2&o=-change")
             lis = testgraph.screener_1(URL)
