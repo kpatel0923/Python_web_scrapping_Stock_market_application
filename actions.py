@@ -133,6 +133,9 @@ class user_Buttons_actions(QMainWindow):
         self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^IXIC'))
         self.btn_RUSS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^RUT'))
 
+    def what_if(self):
+        self.btn_submit_2.clicked.connect(lambda: user_Buttons_budget.what_if_price(self))
+        self.btn_submit_3.clicked.connect(lambda: user_Buttons_budget.process(self))
 
     def top_stocks(self):
 

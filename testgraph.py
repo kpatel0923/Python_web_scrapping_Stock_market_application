@@ -41,3 +41,10 @@ def screener_1(web):
         symbol_list.append(ticker.text)
 
     return symbol_list
+
+
+def price(test):
+    symbol = test
+    s = yf.Ticker(symbol)
+    ask = s.info['ask']
+    return ask

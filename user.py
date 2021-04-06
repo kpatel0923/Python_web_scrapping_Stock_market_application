@@ -125,3 +125,24 @@ class user_Buttons_budget(QMainWindow):
         print(self.btn_2.text())
 
 
+
+    def what_if_price(self):
+        symbol = self.lineEdit_symbol_2.text()
+        price = testgraph.price(symbol)
+        self.label_price.setText(str(price))
+
+    def process(self):
+        shares = self.lineEdit_shares.text()
+        pt = self.lineEdit_pt.text()
+        price = self.label_price.text()
+
+        cost = float(price) * int(shares)
+        cost = float("{:.2f}".format(cost))
+        self.label_cost.setText(str(cost))
+        self.label_pt.setText(str(pt))
+
+        per = ((float(pt)-float(price)) / float(price)) * 100
+        per = float("{:.2f}".format(per))
+        self.label_per.setText(str(per))
+
+
