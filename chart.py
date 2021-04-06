@@ -27,8 +27,8 @@ class MatplotlibWidget(QMainWindow):
         self.MplWidget.canvas.axes.set_title(chartTitle.upper())
         self.MplWidget.canvas.draw()
 
-        name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(
-            stockSymbol)
+        name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(stockSymbol)
+        longSummary = " ".join(longSummary.split(' ')[:101])
 
         self.lbl_name.setText(name)
         self.lbl_exchange.setText(exchange)
@@ -106,8 +106,8 @@ class MatplotlibWidget(QMainWindow):
 
         if (symbol != "DJI" and symbol != "^GSPC" and symbol != "^IXIC" and symbol != "^RUT"):
 
-            name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(
-                stockSymbol)
+            name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(stockSymbol)
+            longSummary = " ".join(longSummary.split(' ')[:101])
 
             self.lbl_name.setText(name)
             self.lbl_exchange.setText(exchange)

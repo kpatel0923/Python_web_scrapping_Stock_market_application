@@ -117,6 +117,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_back_5.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.chart_page))
 
         self.btn_personal.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.info_page))
+        self.btn_budget_info.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.budget_page))
 
         self.btn_change_password.clicked.connect(lambda: user_Buttons.pass_change(self))
         self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
