@@ -94,7 +94,7 @@ class MatplotlibWidget(QMainWindow):
         stockTicker = yf.Ticker(stockSymbol)
 
         df = stockTicker.history(period='1y')  # Placing stock data into a dataframe
-        data = df['Close']
+        data = df['Open']
 
         chartTitle = stockSymbol
 

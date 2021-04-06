@@ -61,7 +61,6 @@ class user_Buttons_budget(QMainWindow):
         score = int(score)
 
         if score >= 11 and score <= 23:
-            print("Conservative")
             URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mega,geo_usa&o=-change")
             lis = testgraph.screener_1(URL)
             self.btn_1.setText(lis[0])
@@ -74,7 +73,6 @@ class user_Buttons_budget(QMainWindow):
             self.btn_8.setText(lis[7])
 
         elif score >= 24 and score <= 34:
-            print("Moderate")
             URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mid,geo_usa&o=-change")
             lis = testgraph.screener_1(URL)
             self.btn_1.setText(lis[0])
@@ -97,8 +95,6 @@ class user_Buttons_budget(QMainWindow):
             self.btn_6.setText(lis[5])
             self.btn_7.setText(lis[6])
             self.btn_8.setText(lis[7])
-
-        print(self.btn_2.text())
 
         sym_1 = self.btn_1.text()
         self.btn_1.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_1))
