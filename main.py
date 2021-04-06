@@ -53,6 +53,7 @@ class MainApp(QMainWindow, ui):
         user_Buttons_actions.indicies(self)
         user_Buttons_actions.what_if(self)
         user_Buttons_actions.top_stocks(self)
+        user_Buttons_actions.info(self)
 
 
 

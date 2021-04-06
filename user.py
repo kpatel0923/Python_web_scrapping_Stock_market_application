@@ -39,22 +39,24 @@ class user_Buttons_budget(QMainWindow):
         email = self.lineEdit_emailholder.text()
         primary = self.lineEdit_primary.text()
         secondary = self.lineEdit_secondary.text()
-        income = primary + secondary
+        income = float(primary) + float(secondary)
         self.income.setText(str(income))
         actions.DATABASE(f"update users set income = '{income}' where email = '{email}' ")
 
-    def expenses(self):
-        email = self.lineEdit_emailholder.text()
         e1 = self.lineEdit_rent.text()
-        e2 = self.lineEdit_utilitiestext()
-        e3 = self.lineEdit_groceriestext()
-        e4 = self.lineEdit_insurancetext()
-        e5 = self.lineEdit_entertainmenttext()
-        e6 = self.lineEdit_othertext()
+        e2 = self.lineEdit_utilities.text()
+        e3 = self.lineEdit_groceries.text()
+        e4 = self.lineEdit_insurance.text()
+        e5 = self.lineEdit_other.text()
 
-        expenses = e1 + e2 + e3 + e4 + e5 + e6
+        acct_size = self.lineEdit_acct_size.text()
+        goal = self.lineEdit_goal.text()
+
+        expenses = float(e1) + float(e2) + float(e3) + float(e4) + float(e5)
         self.expenses.setText(str(expenses))
         actions.DATABASE(f"update users set expenses = '{expenses}' where email = '{email}' ")
+        actions.DATABASE(f"update users set account_size = '{acct_size}' where email = '{email}' ")
+        actions.DATABASE(f"update users set goal = '{goal}' where email = '{email}' ")
 
     def getting_stocks(self):
         score = self.lineEdit_scoreholder.text()

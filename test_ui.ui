@@ -7601,7 +7601,7 @@ border-radius: 12px;
                              </widget>
                             </item>
                             <item row="5" column="0">
-                             <widget class="QPushButton" name="btn_signup_add_2">
+                             <widget class="QPushButton" name="btn_update">
                               <property name="minimumSize">
                                <size>
                                 <width>0</width>
@@ -7664,7 +7664,7 @@ QPushButton:hover
                            <property name="frameShadow">
                             <enum>QFrame::Raised</enum>
                            </property>
-                           <layout class="QGridLayout" name="gridLayout_18">
+                           <layout class="QGridLayout" name="gridLayout_12">
                             <item row="0" column="0">
                              <widget class="QLabel" name="label_354">
                               <property name="maximumSize">
@@ -7740,7 +7740,7 @@ color: rgb(255, 255, 255);
                              </widget>
                             </item>
                             <item row="3" column="0">
-                             <widget class="QLineEdit" name="lineEdit_first_3">
+                             <widget class="QLineEdit" name="lineEdit_primary">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7765,7 +7765,7 @@ border-radius: 12px;
                              </widget>
                             </item>
                             <item row="4" column="0">
-                             <widget class="QLineEdit" name="lineEdit_last_3">
+                             <widget class="QLineEdit" name="lineEdit_secondary">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7790,7 +7790,7 @@ border-radius: 12px;
                              </widget>
                             </item>
                             <item row="5" column="0">
-                             <widget class="QLineEdit" name="lineEdit_useremail_2">
+                             <widget class="QLineEdit" name="lineEdit_acct_size">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7815,6 +7815,31 @@ border-radius: 12px;
                              </widget>
                             </item>
                             <item row="6" column="0">
+                             <widget class="QLineEdit" name="lineEdit_goal">
+                              <property name="maximumSize">
+                               <size>
+                                <width>500</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>century gothic</family>
+                                <pointsize>20</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Goal*</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="7" column="0">
                              <widget class="QLabel" name="label_357">
                               <property name="maximumSize">
                                <size>
@@ -7838,8 +7863,8 @@ color: rgb(255, 255, 255);
                               </property>
                              </widget>
                             </item>
-                            <item row="7" column="0">
-                             <widget class="QLineEdit" name="lineEdit_first_4">
+                            <item row="8" column="0">
+                             <widget class="QLineEdit" name="lineEdit_rent">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7863,8 +7888,8 @@ border-radius: 12px;
                               </property>
                              </widget>
                             </item>
-                            <item row="8" column="0">
-                             <widget class="QLineEdit" name="lineEdit_last_4">
+                            <item row="9" column="0">
+                             <widget class="QLineEdit" name="lineEdit_utilities">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7888,8 +7913,8 @@ border-radius: 12px;
                               </property>
                              </widget>
                             </item>
-                            <item row="9" column="0">
-                             <widget class="QLineEdit" name="lineEdit_useremail_3">
+                            <item row="10" column="0">
+                             <widget class="QLineEdit" name="lineEdit_groceries">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7913,8 +7938,8 @@ border-radius: 12px;
                               </property>
                              </widget>
                             </item>
-                            <item row="10" column="0">
-                             <widget class="QLineEdit" name="lineEdit_last_5">
+                            <item row="11" column="0">
+                             <widget class="QLineEdit" name="lineEdit_insurance">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7938,8 +7963,8 @@ border-radius: 12px;
                               </property>
                              </widget>
                             </item>
-                            <item row="11" column="0">
-                             <widget class="QLineEdit" name="lineEdit_useremail_4">
+                            <item row="12" column="0">
+                             <widget class="QLineEdit" name="lineEdit_other">
                               <property name="maximumSize">
                                <size>
                                 <width>500</width>
@@ -7963,8 +7988,8 @@ border-radius: 12px;
                               </property>
                              </widget>
                             </item>
-                            <item row="12" column="0">
-                             <widget class="QPushButton" name="btn_signup_add_4">
+                            <item row="13" column="0">
+                             <widget class="QPushButton" name="btn_income">
                               <property name="minimumSize">
                                <size>
                                 <width>0</width>
