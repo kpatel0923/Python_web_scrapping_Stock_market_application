@@ -114,6 +114,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_budget.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.budget))
         self.btn_back_3.clicked.connect(lambda: user_Buttons.back_screen(self))
         self.btn_back_4.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.chart_page))
+        self.btn_back_5.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.chart_page))
 
         self.btn_personal.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.info_page))
 
@@ -121,7 +122,9 @@ class user_Buttons_actions(QMainWindow):
         self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
 
         self.btn_refresh_2.clicked.connect(lambda: user_Buttons_budget.getting_stocks(self))
-        self.btn_more.clicked.connect(lambda: user_Buttons_budget.test(self))
+        self.btn_more.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.top))
+        self.btn_p1.clicked.connect(lambda: self.stackedWidget_4.setCurrentWidget(self.user_tops))
+        self.btn_p2.clicked.connect(lambda: self.stackedWidget_4.setCurrentWidget(self.tops))
 
     def indicies(self):
         self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, 'DJI'))
