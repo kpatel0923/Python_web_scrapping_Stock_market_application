@@ -63,6 +63,12 @@ class user_Buttons_budget(QMainWindow):
         score = int(score)
 
         if score >= 11 and score <= 23:
+            # for question 5, 1 https://finviz.com/screener.ashx?v=111&f=fa_div_veryhigh,geo_usa&o=-change
+            # for question 5, 2 https://finviz.com/screener.ashx?v=141&f=an_recom_strongbuy,cap_mid,geo_usa&ft=4&o=-relativevolume
+            # for question 5, 3 https://finviz.com/screener.ashx?v=141&f=an_recom_strongbuy,cap_micro,geo_usa&ft=4&o=-relativevolume
+
+
+
             URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mega,geo_usa&o=-change")
             lis = testgraph.screener_1(URL)
             self.btn_1.setText(lis[0])
@@ -75,6 +81,9 @@ class user_Buttons_budget(QMainWindow):
             self.btn_8.setText(lis[7])
 
         elif score >= 24 and score <= 34:
+            # if Q5 == '1'
+            # elif Q5 == '2'
+            # elif Q5 == '3'
             URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mid,geo_usa&o=-change")
             lis = testgraph.screener_1(URL)
             self.btn_1.setText(lis[0])
