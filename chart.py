@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
 from matplotlib.backends.backend_qt5agg import (NavigationToolbar2QT as NavigationToolbar)
 import yfinance as yf
 
@@ -13,6 +14,7 @@ class MatplotlibWidget(QMainWindow):
 
 
     def update_graph(self, stockPeriod):
+        self.frame_116.setEnabled(True)
         stockSymbol = self.lineEdit_symbol.text()
         stockTicker = yf.Ticker(stockSymbol)
 
@@ -42,7 +44,7 @@ class MatplotlibWidget(QMainWindow):
         self.lbl_pe.setText(str(forwardPE))
         self.lbl_tenvol.setText(str(vol_10_days))
         self.lbl_vol.setText(str(vol))
-        self.lbl_summary.setText(longSummary)
+        self.lbl_summary.setText(longSummary + "...")
 
         self.lbl_exchange.setToolTip(
             "<html><head/><body><p><span style=\" color:#000058;\">An exchange is a marketplace where securities, commodities, derivatives and other financial instruments are traded. The core function of an exchange is to ensure fair and orderly trading and the efficient dissemination of price information for any securities trading on that exchange. Exchanges give companies, governments, and other groups a platform from which to sell securities to the investing public.The more prominent exchanges include the New York Stock Exchange (NYSE), the Nasdaq, the London Stock Exchange (LSE), and the Tokyo Stock Exchange (TSE).</span></p></body></html>")
@@ -89,6 +91,7 @@ class MatplotlibWidget(QMainWindow):
 
     def update_graph_btn(self, symbol):
         print(symbol)
+        self.frame_116.setEnabled(True)
         self.lineEdit_symbol.setText(symbol)
         stockSymbol = self.lineEdit_symbol.text()
         stockTicker = yf.Ticker(stockSymbol)
@@ -121,7 +124,7 @@ class MatplotlibWidget(QMainWindow):
             self.lbl_pe.setText(str(forwardPE))
             self.lbl_tenvol.setText(str(vol_10_days))
             self.lbl_vol.setText(str(vol))
-            self.lbl_summary.setText(longSummary)
+            self.lbl_summary.setText(longSummary + "...")
 
             self.lbl_exchange.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000058;\">An exchange is a marketplace where securities, commodities, derivatives and other financial instruments are traded. The core function of an exchange is to ensure fair and orderly trading and the efficient dissemination of price information for any securities trading on that exchange. Exchanges give companies, governments, and other groups a platform from which to sell securities to the investing public.The more prominent exchanges include the New York Stock Exchange (NYSE), the Nasdaq, the London Stock Exchange (LSE), and the Tokyo Stock Exchange (TSE).</span></p></body></html>")
@@ -163,3 +166,17 @@ class MatplotlibWidget(QMainWindow):
             self.lbl_tenvol.clear()
             self.lbl_vol.clear()
             self.lbl_summary.clear()
+
+
+    def more(self):
+        stockSymbol = self.lineEdit_symbol.text()
+        longSummary = testgraph.more(stockSymbol)
+        self.lbl_summary.setFont(QFont('Century Gothic', 9))
+        self.lbl_summary.setText(longSummary)
+
+    def less(self):
+        stockSymbol = self.lineEdit_symbol.text()
+        longSummary = testgraph.more(stockSymbol)
+        longSummary = " ".join(longSummary.split(' ')[:101])
+        self.lbl_summary.setFont(QFont('Century Gothic', 12))
+        self.lbl_summary.setText(longSummary + "...")

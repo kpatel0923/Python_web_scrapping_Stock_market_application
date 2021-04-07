@@ -5992,7 +5992,7 @@ QPushButton:hover
                              <property name="frameShadow">
                               <enum>QFrame::Raised</enum>
                              </property>
-                             <layout class="QVBoxLayout" name="verticalLayout_72">
+                             <layout class="QVBoxLayout" name="verticalLayout_91">
                               <property name="spacing">
                                <number>0</number>
                               </property>
@@ -7065,6 +7065,128 @@ QPushButton:hover
                                    </property>
                                    <property name="wordWrap">
                                     <bool>true</bool>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QFrame" name="frame_116">
+                                <property name="enabled">
+                                 <bool>false</bool>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>16777215</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                                <property name="frameShape">
+                                 <enum>QFrame::StyledPanel</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QHBoxLayout" name="horizontalLayout_46">
+                                 <property name="spacing">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QPushButton" name="btn_more_2">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>century gothic</family>
+                                     <pointsize>11</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="cursor">
+                                    <cursorShape>PointingHandCursor</cursorShape>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton
+{
+	background: transparent;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover {
+	color: rgb(0, 170, 255);
+}
+</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Expand</string>
+                                   </property>
+                                   <property name="checkable">
+                                    <bool>false</bool>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QPushButton" name="btn_less">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>century gothic</family>
+                                     <pointsize>12</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="cursor">
+                                    <cursorShape>PointingHandCursor</cursorShape>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton
+{
+	background: transparent;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover {
+	color: rgb(0, 170, 255);
+}
+</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Collapse</string>
+                                   </property>
+                                   <property name="checkable">
+                                    <bool>false</bool>
                                    </property>
                                   </widget>
                                  </item>

@@ -48,3 +48,9 @@ def price(test):
     s = yf.Ticker(symbol)
     ask = s.info['ask']
     return ask
+
+def more(test):
+    symbol = test
+    s = yf.Ticker(symbol)
+    longSummary = s.info['longBusinessSummary']
+    return longSummary

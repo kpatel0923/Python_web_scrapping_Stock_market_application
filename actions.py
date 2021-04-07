@@ -53,7 +53,8 @@ class common_Buttons(QMainWindow):
         self.btn_3M.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '3mo'))
         self.btn_1Y.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1y'))
         self.btn_5Y.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '5y'))
-
+        self.btn_more_2.clicked.connect(lambda: MatplotlibWidget.more(self))
+        self.btn_less.clicked.connect(lambda: MatplotlibWidget.less(self))
 
     def refresh(self):
         # Refreshes the indices quotes
