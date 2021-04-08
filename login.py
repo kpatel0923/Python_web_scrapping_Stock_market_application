@@ -10,18 +10,19 @@ import actions
 
 
 class User:
-    def __init__(self, email, first, last, password, age, bills, account_size, goal, score, income, expenses):
+    def __init__(self, email, first, last, password, account_size, goal, score, income, expenses, q5, q8):
         self.__email = email
         self.__first = first
         self.__last = last
         self.__password = password
-        self.__age = age
-        self.__bills = bills
         self.__account_size = account_size
         self.__goal = goal
         self.__score = score
         self.__income = income
         self.__expenses = expenses
+        self.__q5 = q5
+        self.__q8 = q8
+
 
     def getEmail(self):
         return self.__email
@@ -45,12 +46,6 @@ class User:
     def getPassword(self):
         return self.__password
 
-    def getAge(self):
-        return self.__age
-
-    def getBills(self):
-        return self.__bills
-
     def getAccount_size(self):
         return self.__account_size
 
@@ -63,13 +58,17 @@ class User:
     def getExpenses(self):
         return self.__expenses
 
+    def getQ5(self):
+        return self.__q5
+
+    def getQ8(self):
+        return self.__q8
+
     def __str__(self):
         return f" Email: {self.__email} \
                   first: {self.__first} \
                   last:  {self.__last}  \
                   password: {self.__password} \
-                  age: {self.__age} \
-                  bills: {self.__bills} \
                   account_size: {self.__account_size} \
                   goal: {self.__goal} \
                   score: {self.__score}"
@@ -111,11 +110,20 @@ class Login(QMainWindow):
             print(Login.current_user)
             self.stackedWidget.setCurrentWidget(self.user_page)
             self.btn_login_signup.setText("Logout")
+            self.lineEdit_first_2.setText(Login.current_user.getFirst())
+            self.lineEdit_last_2.setText(Login.current_user.getLast())
             self.lineEdit_useremail.setText(Login.current_user.getEmail())
             self.lineEdit_emailholder.setText(Login.current_user.getEmail())
             self.lineEdit_scoreholder.setText(str(Login.current_user.getScore()))
+            self.lineEdit_goalholder.setText(str(Login.current_user.getGoal()))
+            self.lineEdit_income.setText(str(Login.current_user.getIncome()))
+            self.lineEdit_expenses.setText(str(Login.current_user.getExpenses()))
+            self.income.setText(str(Login.current_user.getIncome()))
+            self.expenses.setText(str(Login.current_user.getExpenses()))
+            self.lineEdit_q5.setText(str(Login.current_user.getQ5()))
+            self.lineEdit_q8.setText(str(Login.current_user.getQ8()))
             print("Email: ", self.lineEdit_emailholder.text(), "Score: ", self.lineEdit_scoreholder.text())
-            self.lbl_welcome.setText(f"Welcome: {Login.current_user.getFirst(), Login.current_user.getScore()}")
+            self.lbl_welcome.setText(f"Welcome: {Login.current_user.getFirst()}")
             Login.clear(self)
 
 

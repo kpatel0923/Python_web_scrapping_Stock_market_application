@@ -7586,7 +7586,7 @@ QPushButton:hover
 </string>
                        </property>
                        <property name="currentIndex">
-                        <number>2</number>
+                        <number>0</number>
                        </property>
                        <widget class="QWidget" name="info_page">
                         <layout class="QVBoxLayout" name="verticalLayout_67">
@@ -10521,7 +10521,7 @@ QPushButton:hover
                   <item>
                    <widget class="QStackedWidget" name="stackedWidget_4">
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>1</number>
                     </property>
                     <widget class="QWidget" name="user_tops">
                      <layout class="QVBoxLayout" name="verticalLayout_80">
@@ -13721,6 +13721,191 @@ border-radius: 12px;
                    <string>Enter Income</string>
                   </property>
                  </widget>
+                 <widget class="QLineEdit" name="lineEdit_income">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>260</y>
+                    <width>441</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter Income</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="lineEdit_expenses">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>320</y>
+                    <width>441</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter Income</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="lineEdit_goalholder">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>380</y>
+                    <width>441</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter Income</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="lineEdit_q5">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>440</y>
+                    <width>441</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter Income</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="lineEdit_q8">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>500</y>
+                    <width>441</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter Income</string>
+                  </property>
+                 </widget>
                 </widget>
                </widget>
               </item>
@@ -13933,6 +14118,21 @@ QPushButton:hover
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_62">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QLabel" name="label_23">
                       <property name="minimumSize">
@@ -13944,7 +14144,7 @@ QPushButton:hover
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>40</height>
+                        <height>400</height>
                        </size>
                       </property>
                       <property name="font">
@@ -13976,7 +14176,7 @@ QPushButton:hover
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>40</height>
+                        <height>400</height>
                        </size>
                       </property>
                       <property name="font">
@@ -13986,7 +14186,7 @@ QPushButton:hover
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: rgb(255, 255, 255);
+                       <string notr="true">color: rgb(38, 179, 13);
 </string>
                       </property>
                       <property name="text">
@@ -14008,7 +14208,7 @@ QPushButton:hover
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>40</height>
+                        <height>400</height>
                        </size>
                       </property>
                       <property name="font">
@@ -14040,7 +14240,7 @@ QPushButton:hover
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>40</height>
+                        <height>400</height>
                        </size>
                       </property>
                       <property name="font">
@@ -14050,8 +14250,7 @@ QPushButton:hover
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">color: rgb(255, 255, 255);
-</string>
+                       <string notr="true">color: rgb(209, 28, 15);</string>
                       </property>
                       <property name="text">
                        <string>....</string>
