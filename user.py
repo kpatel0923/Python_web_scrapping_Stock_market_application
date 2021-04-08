@@ -61,6 +61,8 @@ class user_Buttons_budget(QMainWindow):
     def getting_stocks(self):
         score = self.lineEdit_scoreholder.text()
         score = int(score)
+        self.loading.setText("Loading")
+        Chart.loading(self)
 
         if score >= 11 and score <= 23:
             # for question 5, 1 https://finviz.com/screener.ashx?v=111&f=fa_div_veryhigh,geo_usa&o=-change
@@ -131,7 +133,7 @@ class user_Buttons_budget(QMainWindow):
         sym_8 = self.btn_8.text()
         self.btn_8.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_8))
 
-
+        self.loading.setText("")
     def test(self):
         print(self.btn_2.text())
 

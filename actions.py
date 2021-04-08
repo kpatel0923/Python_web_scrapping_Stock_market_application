@@ -45,7 +45,6 @@ class common_Buttons(QMainWindow):
 
     def test(self):
         # Testing the chart
-
         self.btn_submit.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
         self.btn_1D.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1d'))
         self.btn_1W.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1wk'))

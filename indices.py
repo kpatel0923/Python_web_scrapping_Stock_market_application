@@ -3,7 +3,7 @@ from PyQt5.QtCore import QTimer
 
 import requests
 from bs4 import BeautifulSoup
-
+from error_messages import *
 
 class RealTimeLabel(QMainWindow):
     def __init__(self):
@@ -13,6 +13,8 @@ class RealTimeLabel(QMainWindow):
 
     def update_indices(self):
         print("Updating Quotes...")
+        self.loading.setText("Loading")
+        Chart.loading(self)
 
         # DOW update
         url = "https://finance.yahoo.com/quote/%5EDJI?p=%5EDJI"
@@ -44,4 +46,4 @@ class RealTimeLabel(QMainWindow):
         soup = BeautifulSoup(response.text, 'lxml')
         price = soup.find_all('div', {'class': 'My(6px) Pos(r) smartphone_Mt(6px)'})[0].find('span').text
         self.btn_RUSS_quote.setText(price)
-
+        self.loading.setText("")

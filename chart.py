@@ -1,9 +1,17 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
+from PyQt5.QtGui import QMovie
+from PyQt5.QtCore import Qt
+import threading
+from PyQt5.uic import loadUiType
 from matplotlib.backends.backend_qt5agg import (NavigationToolbar2QT as NavigationToolbar)
-import yfinance as yf
+import sys
+import time
 
+import yfinance as yf
 import testgraph
+from error_messages import *
+
 
 class MatplotlibWidget(QMainWindow):
     def __init__(self):
@@ -12,13 +20,11 @@ class MatplotlibWidget(QMainWindow):
 
         self.addToolBar(NavigationToolbar(self.MplWidget.canvas, self))
 
-
-    def update_graph(self, stockPeriod):
-        self.frame_116.setEnabled(True)
+    def chart(self, stockPeriod):
         stockSymbol = self.lineEdit_symbol.text()
         stockTicker = yf.Ticker(stockSymbol)
 
-        df = stockTicker.history(period=stockPeriod) # Placing stock data into a dataframe
+        df = stockTicker.history(period=stockPeriod)  # Placing stock data into a dataframe
         data = df['Close']
 
         chartTitle = stockSymbol
@@ -29,7 +35,8 @@ class MatplotlibWidget(QMainWindow):
         self.MplWidget.canvas.axes.set_title(chartTitle.upper())
         self.MplWidget.canvas.draw()
 
-        name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(stockSymbol)
+        name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(
+            stockSymbol)
         longSummary = " ".join(longSummary.split(' ')[:101])
 
         self.lbl_name.setText(name)
@@ -71,6 +78,28 @@ class MatplotlibWidget(QMainWindow):
             "<html><head/><body><p><span style=\" color:#000062;\">A sector is one of a few general segments in the economy within which a large group of companies can be categorized. An economy can be broken down into about a dozen sectors, which can describe nearly all of the business activity in that economy.</span></p></body></html>")
         self.lbl_industry.setToolTip(
             "<html><head/><body><p><span style=\" color:#000047;\">Industry refers to a specific group of companies that operate in a similar business sphere. Essentially, industries are created by breaking down sectors into more defined groupings.Each of the dozen or so sectors will have a varying number of industries, but it can be in the hundreds.</span></p></body></html>")
+        self.loading.setText("")
+
+
+    def update_graph(self, stockPeriod):
+        self.loading.setText("Loading")
+        Chart.loading(self)
+        # self.statusbar = self.statusBar()
+        # self.statusbar.showMessage("Loading", 3000)
+
+        # self.loading_screen = LoadingScreen()
+        # self.movie = QMovie("giphy.gif")
+        # self.loading.setMovie(self.movie)
+        # self.movie.start()
+        self.frame_116.setEnabled(True)
+
+        if self.loading.text() == "Loading":
+            MatplotlibWidget.chart(self, stockPeriod)
+
+        # Signup_Messages.close(self)
+
+            # self.loading_screen = LoadingScreen.closes(self)
+
 
 
     def update_graph_time(self, stockPeriod):
@@ -90,6 +119,8 @@ class MatplotlibWidget(QMainWindow):
 
 
     def update_graph_btn(self, symbol):
+        self.loading.setText("Loading")
+        Chart.loading(self)
         print(symbol)
         self.frame_116.setEnabled(True)
         self.lineEdit_symbol.setText(symbol)
@@ -151,8 +182,10 @@ class MatplotlibWidget(QMainWindow):
                 "<html><head/><body><p><span style=\" color:#000062;\">A sector is one of a few general segments in the economy within which a large group of companies can be categorized. An economy can be broken down into about a dozen sectors, which can describe nearly all of the business activity in that economy.</span></p></body></html>")
             self.lbl_industry.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000047;\">Industry refers to a specific group of companies that operate in a similar business sphere. Essentially, industries are created by breaking down sectors into more defined groupings.Each of the dozen or so sectors will have a varying number of industries, but it can be in the hundreds.</span></p></body></html>")
-
+            self.loading.setText("")
         else:
+            self.frame_116.setEnabled(False)
+            self.loading.setText("")
             self.lbl_name.clear()
             self.lbl_exchange.clear()
             self.lbl_sector.clear()
