@@ -10,13 +10,14 @@ import actions
 
 
 class User:
-    def __init__(self, email, first, last, password, account_size, goal, score, income, expenses, q5, q8):
+    def __init__(self, email, first, last, password, account_size, goal, saved, score, income, expenses, q5, q8):
         self.__email = email
         self.__first = first
         self.__last = last
         self.__password = password
         self.__account_size = account_size
         self.__goal = goal
+        self.__saved = saved
         self.__score = score
         self.__income = income
         self.__expenses = expenses
@@ -63,6 +64,9 @@ class User:
 
     def getQ8(self):
         return self.__q8
+
+    def getSaved(self):
+        return self.__saved
 
     def __str__(self):
         return f" Email: {self.__email} \
@@ -120,6 +124,9 @@ class Login(QMainWindow):
             self.lineEdit_expenses.setText(str(Login.current_user.getExpenses()))
             self.income.setText(str(Login.current_user.getIncome()))
             self.expenses.setText(str(Login.current_user.getExpenses()))
+            self.Saved.setText(str(Login.current_user.getSaved()))
+            self.Goal.setText(str(Login.current_user.getGoal()))
+
             self.lineEdit_q5.setText(str(Login.current_user.getQ5()))
             self.lineEdit_q8.setText(str(Login.current_user.getQ8()))
             print("Email: ", self.lineEdit_emailholder.text(), "Score: ", self.lineEdit_scoreholder.text())

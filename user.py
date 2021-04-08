@@ -58,6 +58,18 @@ class user_Buttons_budget(QMainWindow):
         actions.DATABASE(f"update users set account_size = '{acct_size}' where email = '{email}' ")
         actions.DATABASE(f"update users set goal = '{goal}' where email = '{email}' ")
 
+    def update(self):
+        first = self.lineEdit_first_2.text()
+        last = self.lineEdit_last_2.text()
+        email = self.lineEdit_emailholder.text()
+        update_email = self.lineEdit_useremail.text()
+
+        actions.DATABASE(f"update users set first = '{first}' where email = '{email}' ")
+        actions.DATABASE(f"update users set last = '{last}' where email = '{email}' ")
+        actions.DATABASE(f"update users set email = '{update_email}' where email = '{email}' ")
+
+        self.lineEdit_emailholder.setText(update_email)
+
     def getting_stocks(self):
         score = self.lineEdit_scoreholder.text()
         score = int(score)
@@ -134,8 +146,7 @@ class user_Buttons_budget(QMainWindow):
         self.btn_8.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_8))
 
         self.loading.setText("")
-    def test(self):
-        print(self.btn_2.text())
+
 
 
 

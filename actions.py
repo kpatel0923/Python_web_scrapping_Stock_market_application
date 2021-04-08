@@ -143,3 +143,4 @@ class user_Buttons_actions(QMainWindow):
 
     def info(self):
         self.btn_income.clicked.connect(lambda: user_Buttons_budget.income(self))
+        self.btn_update.clicked.connect(lambda: user_Buttons_budget.update(self))
