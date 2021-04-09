@@ -169,4 +169,104 @@ class user_Buttons_budget(QMainWindow):
         per = float("{:.2f}".format(per))
         self.label_per.setText(str(per))
 
+        g_5 = float(price) * 0.05
+        g_5 = float("{:.2f}".format(g_5))
+        self.label_price_5.setText(str(g_5))
+
+        g_10 = float(price) * 0.10
+        g_10 = float("{:.2f}".format(g_10))
+        self.label_price_10.setText(str(g_10))
+
+        g_25 = float(price) * 0.25
+        g_25 = float("{:.2f}".format(g_25))
+        self.label_price_25.setText(str(g_25))
+
+        g_50 = float(price) * 0.50
+        g_50 = float("{:.2f}".format(g_50))
+        self.label_price_50.setText(str(g_50))
+
+        g_75 = float(price) * 0.75
+        g_75 = float("{:.2f}".format(g_75))
+        self.label_price_75.setText(str(g_75))
+
+        g_100 = float(price) * 1.00
+        g_100 = float("{:.2f}".format(g_100))
+        self.label_price_100.setText(str(g_100))
+
+        s_5 = float(price) + g_5
+        s_5 = float("{:.2f}".format(s_5))
+        self.label_pt_5.setText(str(s_5))
+
+        s_10 = float(price) + g_10
+        s_10 = float("{:.2f}".format(s_10))
+        self.label_pt_10.setText(str(s_10))
+
+        s_25 = float(price) + g_25
+        s_25 = float("{:.2f}".format(s_25))
+        self.label_pt_25.setText(str(s_25))
+
+        s_50 = float(price )+ g_50
+        s_50 = float("{:.2f}".format(s_50))
+        self.label_pt_50.setText(str(s_50))
+
+        s_75 = float(price) + g_75
+        s_75 = float("{:.2f}".format(s_75))
+        self.label_pt_75.setText(str(s_75))
+
+        s_100 = float(price) + g_100
+        s_100 = float("{:.2f}".format(s_100))
+        self.label_pt_100.setText(str(s_100))
+
+
+        c_5 = float(cost) * 0.05
+        print(c_5)
+        c_5 = float("{:.2f}".format(c_5))
+        self.label_pos_5.setText(str(c_5))
+
+        c_10 = float(cost) * 0.10
+        c_10 = float("{:.2f}".format(c_10))
+        self.label_pos_10.setText(str(c_10))
+
+        c_25 = float(cost) * 0.25
+        c_25 = float("{:.2f}".format(c_25))
+        self.label_pos_25.setText(str(c_25))
+
+        c_50 = float(cost) * 0.50
+        c_50 = float("{:.2f}".format(c_50))
+        self.label_pos_50.setText(str(c_50))
+
+        c_75 = float(cost) * 0.75
+        c_75 = float("{:.2f}".format(c_75))
+        self.label_pos_75.setText(str(c_75))
+
+        c_100 = float(cost) * 1.00
+        c_100 = float("{:.2f}".format(c_100))
+        self.label_pos_100.setText(str(c_100))
+
+
+        pt_5 = float(cost) + c_5
+        pt_5 = float("{:.2f}".format(pt_5))
+        self.label_post_5.setText(str(pt_5))
+
+        pt_10= float(cost) + c_10
+        pt_10 = float("{:.2f}".format(pt_10))
+        self.label_post_10.setText(str(pt_10))
+
+        pt_25 = float(cost) + c_25
+        pt_25 = float("{:.2f}".format(pt_25))
+        self.label_post_25.setText(str(pt_25))
+
+        pt_50 = float(cost) + c_50
+        pt_50 = float("{:.2f}".format(pt_50))
+        self.label_post_50.setText(str(pt_50))
+
+        pt_75 = float(cost) + c_75
+        pt_75 = float("{:.2f}".format(pt_75))
+        self.label_post_75.setText(str(pt_75))
+
+        pt_100 = float(cost) + c_100
+        pt_100 = float("{:.2f}".format(pt_100))
+        self.label_post_100.setText(str(pt_100))
+
+
 

@@ -9508,7 +9508,7 @@ QPushButton:hover
 </string>
                            </property>
                            <property name="text">
-                            <string>....</string>
+                            <string>5%</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -9516,7 +9516,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="1" column="1">
-                          <widget class="QLabel" name="label_402">
+                          <widget class="QLabel" name="label_price_5">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9548,7 +9548,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="1" column="2">
-                          <widget class="QLabel" name="label_404">
+                          <widget class="QLabel" name="label_pt_5">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9580,7 +9580,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="1" column="3">
-                          <widget class="QLabel" name="label_406">
+                          <widget class="QLabel" name="label_pos_5">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9612,7 +9612,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="1" column="4">
-                          <widget class="QLabel" name="label_405">
+                          <widget class="QLabel" name="label_post_5">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9668,7 +9668,7 @@ QPushButton:hover
 </string>
                            </property>
                            <property name="text">
-                            <string>....</string>
+                            <string>10%</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -9676,7 +9676,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="2" column="1">
-                          <widget class="QLabel" name="label_397">
+                          <widget class="QLabel" name="label_price_10">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9708,7 +9708,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="2" column="2">
-                          <widget class="QLabel" name="label_399">
+                          <widget class="QLabel" name="label_pt_10">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9740,7 +9740,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="2" column="3">
-                          <widget class="QLabel" name="label_401">
+                          <widget class="QLabel" name="label_pos_10">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9772,7 +9772,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="2" column="4">
-                          <widget class="QLabel" name="label_400">
+                          <widget class="QLabel" name="label_post_10">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9828,7 +9828,7 @@ QPushButton:hover
 </string>
                            </property>
                            <property name="text">
-                            <string>....</string>
+                            <string>25%</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -9836,7 +9836,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="3" column="1">
-                          <widget class="QLabel" name="label_370">
+                          <widget class="QLabel" name="label_price_25">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9868,7 +9868,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="3" column="2">
-                          <widget class="QLabel" name="label_371">
+                          <widget class="QLabel" name="label_pt_25">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9900,7 +9900,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="3" column="3">
-                          <widget class="QLabel" name="label_379">
+                          <widget class="QLabel" name="label_pos_25">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9932,7 +9932,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="3" column="4">
-                          <widget class="QLabel" name="label_381">
+                          <widget class="QLabel" name="label_post_25">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -9988,7 +9988,7 @@ QPushButton:hover
 </string>
                            </property>
                            <property name="text">
-                            <string>....</string>
+                            <string>50%</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -9996,7 +9996,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="4" column="1">
-                          <widget class="QLabel" name="label_382">
+                          <widget class="QLabel" name="label_price_50">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10028,7 +10028,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="4" column="2">
-                          <widget class="QLabel" name="label_384">
+                          <widget class="QLabel" name="label_pt_50">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10060,7 +10060,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="4" column="3">
-                          <widget class="QLabel" name="label_386">
+                          <widget class="QLabel" name="label_pos_50">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10092,7 +10092,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="4" column="4">
-                          <widget class="QLabel" name="label_385">
+                          <widget class="QLabel" name="label_post_50">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10148,7 +10148,7 @@ QPushButton:hover
 </string>
                            </property>
                            <property name="text">
-                            <string>....</string>
+                            <string>75%</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -10156,7 +10156,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="5" column="1">
-                          <widget class="QLabel" name="label_387">
+                          <widget class="QLabel" name="label_price_75">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10188,7 +10188,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="5" column="2">
-                          <widget class="QLabel" name="label_389">
+                          <widget class="QLabel" name="label_pt_75">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10220,7 +10220,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="5" column="3">
-                          <widget class="QLabel" name="label_391">
+                          <widget class="QLabel" name="label_pos_75">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10252,7 +10252,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="5" column="4">
-                          <widget class="QLabel" name="label_390">
+                          <widget class="QLabel" name="label_post_75">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10308,7 +10308,7 @@ QPushButton:hover
 </string>
                            </property>
                            <property name="text">
-                            <string>....</string>
+                            <string>100%</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -10316,7 +10316,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="6" column="1">
-                          <widget class="QLabel" name="label_392">
+                          <widget class="QLabel" name="label_price_100">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10348,7 +10348,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="6" column="2">
-                          <widget class="QLabel" name="label_394">
+                          <widget class="QLabel" name="label_pt_100">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10380,7 +10380,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="6" column="3">
-                          <widget class="QLabel" name="label_396">
+                          <widget class="QLabel" name="label_pos_100">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -10412,7 +10412,7 @@ QPushButton:hover
                           </widget>
                          </item>
                          <item row="6" column="4">
-                          <widget class="QLabel" name="label_395">
+                          <widget class="QLabel" name="label_post_100">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
