@@ -4479,7 +4479,7 @@ QPushButton:hover
                  </size>
                 </property>
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>2</number>
                 </property>
                 <widget class="QWidget" name="chart_page">
                  <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -8925,7 +8925,7 @@ QPushButton:hover
                               <property name="frameShadow">
                                <enum>QFrame::Raised</enum>
                               </property>
-                              <layout class="QVBoxLayout" name="verticalLayout_88">
+                              <layout class="QVBoxLayout" name="verticalLayout_72">
                                <item>
                                 <widget class="QLineEdit" name="lineEdit_shares">
                                  <property name="maximumSize">
@@ -9015,6 +9015,45 @@ QPushButton:hover
                                  </property>
                                 </widget>
                                </item>
+                               <item>
+                                <widget class="QPushButton" name="btn_clear">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>100</width>
+                                   <height>25</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>100</width>
+                                   <height>16777215</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>century gothic</family>
+                                   <pointsize>15</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Clear</string>
+                                 </property>
+                                </widget>
+                               </item>
                               </layout>
                              </widget>
                             </item>
@@ -9065,6 +9104,8 @@ QPushButton:hover
                                <font>
                                 <family>century gothic</family>
                                 <pointsize>16</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
                                </font>
                               </property>
                               <property name="styleSheet">
@@ -9097,6 +9138,8 @@ QPushButton:hover
                                <font>
                                 <family>century gothic</family>
                                 <pointsize>16</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
                                </font>
                               </property>
                               <property name="styleSheet">
@@ -9129,6 +9172,8 @@ QPushButton:hover
                                <font>
                                 <family>century gothic</family>
                                 <pointsize>16</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
                                </font>
                               </property>
                               <property name="styleSheet">
@@ -9257,6 +9302,8 @@ QPushButton:hover
                                <font>
                                 <family>century gothic</family>
                                 <pointsize>16</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
                                </font>
                               </property>
                               <property name="styleSheet">
@@ -9323,6 +9370,21 @@ QPushButton:hover
                          <enum>QFrame::Raised</enum>
                         </property>
                         <layout class="QGridLayout" name="gridLayout_23">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
                          <item row="0" column="0">
                           <widget class="QLabel" name="label_366">
                            <property name="minimumSize">
@@ -9341,6 +9403,8 @@ QPushButton:hover
                             <font>
                              <family>century gothic</family>
                              <pointsize>16</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
                             </font>
                            </property>
                            <property name="styleSheet">
@@ -9373,6 +9437,8 @@ QPushButton:hover
                             <font>
                              <family>century gothic</family>
                              <pointsize>16</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
                             </font>
                            </property>
                            <property name="styleSheet">
@@ -9405,6 +9471,8 @@ QPushButton:hover
                             <font>
                              <family>century gothic</family>
                              <pointsize>16</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
                             </font>
                            </property>
                            <property name="styleSheet">
@@ -9437,6 +9505,8 @@ QPushButton:hover
                             <font>
                              <family>century gothic</family>
                              <pointsize>16</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
                             </font>
                            </property>
                            <property name="styleSheet">
@@ -9469,6 +9539,8 @@ QPushButton:hover
                             <font>
                              <family>century gothic</family>
                              <pointsize>16</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
                             </font>
                            </property>
                            <property name="styleSheet">
@@ -13874,6 +13946,43 @@ border-radius: 12px;
                    <rect>
                     <x>100</x>
                     <y>500</y>
+                    <width>441</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>500</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>century gothic</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter Income</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="lineEdit_price">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>560</y>
                     <width>441</width>
                     <height>36</height>
                    </rect>

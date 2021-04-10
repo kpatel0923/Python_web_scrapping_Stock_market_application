@@ -136,6 +136,7 @@ class user_Buttons_actions(QMainWindow):
     def what_if(self):
         self.btn_submit_2.clicked.connect(lambda: user_Buttons_budget.what_if_price(self))
         self.btn_submit_3.clicked.connect(lambda: user_Buttons_budget.process(self))
+        self.btn_clear.clicked.connect(lambda : user_Buttons_budget.clear_what(self))
 
     def top_stocks(self):
 
