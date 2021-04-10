@@ -124,6 +124,7 @@ class user_Buttons_actions(QMainWindow):
 
         self.btn_refresh_2.clicked.connect(lambda: user_Buttons_budget.getting_stocks(self))
         self.btn_more.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.top))
+        self.btn_refresh_3.clicked.connect(lambda: testgraph.screener_2())
         self.btn_p1.clicked.connect(lambda: self.stackedWidget_4.setCurrentWidget(self.user_tops))
         self.btn_p2.clicked.connect(lambda: self.stackedWidget_4.setCurrentWidget(self.tops))
 

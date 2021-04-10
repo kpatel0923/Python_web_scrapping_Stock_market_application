@@ -42,6 +42,37 @@ def screener_1(web):
 
     return symbol_list
 
+def screener_2():
+    # Web scraping tickers from a finviz screener
+    # Copy & paste the url to your browser and go to the website to edit the screener
+    # Then copy & paste the new url into the script
+
+    URL = ("https://finviz.com/screener.ashx?v=111&f=cap_micro,geo_usa,sh_relvol_o2&o=-change")
+    req = Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
+    webpage = urlopen(req).read()
+
+    soup = BeautifulSoup(webpage, 'html.parser')
+    tickers = soup.find_all('a', attrs={'class': 'screener-link-primary'})
+    ticker_info = soup.find_all('a', attrs={'class': 'screener-link'})
+
+    symbol_list = []
+    for ticker in tickers:
+        symbol_list.append(ticker.text)
+
+    info_list = []
+    for info in ticker_info:
+        info_list.append(info.text)
+
+    percent_list = []
+    percent_list.append(info_list[8::10])
+
+    name_list = []
+    name_list.append(info_list[1::10])
+
+    print(symbol_list)
+    print(name_list)
+    print(percent_list)
+
 
 def price(test):
     symbol = test
