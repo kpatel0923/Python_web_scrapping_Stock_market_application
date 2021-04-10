@@ -65,14 +65,14 @@ class quiz_Buttons(QMainWindow):
         if self.btn_login_signup.text() == "Logout":
             user_email = self.lineEdit_useremail.text()
             actions.DATABASE(f"update users set score = '{quiz_Buttons.total}' where email = '{user_email}' ")
-            actions.DATABASE(f"update users set q5 = '{quiz_Buttons.score_6}' where email = '{user_email}' ")
+            actions.DATABASE(f"update users set q6 = '{quiz_Buttons.score_6}' where email = '{user_email}' ")
             print(quiz_Buttons.total)
             self.lineEdit_scoreholder.setText(str(quiz_Buttons.total))
             self.stackedWidget.setCurrentWidget(self.user_page)
         else:
             user_email = self.lineEdit_email_2.text()
             actions.DATABASE(f"update users set score = '{quiz_Buttons.total}' where email = '{user_email}' ")
-            actions.DATABASE(f"update users set q5 = '{quiz_Buttons.score_6}' where email = '{user_email}' ")
+            actions.DATABASE(f"update users set q6 = '{quiz_Buttons.score_6}' where email = '{user_email}' ")
             print(quiz_Buttons.total)
             Signup.clear(self)
             self.stackedWidget.setCurrentWidget(self.user_page)
