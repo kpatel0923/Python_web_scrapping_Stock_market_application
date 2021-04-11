@@ -271,6 +271,8 @@ class user_Buttons_budget(QMainWindow):
         #call the screener_2 twice for the tops and bottoms
 
         #call andy's functions here also
+        stockList = testgraph.topGainers()
+        print(stockList)
 
 
 

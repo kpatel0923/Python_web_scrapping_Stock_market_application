@@ -97,9 +97,10 @@ def topGainers():
         df = pd.DataFrame(stockList)
         stock_list = df.values.tolist()
 
-        f = '{:<5} | {:<40} | {:<6}'
-        for i in stock_list:
-            print(f.format(*i))
+    return stockList
+        # f = '{:<5} | {:<40} | {:<6}'
+        # for i in stock_list:
+        #     print(f.format(*i))
 
 
 
