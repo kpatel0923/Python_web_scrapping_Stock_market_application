@@ -112,6 +112,7 @@ class Login(QMainWindow):
             print(Login.current_user)
             self.stackedWidget.setCurrentWidget(self.user_page)
             self.btn_login_signup.setText("Logout")
+
             self.lineEdit_first_2.setText(Login.current_user.getFirst())
             self.lineEdit_last_2.setText(Login.current_user.getLast())
             self.lineEdit_useremail.setText(Login.current_user.getEmail())

@@ -31,6 +31,8 @@ class user_Buttons(QMainWindow):
 
 class user_Buttons_budget(QMainWindow):
 
+    URL = None
+
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)
@@ -73,53 +75,158 @@ class user_Buttons_budget(QMainWindow):
     def getting_stocks(self):
         score = self.lineEdit_scoreholder.text()
         score = int(score)
+        question = int(self.lineEdit_q6.text())
         self.loading.setText("Loading")
         Chart.loading(self)
 
         if score >= 11 and score <= 23:
-            # for question 5, 1 https://finviz.com/screener.ashx?v=111&f=fa_div_veryhigh,geo_usa&o=-change
-            # for question 5, 2 https://finviz.com/screener.ashx?v=141&f=an_recom_strongbuy,cap_mid,geo_usa&ft=4&o=-relativevolume
-            # for question 5, 3 https://finviz.com/screener.ashx?v=141&f=an_recom_strongbuy,cap_micro,geo_usa&ft=4&o=-relativevolume
+            if question == 1:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mega,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-marketcap")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
 
+            elif question == 2:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mega,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-change")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
 
+            elif question == 3:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mega,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-volume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
 
-            URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mega,geo_usa&o=-change")
-            lis = testgraph.screener_1(URL)
-            self.btn_1.setText(lis[0])
-            self.btn_2.setText(lis[1])
-            self.btn_3.setText(lis[2])
-            self.btn_4.setText(lis[3])
-            self.btn_5.setText(lis[4])
-            self.btn_6.setText(lis[5])
-            self.btn_7.setText(lis[6])
-            self.btn_8.setText(lis[7])
+            elif question == 4:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=141&f=cap_mega,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-relativevolume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
 
         elif score >= 24 and score <= 34:
-            # if Q5 == '1'
-            # elif Q5 == '2'
-            # elif Q5 == '3'
-            URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mid,geo_usa&o=-change")
-            lis = testgraph.screener_1(URL)
-            self.btn_1.setText(lis[0])
-            self.btn_2.setText(lis[1])
-            self.btn_3.setText(lis[2])
-            self.btn_4.setText(lis[3])
-            self.btn_5.setText(lis[4])
-            self.btn_6.setText(lis[5])
-            self.btn_7.setText(lis[6])
-            self.btn_8.setText(lis[7])
+            if question == 1:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_large,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-marketcap")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
+            elif question == 2:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_large,ta_sma20_pb,ta_sma200_pa,ta_sma50_pa&ft=4&o=-marketcap")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
+            elif question == 3:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mid,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-volume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
+            elif question == 4:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_mid,ta_sma20_pb,ta_sma200_pa,ta_sma50_pa&ft=4&o=-relativevolume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
 
         elif score >= 35 and score <= 47:
-            URL = ("https://finviz.com/screener.ashx?v=111&f=cap_micro,geo_usa,sh_relvol_o2&o=-change")
-            lis = testgraph.screener_1(URL)
-            self.btn_1.setText(lis[0])
-            self.btn_2.setText(lis[1])
-            self.btn_3.setText(lis[2])
-            self.btn_4.setText(lis[3])
-            self.btn_5.setText(lis[4])
-            self.btn_6.setText(lis[5])
-            self.btn_7.setText(lis[6])
-            self.btn_8.setText(lis[7])
+            if question == 1:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=141&f=cap_midunder,ta_sma20_pa20,ta_sma200_pa,ta_sma50_pa&ft=4&o=-volume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
+            elif question == 2:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=141&f=cap_midunder,ta_sma20_pa30,ta_sma200_pa,ta_sma50_pa&ft=4&o=-volume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
+            elif question == 3:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_midunder,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-volume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
+
+            elif question == 4:
+                user_Buttons_budget.URL = ("https://finviz.com/screener.ashx?v=111&f=cap_smallunder&ft=4&o=-relativevolume")
+                lis = testgraph.screener_1(user_Buttons_budget.URL)
+                self.btn_1.setText(lis[0])
+                self.btn_2.setText(lis[1])
+                self.btn_3.setText(lis[2])
+                self.btn_4.setText(lis[3])
+                self.btn_5.setText(lis[4])
+                self.btn_6.setText(lis[5])
+                self.btn_7.setText(lis[6])
+                self.btn_8.setText(lis[7])
 
         sym_1 = self.btn_1.text()
         self.btn_1.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_1))
@@ -146,6 +253,24 @@ class user_Buttons_budget(QMainWindow):
         self.btn_8.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, sym_8))
 
         self.loading.setText("")
+
+        self.btn_more.setEnabled(True)
+
+    def more_stocks(self):
+        symbol_list, names_list, percents_list = testgraph.screener_2(user_Buttons_budget.URL)
+        print("User Picks\n", symbol_list, names_list, percents_list)
+
+        gainers = "https://finviz.com/screener.ashx?v=111&s=ta_topgainers&ft=4"
+        symbol_list, names_list, percents_list = testgraph.screener_2(gainers)
+        print("Gainers\n", symbol_list, names_list, percents_list)
+
+        losers = "https://finviz.com/screener.ashx?v=111&s=ta_toplosers"
+        symbol_list, names_list, percents_list = testgraph.screener_2(losers)
+        print("Losers\n", symbol_list, names_list, percents_list)
+
+        #call the screener_2 twice for the tops and bottoms
+
+        #call andy's functions here also
 
 
 

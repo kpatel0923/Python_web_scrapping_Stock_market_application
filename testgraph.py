@@ -42,12 +42,12 @@ def screener_1(web):
 
     return symbol_list
 
-def screener_2():
+def screener_2(test):
     # Web scraping tickers from a finviz screener
     # Copy & paste the url to your browser and go to the website to edit the screener
     # Then copy & paste the new url into the script
 
-    URL = ("https://finviz.com/screener.ashx?v=111&f=cap_micro,geo_usa,sh_relvol_o2&o=-change")
+    URL = test
     req = Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
     webpage = urlopen(req).read()
 
@@ -69,9 +69,12 @@ def screener_2():
     name_list = []
     name_list.append(info_list[1::10])
 
-    print(symbol_list)
-    print(name_list)
-    print(percent_list)
+    names_list = name_list[0]
+    percents_list = percent_list[0]
+
+    return symbol_list, names_list, percents_list
+
+
 
 
 def price(test):

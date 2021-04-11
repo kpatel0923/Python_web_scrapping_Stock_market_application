@@ -1704,7 +1704,7 @@ QPushButton:hover
               <item>
                <widget class="QStackedWidget" name="stackedWidget_quiz">
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>12</number>
                 </property>
                 <widget class="QWidget" name="page_1">
                  <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -5592,6 +5592,9 @@ QPushButton:hover
                               </item>
                               <item>
                                <widget class="QPushButton" name="btn_more">
+                                <property name="enabled">
+                                 <bool>false</bool>
+                                </property>
                                 <property name="minimumSize">
                                  <size>
                                   <width>100</width>
@@ -10641,7 +10644,7 @@ QPushButton:hover
                   <item>
                    <widget class="QStackedWidget" name="stackedWidget_4">
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="user_tops">
                      <layout class="QVBoxLayout" name="verticalLayout_80">
