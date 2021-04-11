@@ -103,6 +103,7 @@ def topGainers():
 
 
 
+
 def price(test):
     symbol = test
     s = yf.Ticker(symbol)
