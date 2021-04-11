@@ -4479,7 +4479,7 @@ QPushButton:hover
                  </size>
                 </property>
                 <property name="currentIndex">
-                 <number>3</number>
+                 <number>1</number>
                 </property>
                 <widget class="QWidget" name="chart_page">
                  <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -7470,6 +7470,61 @@ QPushButton:hover
                          </widget>
                         </item>
                         <item>
+                         <widget class="QFrame" name="frame_103">
+                          <property name="styleSheet">
+                           <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_37">
+                           <item>
+                            <widget class="QPushButton" name="btn_profits_loses">
+                             <property name="minimumSize">
+                              <size>
+                               <width>250</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>century gothic</family>
+                               <pointsize>15</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Profits/Loses</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
                          <widget class="QFrame" name="frame_76">
                           <property name="styleSheet">
                            <string notr="true">	background:rgba(0,0,0,0);
@@ -8125,6 +8180,169 @@ border-radius: 12px;
                             </item>
                             <item row="13" column="0">
                              <widget class="QPushButton" name="btn_income">
+                              <property name="minimumSize">
+                               <size>
+                                <width>0</width>
+                                <height>50</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>500</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>century gothic</family>
+                                <pointsize>15</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                              </property>
+                              <property name="text">
+                               <string>Update</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                       <widget class="QWidget" name="profits_page">
+                        <layout class="QVBoxLayout" name="verticalLayout_79">
+                         <item>
+                          <widget class="QFrame" name="frame_104">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>500</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">	background:rgba(0,0,0,0);
+</string>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_13">
+                            <item row="1" column="0">
+                             <widget class="QLabel" name="label_70">
+                              <property name="maximumSize">
+                               <size>
+                                <width>16777215</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>century gothic</family>
+                                <pointsize>13</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">	background:rgba(0,0,0,0);
+color: rgb(255, 255, 255);
+</string>
+                              </property>
+                              <property name="text">
+                               <string>Enter &quot;0&quot; for fields with no changes</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="0">
+                             <widget class="QLineEdit" name="lineEdit_profits">
+                              <property name="maximumSize">
+                               <size>
+                                <width>500</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>century gothic</family>
+                                <pointsize>20</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Profits</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="0" column="0">
+                             <widget class="QLabel" name="label_38">
+                              <property name="maximumSize">
+                               <size>
+                                <width>16777215</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>century gothic</family>
+                                <pointsize>13</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">	background:rgba(0,0,0,0);
+color: rgb(255, 255, 255);
+</string>
+                              </property>
+                              <property name="text">
+                               <string>Enter your pofits and losses here to track and update progress.</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="3" column="0">
+                             <widget class="QLineEdit" name="lineEdit_loses">
+                              <property name="maximumSize">
+                               <size>
+                                <width>500</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>century gothic</family>
+                                <pointsize>20</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Loses</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QPushButton" name="btn_update_profits">
                               <property name="minimumSize">
                                <size>
                                 <width>0</width>

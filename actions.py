@@ -115,6 +115,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_back_3.clicked.connect(lambda: user_Buttons.back_screen(self))
         self.btn_back_4.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.chart_page))
         self.btn_back_5.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.chart_page))
+        self.btn_profits_loses.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.profits_page))
 
         self.btn_personal.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.info_page))
         self.btn_budget_info.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.budget_page))
@@ -138,7 +139,9 @@ class user_Buttons_actions(QMainWindow):
     def what_if(self):
         self.btn_submit_2.clicked.connect(lambda: user_Buttons_budget.what_if_price(self))
         self.btn_submit_3.clicked.connect(lambda: user_Buttons_budget.process(self))
-        self.btn_clear.clicked.connect(lambda : user_Buttons_budget.clear_what(self))
+        self.btn_clear.clicked.connect(lambda: user_Buttons_budget.clear_what(self))
+
+        self.btn_update_profits.clicked.connect(lambda: user_Buttons_budget.saved(self) )
 
     def top_stocks(self):
 

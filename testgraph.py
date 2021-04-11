@@ -44,6 +44,7 @@ def screener_1(web):
 
     return symbol_list
 
+
 def screener_2(test):
     # Web scraping tickers from a finviz screener
     # Copy & paste the url to your browser and go to the website to edit the screener

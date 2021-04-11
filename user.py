@@ -278,6 +278,16 @@ class user_Buttons_budget(QMainWindow):
         print(Losers)
 
 
+    def saved(self):
+        profits = self.lineEdit_profits.text()
+        loses = self.lineEdit_loses.text()
+
+        if profits.isalnum() and loses.isalnum():
+        # if self.lineEdit_profits.text() != "" and self.lineEdit_loses.text() != "":
+            total = float(profits) + (float(loses) * (-1))
+            print(total)
+        else:
+            print("invalid inputs")
 
     def what_if_price(self):
         symbol = self.lineEdit_symbol_2.text()
@@ -285,6 +295,7 @@ class user_Buttons_budget(QMainWindow):
         price = float(price)
         price = "{:,.2f}".format(price)
         self.label_price.setText("$" + str(price))
+
 
     def process(self):
         shares = self.lineEdit_shares.text()
