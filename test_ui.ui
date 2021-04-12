@@ -10857,12 +10857,52 @@ QPushButton:hover
                       <string>Refresh</string>
                      </property>
                     </widget>
+                    <widget class="QLabel" name="label_72">
+                     <property name="geometry">
+                      <rect>
+                       <x>350</x>
+                       <y>0</y>
+                       <width>345</width>
+                       <height>40</height>
+                      </rect>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>century gothic</family>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Stonks Page</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
                    </widget>
                   </item>
                   <item>
                    <widget class="QStackedWidget" name="stackedWidget_4">
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="user_tops">
                      <layout class="QVBoxLayout" name="verticalLayout_77">
@@ -10913,7 +10953,7 @@ QPushButton:hover
                            <property name="font">
                             <font>
                              <family>century gothic</family>
-                             <pointsize>12</pointsize>
+                             <pointsize>14</pointsize>
                              <weight>75</weight>
                              <bold>true</bold>
                             </font>
@@ -10947,7 +10987,7 @@ QPushButton:hover
                            <property name="font">
                             <font>
                              <family>century gothic</family>
-                             <pointsize>12</pointsize>
+                             <pointsize>14</pointsize>
                              <weight>75</weight>
                              <bold>true</bold>
                             </font>
@@ -10981,7 +11021,7 @@ QPushButton:hover
                            <property name="font">
                             <font>
                              <family>century gothic</family>
-                             <pointsize>12</pointsize>
+                             <pointsize>14</pointsize>
                              <weight>75</weight>
                              <bold>true</bold>
                             </font>
@@ -11115,7 +11155,7 @@ QPushButton:hover
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -11147,7 +11187,7 @@ QPushButton:hover
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -11179,7 +11219,7 @@ QPushButton:hover
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -11631,7 +11671,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -11663,7 +11703,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -11695,7 +11735,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -12291,7 +12331,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -12323,7 +12363,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -12355,7 +12395,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -12792,7 +12832,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                            <property name="font">
                             <font>
                              <family>century gothic</family>
-                             <pointsize>12</pointsize>
+                             <pointsize>14</pointsize>
                              <weight>75</weight>
                              <bold>true</bold>
                             </font>
@@ -12826,7 +12866,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                            <property name="font">
                             <font>
                              <family>century gothic</family>
-                             <pointsize>12</pointsize>
+                             <pointsize>14</pointsize>
                              <weight>75</weight>
                              <bold>true</bold>
                             </font>
@@ -12860,7 +12900,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                            <property name="font">
                             <font>
                              <family>century gothic</family>
-                             <pointsize>12</pointsize>
+                             <pointsize>14</pointsize>
                              <weight>75</weight>
                              <bold>true</bold>
                             </font>
@@ -12994,7 +13034,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -13026,7 +13066,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -13058,7 +13098,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -13510,7 +13550,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -13542,7 +13582,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -13574,7 +13614,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -13582,7 +13622,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
 </string>
                                  </property>
                                  <property name="text">
-                                  <string>Percentage2</string>
+                                  <string>Percentage</string>
                                  </property>
                                  <property name="alignment">
                                   <set>Qt::AlignCenter</set>
@@ -14020,7 +14060,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -14052,7 +14092,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -14084,7 +14124,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="font">
                                   <font>
                                    <family>century gothic</family>
-                                   <pointsize>10</pointsize>
+                                   <pointsize>12</pointsize>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
