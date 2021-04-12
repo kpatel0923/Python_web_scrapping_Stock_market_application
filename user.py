@@ -260,6 +260,42 @@ class user_Buttons_budget(QMainWindow):
         symbol_list, names_list, percents_list = testgraph.screener_2(user_Buttons_budget.URL)
         print("User Picks\n", symbol_list, names_list, percents_list)
 
+        self.label_sym_2_0.setText(symbol_list[0])
+        self.label_sym_2_1.setText(symbol_list[1])
+        self.label_sym_2_2.setText(symbol_list[2])
+        self.label_sym_2_3.setText(symbol_list[3])
+        self.label_sym_2_4.setText(symbol_list[4])
+        self.label_sym_2_5.setText(symbol_list[5])
+        self.label_sym_2_6.setText(symbol_list[6])
+        self.label_sym_2_7.setText(symbol_list[7])
+        self.label_sym_2_8.setText(symbol_list[8])
+        self.label_sym_2_9.setText(symbol_list[9])
+
+        self.label_name_2_0.setText(names_list[0])
+        self.label_name_2_1.setText(names_list[1])
+        self.label_name_2_2.setText(names_list[2])
+        self.label_name_2_3.setText(names_list[3])
+        self.label_name_2_4.setText(names_list[4])
+        self.label_name_2_5.setText(names_list[5])
+        self.label_name_2_6.setText(names_list[6])
+        self.label_name_2_7.setText(names_list[7])
+        self.label_name_2_8.setText(names_list[8])
+        self.label_name_2_9.setText(names_list[9])
+
+        self.label_percent_2_0.setText(percents_list[0])
+        self.label_percent_2_1.setText(percents_list[1])
+        self.label_percent_2_2.setText(percents_list[2])
+        self.label_percent_2_3.setText(percents_list[3])
+        self.label_percent_2_4.setText(percents_list[4])
+        self.label_percent_2_5.setText(percents_list[5])
+        self.label_percent_2_6.setText(percents_list[6])
+        self.label_percent_2_7.setText(percents_list[7])
+        self.label_percent_2_8.setText(percents_list[8])
+        self.label_percent_2_9.setText(percents_list[9])
+
+
+
+
         gainers = "https://finviz.com/screener.ashx?v=111&s=ta_topgainers&ft=4"
         symbol_list, names_list, percents_list = testgraph.screener_2(gainers)
         print("Gainers\n", symbol_list, names_list, percents_list)
