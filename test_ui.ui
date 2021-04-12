@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1393</width>
-    <height>858</height>
+    <height>894</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -4479,7 +4479,7 @@ QPushButton:hover
                  </size>
                 </property>
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>3</number>
                 </property>
                 <widget class="QWidget" name="chart_page">
                  <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -10902,7 +10902,7 @@ QPushButton:hover
                   <item>
                    <widget class="QStackedWidget" name="stackedWidget_4">
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>1</number>
                     </property>
                     <widget class="QWidget" name="user_tops">
                      <layout class="QVBoxLayout" name="verticalLayout_77">
@@ -11273,6 +11273,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="0" column="1">
@@ -11316,6 +11319,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="2" column="0">
@@ -11325,6 +11331,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11385,6 +11394,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="3" column="1">
@@ -11418,6 +11430,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="4" column="1">
@@ -11447,6 +11462,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11484,6 +11502,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="6" column="1">
@@ -11513,6 +11534,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11550,6 +11574,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="9" column="0">
@@ -11559,6 +11586,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11794,6 +11824,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="0" column="2">
@@ -11827,6 +11860,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="0" column="1">
@@ -11856,6 +11892,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11938,6 +11977,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="4" column="0">
@@ -11952,6 +11994,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12049,6 +12094,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="6" column="1">
@@ -12096,6 +12144,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12145,6 +12196,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="8" column="1">
@@ -12174,6 +12228,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12222,6 +12279,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12473,6 +12533,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="1" column="1">
@@ -12506,6 +12569,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="2" column="0">
@@ -12515,6 +12581,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12549,6 +12618,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="3" column="1">
@@ -12581,6 +12653,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12628,6 +12703,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="5" column="0">
@@ -12637,6 +12715,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12681,6 +12762,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="8" column="0">
@@ -12690,6 +12774,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12746,6 +12833,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13152,6 +13242,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="0" column="1">
@@ -13195,6 +13288,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="2" column="1">
@@ -13214,6 +13310,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13247,6 +13346,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13297,6 +13399,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="4" column="1">
@@ -13316,6 +13421,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13349,6 +13457,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13406,6 +13517,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="8" column="0">
@@ -13415,6 +13529,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13471,6 +13588,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13668,6 +13788,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="0" column="1">
@@ -13687,6 +13810,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13734,6 +13860,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="3" column="0">
@@ -13743,6 +13872,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13776,6 +13908,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13819,6 +13954,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13866,6 +14004,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="6" column="1">
@@ -13885,6 +14026,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13932,6 +14076,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="8" column="1">
@@ -13974,6 +14121,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -14170,16 +14320,6 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                <property name="spacing">
                                 <number>0</number>
                                </property>
-                               <item row="0" column="0">
-                                <widget class="QLabel" name="label_sym_1_0">
-                                 <property name="styleSheet">
-                                  <string notr="true">color: rgb(255, 255, 255);</string>
-                                 </property>
-                                 <property name="text">
-                                  <string>....</string>
-                                 </property>
-                                </widget>
-                               </item>
                                <item row="0" column="2">
                                 <widget class="QLabel" name="label_percent_1_0">
                                  <property name="styleSheet">
@@ -14203,6 +14343,19 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                 </widget>
                                </item>
+                               <item row="0" column="0">
+                                <widget class="QLabel" name="label_sym_1_0">
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
+                                </widget>
+                               </item>
                                <item row="1" column="1">
                                 <widget class="QLabel" name="label_name_1_1">
                                  <property name="styleSheet">
@@ -14221,6 +14374,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="1" column="2">
@@ -14236,6 +14392,16 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                 </widget>
                                </item>
+                               <item row="2" column="1">
+                                <widget class="QLabel" name="label_name_1_2">
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>....</string>
+                                 </property>
+                                </widget>
+                               </item>
                                <item row="1" column="0">
                                 <widget class="QLabel" name="label_sym_1_1">
                                  <property name="styleSheet">
@@ -14243,6 +14409,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -14254,20 +14423,13 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
-                                </widget>
-                               </item>
-                               <item row="2" column="1">
-                                <widget class="QLabel" name="label_name_1_2">
-                                 <property name="styleSheet">
-                                  <string notr="true">color: rgb(255, 255, 255);</string>
-                                 </property>
-                                 <property name="text">
-                                  <string>....</string>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
-                               <item row="2" column="2">
-                                <widget class="QLabel" name="label_percent_1_2">
+                               <item row="3" column="2">
+                                <widget class="QLabel" name="label_percent_1_3">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -14287,10 +14449,13 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
-                               <item row="3" column="2">
-                                <widget class="QLabel" name="label_percent_1_3">
+                               <item row="2" column="2">
+                                <widget class="QLabel" name="label_percent_1_2">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -14312,6 +14477,19 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                 </widget>
                                </item>
+                               <item row="5" column="0">
+                                <widget class="QLabel" name="label_sym_1_5">
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
+                                </widget>
+                               </item>
                                <item row="4" column="1">
                                 <widget class="QLabel" name="label_name_1_4">
                                  <property name="styleSheet">
@@ -14322,18 +14500,8 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                 </widget>
                                </item>
-                               <item row="5" column="0">
-                                <widget class="QLabel" name="label_sym_1_5">
-                                 <property name="styleSheet">
-                                  <string notr="true">color: rgb(255, 255, 255);</string>
-                                 </property>
-                                 <property name="text">
-                                  <string>....</string>
-                                 </property>
-                                </widget>
-                               </item>
-                               <item row="4" column="2">
-                                <widget class="QLabel" name="label_percent_1_4">
+                               <item row="6" column="0">
+                                <widget class="QLabel" name="label_sym_1_6">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -14342,6 +14510,16 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="alignment">
                                   <set>Qt::AlignCenter</set>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="5" column="1">
+                                <widget class="QLabel" name="label_name_1_5">
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>....</string>
                                  </property>
                                 </widget>
                                </item>
@@ -14358,18 +14536,21 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                 </widget>
                                </item>
-                               <item row="6" column="0">
-                                <widget class="QLabel" name="label_sym_1_6">
+                               <item row="4" column="2">
+                                <widget class="QLabel" name="label_percent_1_4">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
-                               <item row="5" column="1">
-                                <widget class="QLabel" name="label_name_1_5">
+                               <item row="6" column="1">
+                                <widget class="QLabel" name="label_name_1_6">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -14396,15 +14577,21 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
-                               <item row="6" column="1">
-                                <widget class="QLabel" name="label_name_1_6">
+                               <item row="8" column="0">
+                                <widget class="QLabel" name="label_sym_1_8">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -14423,16 +14610,6 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                </item>
                                <item row="8" column="1">
                                 <widget class="QLabel" name="label_name_1_8">
-                                 <property name="styleSheet">
-                                  <string notr="true">color: rgb(255, 255, 255);</string>
-                                 </property>
-                                 <property name="text">
-                                  <string>....</string>
-                                 </property>
-                                </widget>
-                               </item>
-                               <item row="8" column="0">
-                                <widget class="QLabel" name="label_sym_1_8">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -14461,6 +14638,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
