@@ -4479,7 +4479,7 @@ QPushButton:hover
                  </size>
                 </property>
                 <property name="currentIndex">
-                 <number>1</number>
+                 <number>0</number>
                 </property>
                 <widget class="QWidget" name="chart_page">
                  <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -10862,7 +10862,7 @@ QPushButton:hover
                   <item>
                    <widget class="QStackedWidget" name="stackedWidget_4">
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>1</number>
                     </property>
                     <widget class="QWidget" name="user_tops">
                      <layout class="QVBoxLayout" name="verticalLayout_77">
@@ -11201,7 +11201,7 @@ QPushButton:hover
                              <widget class="QFrame" name="frame_123">
                               <property name="styleSheet">
                                <string notr="true">	background:rgba(0,0,0,0.5);
-</string>
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                               </property>
                               <property name="frameShape">
                                <enum>QFrame::StyledPanel</enum>
@@ -11263,6 +11263,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="1" column="0">
@@ -11303,6 +11306,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="2" column="2">
@@ -11313,6 +11319,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="3" column="2">
@@ -11322,6 +11331,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11352,6 +11364,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11403,6 +11418,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="6" column="2">
@@ -11412,6 +11430,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11463,6 +11484,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="8" column="2">
@@ -11472,6 +11496,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11512,6 +11539,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -11713,6 +11743,11 @@ QPushButton:hover
                                </property>
                                <item row="1" column="0">
                                 <widget class="QLabel" name="label_sym_3_1">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11723,16 +11758,29 @@ QPushButton:hover
                                </item>
                                <item row="0" column="2">
                                 <widget class="QLabel" name="label_percent_3_0">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="0" column="0">
                                 <widget class="QLabel" name="label_sym_3_0">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11743,6 +11791,11 @@ QPushButton:hover
                                </item>
                                <item row="0" column="1">
                                 <widget class="QLabel" name="label_name_3_0">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11753,6 +11806,11 @@ QPushButton:hover
                                </item>
                                <item row="2" column="0">
                                 <widget class="QLabel" name="label_sym_3_2">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11763,6 +11821,11 @@ QPushButton:hover
                                </item>
                                <item row="1" column="1">
                                 <widget class="QLabel" name="label_name_3_1">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11773,26 +11836,47 @@ QPushButton:hover
                                </item>
                                <item row="1" column="2">
                                 <widget class="QLabel" name="label_percent_3_1">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
                                <item row="2" column="2">
                                 <widget class="QLabel" name="label_percent_3_2">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="2" column="1">
                                 <widget class="QLabel" name="label_name_3_2">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11803,6 +11887,11 @@ QPushButton:hover
                                </item>
                                <item row="3" column="0">
                                 <widget class="QLabel" name="label_sym_3_3">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11813,6 +11902,11 @@ QPushButton:hover
                                </item>
                                <item row="4" column="0">
                                 <widget class="QLabel" name="label_sym_3_4">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11823,6 +11917,11 @@ QPushButton:hover
                                </item>
                                <item row="4" column="1">
                                 <widget class="QLabel" name="label_name_3_4">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11833,6 +11932,11 @@ QPushButton:hover
                                </item>
                                <item row="3" column="1">
                                 <widget class="QLabel" name="label_name_3_3">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11843,16 +11947,29 @@ QPushButton:hover
                                </item>
                                <item row="3" column="2">
                                 <widget class="QLabel" name="label_percent_3_3">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="5" column="1">
                                 <widget class="QLabel" name="label_name_3_5">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11863,16 +11980,29 @@ QPushButton:hover
                                </item>
                                <item row="4" column="2">
                                 <widget class="QLabel" name="label_percent_3_4">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="5" column="0">
                                 <widget class="QLabel" name="label_sym_3_5">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11883,6 +12013,11 @@ QPushButton:hover
                                </item>
                                <item row="6" column="1">
                                 <widget class="QLabel" name="label_name_3_6">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11893,16 +12028,29 @@ QPushButton:hover
                                </item>
                                <item row="5" column="2">
                                 <widget class="QLabel" name="label_percent_3_5">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="6" column="0">
                                 <widget class="QLabel" name="label_sym_3_6">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11913,6 +12061,11 @@ QPushButton:hover
                                </item>
                                <item row="7" column="1">
                                 <widget class="QLabel" name="label_name_3_7">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11923,16 +12076,29 @@ QPushButton:hover
                                </item>
                                <item row="6" column="2">
                                 <widget class="QLabel" name="label_percent_3_6">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="7" column="0">
                                 <widget class="QLabel" name="label_sym_3_7">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11943,6 +12109,11 @@ QPushButton:hover
                                </item>
                                <item row="8" column="1">
                                 <widget class="QLabel" name="label_name_3_8">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11953,6 +12124,11 @@ QPushButton:hover
                                </item>
                                <item row="8" column="0">
                                 <widget class="QLabel" name="label_sym_3_8">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11963,16 +12139,29 @@ QPushButton:hover
                                </item>
                                <item row="7" column="2">
                                 <widget class="QLabel" name="label_percent_3_7">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="9" column="1">
                                 <widget class="QLabel" name="label_name_3_9">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11983,6 +12172,11 @@ QPushButton:hover
                                </item>
                                <item row="9" column="0">
                                 <widget class="QLabel" name="label_sym_3_9">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -11993,21 +12187,37 @@ QPushButton:hover
                                </item>
                                <item row="9" column="2">
                                 <widget class="QLabel" name="label_percent_3_9">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
                                <item row="8" column="2">
                                 <widget class="QLabel" name="label_percent_3_8">
+                                 <property name="font">
+                                  <font>
+                                   <pointsize>10</pointsize>
+                                  </font>
+                                 </property>
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12167,6 +12377,7 @@ QPushButton:hover
                              <widget class="QFrame" name="frame_122">
                               <property name="styleSheet">
                                <string notr="true">	background:rgba(0,0,0,0.5);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
 </string>
                               </property>
                               <property name="frameShape">
@@ -12198,6 +12409,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12239,6 +12453,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="1" column="0">
@@ -12279,6 +12496,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="3" column="0">
@@ -12308,6 +12528,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12339,6 +12562,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="5" column="2">
@@ -12348,6 +12574,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12399,6 +12628,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="7" column="0">
@@ -12429,6 +12661,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="7" column="1">
@@ -12448,6 +12683,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12478,6 +12716,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -12839,7 +13080,7 @@ QPushButton:hover
                              <widget class="QFrame" name="frame_133">
                               <property name="styleSheet">
                                <string notr="true">	background:rgba(0,0,0,0.5);
-</string>
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                               </property>
                               <property name="frameShape">
                                <enum>QFrame::StyledPanel</enum>
@@ -12891,6 +13132,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="1" column="1">
@@ -12941,6 +13185,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="3" column="1">
@@ -12971,6 +13218,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="4" column="2">
@@ -12981,6 +13231,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="3" column="2">
@@ -12990,6 +13243,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13041,6 +13297,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="6" column="0">
@@ -13071,6 +13330,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="7" column="2">
@@ -13080,6 +13342,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13121,6 +13386,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="8" column="1">
@@ -13140,6 +13408,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13325,7 +13596,7 @@ QPushButton:hover
                              <widget class="QFrame" name="frame_131">
                               <property name="styleSheet">
                                <string notr="true">	background:rgba(0,0,0,0.5);
-</string>
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                               </property>
                               <property name="frameShape">
                                <enum>QFrame::StyledPanel</enum>
@@ -13387,6 +13658,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="1" column="1">
@@ -13406,6 +13680,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13437,6 +13714,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="2" column="1">
@@ -13466,6 +13746,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13517,6 +13800,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="5" column="2">
@@ -13526,6 +13812,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13577,6 +13866,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="7" column="2">
@@ -13586,6 +13878,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13627,6 +13922,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="9" column="0">
@@ -13646,6 +13944,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13805,7 +14106,7 @@ QPushButton:hover
                              <widget class="QFrame" name="frame_132">
                               <property name="styleSheet">
                                <string notr="true">	background:rgba(0,0,0,0.5);
-</string>
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                               </property>
                               <property name="frameShape">
                                <enum>QFrame::StyledPanel</enum>
@@ -13847,6 +14148,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="0" column="1">
@@ -13886,6 +14190,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13927,6 +14234,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="4" column="0">
@@ -13946,6 +14256,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -13987,6 +14300,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="5" column="2">
@@ -13996,6 +14312,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
@@ -14057,6 +14376,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="8" column="1">
@@ -14087,6 +14409,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="9" column="0">
@@ -14107,6 +14432,9 @@ QPushButton:hover
                                  <property name="text">
                                   <string>....</string>
                                  </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="9" column="1">
@@ -14126,6 +14454,9 @@ QPushButton:hover
                                  </property>
                                  <property name="text">
                                   <string>....</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
                                  </property>
                                 </widget>
                                </item>
