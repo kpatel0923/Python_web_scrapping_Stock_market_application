@@ -60,6 +60,8 @@ class user_Buttons_budget(QMainWindow):
         actions.DATABASE(f"update users set account_size = '{acct_size}' where email = '{email}' ")
         actions.DATABASE(f"update users set goal = '{goal}' where email = '{email}' ")
 
+
+
     def update(self):
         first = self.lineEdit_first_2.text()
         last = self.lineEdit_last_2.text()
@@ -384,15 +386,27 @@ class user_Buttons_budget(QMainWindow):
         self.label_72.setText("Stonks Page")
 
     def saved(self):
+        email = self.lineEdit_emailholder.text()
         profits = self.lineEdit_profits.text()
         loses = self.lineEdit_loses.text()
 
+        saved  = float(self.Saved.text())
+        goal =  float(self.Goal.text())
+        print(f"Goal: {goal}, Saved: {saved}")
+
         if profits.isalnum() and loses.isalnum():
-        # if self.lineEdit_profits.text() != "" and self.lineEdit_loses.text() != "":
             total = float(profits) + (float(loses) * (-1))
             print(total)
+
+            if total != saved:
+                actions.DATABASE(f"update users set saved = '{total}' where email = '{email}' ")
+                self.Saved.setText(str(total))
+                print(f"Goal: {goal}, Saved: {saved}")
+
+
         else:
             print("invalid inputs")
+
 
     def what_if_price(self):
         symbol = self.lineEdit_symbol_2.text()
