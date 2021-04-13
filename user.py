@@ -262,6 +262,8 @@ class user_Buttons_budget(QMainWindow):
         self.label_72.setText("Stonks Page Loading!")
         Chart.loading(self)
 
+        # User Recommended from Finviz
+
         symbol_list, names_list, percents_list = testgraph.screener_2(user_Buttons_budget.URL)
         print("User Picks\n", symbol_list, names_list, percents_list)
 
@@ -287,19 +289,85 @@ class user_Buttons_budget(QMainWindow):
         self.label_name_5_8.setText(names_list[8])
         self.label_name_5_9.setText(names_list[9])
 
-        self.label_percent_5_0.setText(percents_list[0])
-        self.label_percent_5_1.setText(percents_list[1])
-        self.label_percent_5_2.setText(percents_list[2])
-        self.label_percent_5_3.setText(percents_list[3])
-        self.label_percent_5_4.setText(percents_list[4])
-        self.label_percent_5_5.setText(percents_list[5])
-        self.label_percent_5_6.setText(percents_list[6])
-        self.label_percent_5_7.setText(percents_list[7])
-        self.label_percent_5_8.setText(percents_list[8])
-        self.label_percent_5_9.setText(percents_list[9])
+        percent_color = []
+        style_sheet_red = "color: rgb(255,0,0)"
+        style_sheet_green = "color: rgb(0,255,0)"
 
+        for percent in percents_list:
+            percent = percent.replace("%", "")
+            percent_color.append(float(percent))
 
+        if percent_color[0] < 0.0:
+            self.label_percent_5_0.setStyleSheet(style_sheet_red)
+            self.label_percent_5_0.setText(percents_list[0])
+        else:
+            self.label_percent_5_0.setStyleSheet(style_sheet_green)
+            self.label_percent_5_0.setText(percents_list[0])
 
+        if percent_color[1] < 0.0:
+            self.label_percent_5_1.setStyleSheet(style_sheet_red)
+            self.label_percent_5_1.setText(percents_list[1])
+        else:
+            self.label_percent_5_1.setStyleSheet(style_sheet_green)
+            self.label_percent_5_1.setText(percents_list[1])
+
+        if percent_color[2] < 0.0:
+            self.label_percent_5_2.setStyleSheet(style_sheet_red)
+            self.label_percent_5_2.setText(percents_list[2])
+        else:
+            self.label_percent_5_2.setStyleSheet(style_sheet_green)
+            self.label_percent_5_2.setText(percents_list[2])
+
+        if percent_color[3] < 0.0:
+            self.label_percent_5_3.setStyleSheet(style_sheet_red)
+            self.label_percent_5_3.setText(percents_list[3])
+        else:
+            self.label_percent_5_3.setStyleSheet(style_sheet_green)
+            self.label_percent_5_3.setText(percents_list[3])
+
+        if percent_color[4] < 0.0:
+            self.label_percent_5_4.setStyleSheet(style_sheet_red)
+            self.label_percent_5_4.setText(percents_list[4])
+        else:
+            self.label_percent_5_4.setStyleSheet(style_sheet_green)
+            self.label_percent_5_4.setText(percents_list[4])
+
+        if percent_color[5] < 0.0:
+            self.label_percent_5_5.setStyleSheet(style_sheet_red)
+            self.label_percent_5_5.setText(percents_list[5])
+        else:
+            self.label_percent_5_5.setStyleSheet(style_sheet_green)
+            self.label_percent_5_5.setText(percents_list[5])
+
+        if percent_color[6] < 0.0:
+            self.label_percent_5_6.setStyleSheet(style_sheet_red)
+            self.label_percent_5_6.setText(percents_list[6])
+        else:
+            self.label_percent_5_6.setStyleSheet(style_sheet_green)
+            self.label_percent_5_6.setText(percents_list[6])
+
+        if percent_color[7] < 0.0:
+            self.label_percent_5_7.setStyleSheet(style_sheet_red)
+            self.label_percent_5_7.setText(percents_list[7])
+        else:
+            self.label_percent_5_7.setStyleSheet(style_sheet_green)
+            self.label_percent_5_7.setText(percents_list[7])
+
+        if percent_color[8] < 0.0:
+            self.label_percent_5_8.setStyleSheet(style_sheet_red)
+            self.label_percent_5_8.setText(percents_list[8])
+        else:
+            self.label_percent_5_8.setStyleSheet(style_sheet_green)
+            self.label_percent_5_8.setText(percents_list[8])
+
+        if percent_color[9] < 0.0:
+            self.label_percent_5_9.setStyleSheet(style_sheet_red)
+            self.label_percent_5_9.setText(percents_list[9])
+        else:
+            self.label_percent_5_9.setStyleSheet(style_sheet_green)
+            self.label_percent_5_9.setText(percents_list[9])
+
+        # Top Gainers from Finviz
 
         gainers = "https://finviz.com/screener.ashx?v=111&s=ta_topgainers&ft=4"
         symbol_list, names_list, percents_list = testgraph.screener_2(gainers)
@@ -338,6 +406,8 @@ class user_Buttons_budget(QMainWindow):
         self.label_percent_3_8.setText(percents_list[8])
         self.label_percent_3_9.setText(percents_list[9])
 
+        # Top Losers from Finviz
+
         losers = "https://finviz.com/screener.ashx?v=111&s=ta_toplosers"
         symbol_list, names_list, percents_list = testgraph.screener_2(losers)
         print("Losers\n", symbol_list, names_list, percents_list)
@@ -374,14 +444,80 @@ class user_Buttons_budget(QMainWindow):
         self.label_percent_4_7.setText(percents_list[7])
         self.label_percent_4_8.setText(percents_list[8])
         self.label_percent_4_9.setText(percents_list[9])
-        #call the screener_2 twice for the tops and bottoms
 
-        #call andy's functions here also
-        Gainers = testgraph.topGainers()
-        print(Gainers)
+        # Top Gainers from Yahoo Finance
 
-        Losers = testgraph.topLosers()
-        print(Losers)
+        symbol_list, names_list, percents_list = testgraph.top_gainers()
+
+        self.label_sym_0_0.setText(symbol_list[0])
+        self.label_sym_0_1.setText(symbol_list[1])
+        self.label_sym_0_2.setText(symbol_list[2])
+        self.label_sym_0_3.setText(symbol_list[3])
+        self.label_sym_0_4.setText(symbol_list[4])
+        self.label_sym_0_5.setText(symbol_list[5])
+        self.label_sym_0_6.setText(symbol_list[6])
+        self.label_sym_0_7.setText(symbol_list[7])
+        self.label_sym_0_8.setText(symbol_list[8])
+        self.label_sym_0_9.setText(symbol_list[9])
+
+        self.label_name_0_0.setText(names_list[0])
+        self.label_name_0_1.setText(names_list[1])
+        self.label_name_0_2.setText(names_list[2])
+        self.label_name_0_3.setText(names_list[3])
+        self.label_name_0_4.setText(names_list[4])
+        self.label_name_0_5.setText(names_list[5])
+        self.label_name_0_6.setText(names_list[6])
+        self.label_name_0_7.setText(names_list[7])
+        self.label_name_0_8.setText(names_list[8])
+        self.label_name_0_9.setText(names_list[9])
+
+        self.label_percent_0_0.setText(percents_list[0])
+        self.label_percent_0_1.setText(percents_list[1])
+        self.label_percent_0_2.setText(percents_list[2])
+        self.label_percent_0_3.setText(percents_list[3])
+        self.label_percent_0_4.setText(percents_list[4])
+        self.label_percent_0_5.setText(percents_list[5])
+        self.label_percent_0_6.setText(percents_list[6])
+        self.label_percent_0_7.setText(percents_list[7])
+        self.label_percent_0_8.setText(percents_list[8])
+        self.label_percent_0_9.setText(percents_list[9])
+
+        # Top Losers from Yahoo Finance
+
+        symbol_list, names_list, percents_list = testgraph.top_losers()
+
+        self.label_sym_1_0.setText(symbol_list[0])
+        self.label_sym_1_1.setText(symbol_list[1])
+        self.label_sym_1_2.setText(symbol_list[2])
+        self.label_sym_1_3.setText(symbol_list[3])
+        self.label_sym_1_4.setText(symbol_list[4])
+        self.label_sym_1_5.setText(symbol_list[5])
+        self.label_sym_1_6.setText(symbol_list[6])
+        self.label_sym_1_7.setText(symbol_list[7])
+        self.label_sym_1_8.setText(symbol_list[8])
+        self.label_sym_1_9.setText(symbol_list[9])
+
+        self.label_name_1_0.setText(names_list[0])
+        self.label_name_1_1.setText(names_list[1])
+        self.label_name_1_2.setText(names_list[2])
+        self.label_name_1_3.setText(names_list[3])
+        self.label_name_1_4.setText(names_list[4])
+        self.label_name_1_5.setText(names_list[5])
+        self.label_name_1_6.setText(names_list[6])
+        self.label_name_1_7.setText(names_list[7])
+        self.label_name_1_8.setText(names_list[8])
+        self.label_name_1_9.setText(names_list[9])
+
+        self.label_percent_1_0.setText(percents_list[0])
+        self.label_percent_1_1.setText(percents_list[1])
+        self.label_percent_1_2.setText(percents_list[2])
+        self.label_percent_1_3.setText(percents_list[3])
+        self.label_percent_1_4.setText(percents_list[4])
+        self.label_percent_1_5.setText(percents_list[5])
+        self.label_percent_1_6.setText(percents_list[6])
+        self.label_percent_1_7.setText(percents_list[7])
+        self.label_percent_1_8.setText(percents_list[8])
+        self.label_percent_1_9.setText(percents_list[9])
 
         self.label_72.setText("Stonks Page")
 

@@ -77,57 +77,44 @@ def screener_2(test):
     return symbol_list, names_list, percents_list
 
 
-def topGainers():
+def top_gainers():
     url = ('https://finance.yahoo.com/gainers')
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
+    sym_list = []
+    name_list = []
+    percent_list = []
+
     for row in soup.find_all('table')[0].tbody.find_all('tr')[:10]:
+        stock_symbol = row.find_all('td')[0].text
+        sym_list.append(stock_symbol)
+        stock_name = row.find_all('td')[1].text
+        name_list.append(stock_name)
+        stock_change = row.find_all('td')[4].text
+        percent_list.append(stock_change)
 
-        stockSymbol = row.find_all('td')[0].text
-        stockName = row.find_all('td')[1].text
-        stockChange = row.find_all('td')[4].text
-        #        vol = row.find_all('td')[5].text
-        #        threeMonVol = row.find_all('td')[6].text
-
-        stockList = {'Stock Symbol': [stockSymbol],
-                     'Stock Name': [stockName],
-                     'Percentage Change': [stockChange]}
-
-        df = pd.DataFrame(stockList)
-        stock_list = df.values.tolist()
-
-    return stockList
-        # f = '{:<5} | {:<40} | {:<6}'
-        # for i in stock_list:
-        #     print(f.format(*i))
+    return sym_list, name_list, percent_list
 
 
-
-def topLosers():
+def top_losers():
     url = ('https://finance.yahoo.com/losers')
     page = requests.get(url)
-    soup = BeautifulSoup(page.content, 'html.parser')
+    soup = BeautifulSoup(page.content,'html.parser')
+
+    sym_list = []
+    name_list = []
+    percent_list = []
 
     for row in soup.find_all('table')[0].tbody.find_all('tr')[:10]:
+        stock_symbol = row.find_all('td')[0].text
+        sym_list.append(stock_symbol)
+        stock_name  = row.find_all('td')[1].text
+        name_list.append(stock_name)
+        stock_change = row.find_all('td')[4].text
+        percent_list.append(stock_change)
 
-        stockSymbol = row.find_all('td')[0].text
-        stockName = row.find_all('td')[1].text
-        stockChange = row.find_all('td')[4].text
-        #        vol = row.find_all('td')[5].text
-        #        threeMonVol = row.find_all('td')[6].text
-
-        stockList = {'Stock Symbol': [stockSymbol],
-                     'Stock Name': [stockName],
-                     'Percentage Change': [stockChange]}
-
-        df = pd.DataFrame(stockList)
-        stock_list = df.values.tolist()
-
-    return stockList
-        # f = '{:<5} | {:<40} | {:<6}'
-        # for i in stock_list:
-        #     print(f.format(*i))
+    return sym_list, name_list, percent_list
 
 
 
