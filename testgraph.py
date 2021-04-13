@@ -20,14 +20,13 @@ def summary(test):
     vol_10_days = s.info['averageVolume10days']
     divYield = s.info['dividendYield']
 
-    beta = s.info['beta']
     forwardPE = s.info['forwardPE']
 
     sector = s.info['sector']
     industry = s.info['industry']
     longSummary = s.info['longBusinessSummary']
 
-    return name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary
+    return name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, forwardPE, vol_10_days, vol, longSummary
 
 
 def screener_1(web):

@@ -1704,7 +1704,7 @@ QPushButton:hover
               <item>
                <widget class="QStackedWidget" name="stackedWidget_quiz">
                 <property name="currentIndex">
-                 <number>12</number>
+                 <number>0</number>
                 </property>
                 <widget class="QWidget" name="page_1">
                  <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -4479,7 +4479,7 @@ QPushButton:hover
                  </size>
                 </property>
                 <property name="currentIndex">
-                 <number>3</number>
+                 <number>0</number>
                 </property>
                 <widget class="QWidget" name="chart_page">
                  <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -6492,18 +6492,6 @@ QPushButton:hover
                                     <enum>QFrame::Raised</enum>
                                    </property>
                                    <layout class="QFormLayout" name="formLayout_2">
-                                    <property name="leftMargin">
-                                     <number>0</number>
-                                    </property>
-                                    <property name="topMargin">
-                                     <number>0</number>
-                                    </property>
-                                    <property name="rightMargin">
-                                     <number>0</number>
-                                    </property>
-                                    <property name="bottomMargin">
-                                     <number>0</number>
-                                    </property>
                                     <item row="0" column="0">
                                      <widget class="QLabel" name="label_51">
                                       <property name="minimumSize">
@@ -6709,74 +6697,6 @@ QPushButton:hover
                                      </widget>
                                     </item>
                                     <item row="3" column="0">
-                                     <widget class="QLabel" name="label_54">
-                                      <property name="minimumSize">
-                                       <size>
-                                        <width>0</width>
-                                        <height>20</height>
-                                       </size>
-                                      </property>
-                                      <property name="maximumSize">
-                                       <size>
-                                        <width>16777215</width>
-                                        <height>20</height>
-                                       </size>
-                                      </property>
-                                      <property name="font">
-                                       <font>
-                                        <family>century gothic</family>
-                                        <pointsize>12</pointsize>
-                                       </font>
-                                      </property>
-                                      <property name="styleSheet">
-                                       <string notr="true">color: rgb(255, 255, 255);
-	background:rgba(0,0,0,0);
-
-</string>
-                                      </property>
-                                      <property name="text">
-                                       <string>Beta:</string>
-                                      </property>
-                                      <property name="alignment">
-                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                      </property>
-                                     </widget>
-                                    </item>
-                                    <item row="3" column="1">
-                                     <widget class="QLabel" name="lb_beta">
-                                      <property name="minimumSize">
-                                       <size>
-                                        <width>0</width>
-                                        <height>20</height>
-                                       </size>
-                                      </property>
-                                      <property name="maximumSize">
-                                       <size>
-                                        <width>16777215</width>
-                                        <height>20</height>
-                                       </size>
-                                      </property>
-                                      <property name="font">
-                                       <font>
-                                        <family>century gothic</family>
-                                        <pointsize>12</pointsize>
-                                       </font>
-                                      </property>
-                                      <property name="styleSheet">
-                                       <string notr="true">color: rgb(255, 255, 255);
-	background:rgba(0,0,0,0);
-
-</string>
-                                      </property>
-                                      <property name="text">
-                                       <string>....</string>
-                                      </property>
-                                      <property name="alignment">
-                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                      </property>
-                                     </widget>
-                                    </item>
-                                    <item row="4" column="0">
                                      <widget class="QLabel" name="label_55">
                                       <property name="minimumSize">
                                        <size>
@@ -6810,7 +6730,7 @@ QPushButton:hover
                                       </property>
                                      </widget>
                                     </item>
-                                    <item row="4" column="1">
+                                    <item row="3" column="1">
                                      <widget class="QLabel" name="lbl_pe">
                                       <property name="minimumSize">
                                        <size>
@@ -6844,7 +6764,7 @@ QPushButton:hover
                                       </property>
                                      </widget>
                                     </item>
-                                    <item row="5" column="0">
+                                    <item row="4" column="0">
                                      <widget class="QLabel" name="label_49">
                                       <property name="minimumSize">
                                        <size>
@@ -6878,7 +6798,7 @@ QPushButton:hover
                                       </property>
                                      </widget>
                                     </item>
-                                    <item row="5" column="1">
+                                    <item row="4" column="1">
                                      <widget class="QLabel" name="lbl_tenvol">
                                       <property name="minimumSize">
                                        <size>
@@ -6912,7 +6832,7 @@ QPushButton:hover
                                       </property>
                                      </widget>
                                     </item>
-                                    <item row="6" column="0">
+                                    <item row="5" column="0">
                                      <widget class="QLabel" name="label_50">
                                       <property name="minimumSize">
                                        <size>
@@ -6946,7 +6866,7 @@ QPushButton:hover
                                       </property>
                                      </widget>
                                     </item>
-                                    <item row="6" column="1">
+                                    <item row="5" column="1">
                                      <widget class="QLabel" name="lbl_vol">
                                       <property name="minimumSize">
                                        <size>
@@ -7644,7 +7564,7 @@ QPushButton:hover
 </string>
                        </property>
                        <property name="currentIndex">
-                        <number>2</number>
+                        <number>3</number>
                        </property>
                        <widget class="QWidget" name="info_page">
                         <layout class="QVBoxLayout" name="verticalLayout_67">
@@ -10761,38 +10681,32 @@ QPushButton:hover
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <widget class="QPushButton" name="btn_back_5">
-                     <property name="enabled">
-                      <bool>true</bool>
-                     </property>
-                     <property name="geometry">
-                      <rect>
-                       <x>10</x>
-                       <y>10</y>
-                       <width>150</width>
-                       <height>40</height>
-                      </rect>
-                     </property>
-                     <property name="minimumSize">
-                      <size>
-                       <width>150</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>150</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <family>century gothic</family>
-                       <pointsize>15</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QPushButton
+                    <layout class="QHBoxLayout" name="horizontalLayout_47">
+                     <item>
+                      <widget class="QPushButton" name="btn_back_5">
+                       <property name="enabled">
+                        <bool>true</bool>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>150</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>century gothic</family>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton
 {
 	background: transparent;
 	border-radius: 10px;
@@ -10804,105 +10718,95 @@ QPushButton:hover
 {
 	background-color: rgb(0, 170, 255);
 }</string>
-                     </property>
-                     <property name="text">
-                      <string>&lt; Back</string>
-                     </property>
-                    </widget>
-                    <widget class="QPushButton" name="btn_refresh_3">
-                     <property name="enabled">
-                      <bool>true</bool>
-                     </property>
-                     <property name="geometry">
-                      <rect>
-                       <x>890</x>
-                       <y>10</y>
-                       <width>150</width>
-                       <height>40</height>
-                      </rect>
-                     </property>
-                     <property name="minimumSize">
-                      <size>
-                       <width>150</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>150</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <family>century gothic</family>
-                       <pointsize>15</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QPushButton
-{
-	background: transparent;
-	border-radius: 10px;
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(255, 255, 255)
-}
-
-QPushButton:hover
-{
-	background-color: rgb(0, 170, 255);
-}</string>
-                     </property>
-                     <property name="text">
-                      <string>Refresh</string>
-                     </property>
-                    </widget>
-                    <widget class="QLabel" name="label_72">
-                     <property name="geometry">
-                      <rect>
-                       <x>350</x>
-                       <y>0</y>
-                       <width>345</width>
-                       <height>40</height>
-                      </rect>
-                     </property>
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <family>century gothic</family>
-                       <pointsize>14</pointsize>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(255, 255, 255);
+                       </property>
+                       <property name="text">
+                        <string>&lt; Back</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_72">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>century gothic</family>
+                         <pointsize>14</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(255, 255, 255);
 </string>
-                     </property>
-                     <property name="text">
-                      <string>Stonks Page</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                    </widget>
+                       </property>
+                       <property name="text">
+                        <string>Stonks Page</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btn_refresh_3">
+                       <property name="enabled">
+                        <bool>true</bool>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>150</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>century gothic</family>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	background-color: rgb(0, 170, 255);
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Refresh</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
                    </widget>
                   </item>
                   <item>
                    <widget class="QStackedWidget" name="stackedWidget_4">
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="user_tops">
                      <layout class="QVBoxLayout" name="verticalLayout_77">
@@ -11031,7 +10935,7 @@ QPushButton:hover
 </string>
                            </property>
                            <property name="text">
-                            <string>User Prefrences</string>
+                            <string>User Preferences</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -13000,7 +12904,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;
 </string>
                            </property>
                            <property name="text">
-                            <string>User Prefrences</string>
+                            <string>Volume Leaders</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
@@ -15485,6 +15389,21 @@ QPushButton:hover
                        <enum>QFrame::Raised</enum>
                       </property>
                       <layout class="QVBoxLayout" name="verticalLayout_64">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
                        <item>
                         <widget class="QLabel" name="Saved_2">
                          <property name="minimumSize">

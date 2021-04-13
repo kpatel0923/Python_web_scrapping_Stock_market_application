@@ -37,7 +37,7 @@ class MatplotlibWidget(QMainWindow):
 
         if (stockSymbol != "DJI" and stockSymbol != "^GSPC" and stockSymbol != "^IXIC" and stockSymbol != "^RUT"):
 
-            name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(
+            name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(
                 stockSymbol)
             longSummary = " ".join(longSummary.split(' ')[:101])
 
@@ -71,9 +71,6 @@ class MatplotlibWidget(QMainWindow):
                 "<html><head/><body><p><span style=\" color:#000062;\">Previous close is a security\'s closing price on the preceding time period of the one being referenced. Previous close almost always refers to the prior day\'s final price of a security when the market officially closes for the day.</span></p></body></html>")
             self.lbl_yield.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000062;\">The dividend yield, expressed as a percentage, is a financial ratio (dividend/price) that shows how much a company pays out in dividends each year relative to its stock price.The dividend yield is an estimate of the dividend-only return of a stock investment. Assuming the dividend is not raised or lowered, the yield will rise when the price of the stock falls. And conversely, it will fall when the price of the stock rises. Because dividend yields change relative to the stock price, it can often look unusually high for stocks that are falling in value quickly.</span></p></body></html>")
-
-            #	    self.lbl_beta.setToolTip("<html><head/><body><p><span style=\" color:#00004f;\">Beta measures a stock\'s volatility, the degree to which its price fluctuates in relation to the overall stock market. In other words, it gives a sense of the stock\'s risk compared to that of the greater market\'s. Beta is used also to compare a stock\'s market risk to that of other stocks. Beta expresses the trade-off between minimizing risk and maximizing return. Say a company has a beta of 2. This means it is two times as volatile as the overall market. We expect the market overall to go up by 10%. That means this stock could rise by 20%. On the other hand, if the market declines 6%, investors in that company can expect a loss of 12%.If a stock had a beta of 0.5, we would expect it to be half as volatile as the market: A market return of 10% would mean a 5% gain for the company.</span></p></body></html>")
-
             self.lbl_pe.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000068;\">The forward P/E ratio (or forward price-to-earnings ratio) divides the current share price of a company by the estimated future (“forward”) earnings per share (EPS) of that company. For valuation purposes, a forward P/E ratio is typically considered more relevant than a historical P/E ratio.</span></p></body></html>")
             self.lbl_sector.setToolTip(
@@ -158,7 +155,7 @@ class MatplotlibWidget(QMainWindow):
 
         if (symbol != "DJI" and symbol != "^GSPC" and symbol != "^IXIC" and symbol != "^RUT"):
 
-            name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, beta, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(stockSymbol)
+            name, exchange, sector, industry, ask, bid, _open, prevClose, divYield, forwardPE, vol_10_days, vol, longSummary = testgraph.summary(stockSymbol)
             longSummary = " ".join(longSummary.split(' ')[:101])
 
             self.lbl_name.setText(name)
@@ -191,9 +188,6 @@ class MatplotlibWidget(QMainWindow):
                 "<html><head/><body><p><span style=\" color:#000062;\">Previous close is a security\'s closing price on the preceding time period of the one being referenced. Previous close almost always refers to the prior day\'s final price of a security when the market officially closes for the day.</span></p></body></html>")
             self.lbl_yield.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000062;\">The dividend yield, expressed as a percentage, is a financial ratio (dividend/price) that shows how much a company pays out in dividends each year relative to its stock price.The dividend yield is an estimate of the dividend-only return of a stock investment. Assuming the dividend is not raised or lowered, the yield will rise when the price of the stock falls. And conversely, it will fall when the price of the stock rises. Because dividend yields change relative to the stock price, it can often look unusually high for stocks that are falling in value quickly.</span></p></body></html>")
-
-            #	    self.lbl_beta.setToolTip("<html><head/><body><p><span style=\" color:#00004f;\">Beta measures a stock\'s volatility, the degree to which its price fluctuates in relation to the overall stock market. In other words, it gives a sense of the stock\'s risk compared to that of the greater market\'s. Beta is used also to compare a stock\'s market risk to that of other stocks. Beta expresses the trade-off between minimizing risk and maximizing return. Say a company has a beta of 2. This means it is two times as volatile as the overall market. We expect the market overall to go up by 10%. That means this stock could rise by 20%. On the other hand, if the market declines 6%, investors in that company can expect a loss of 12%.If a stock had a beta of 0.5, we would expect it to be half as volatile as the market: A market return of 10% would mean a 5% gain for the company.</span></p></body></html>")
-
             self.lbl_pe.setToolTip(
                 "<html><head/><body><p><span style=\" color:#000068;\">The forward P/E ratio (or forward price-to-earnings ratio) divides the current share price of a company by the estimated future (“forward”) earnings per share (EPS) of that company. For valuation purposes, a forward P/E ratio is typically considered more relevant than a historical P/E ratio.</span></p></body></html>")
             self.lbl_sector.setToolTip(

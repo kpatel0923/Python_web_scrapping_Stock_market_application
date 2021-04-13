@@ -257,6 +257,9 @@ class user_Buttons_budget(QMainWindow):
         self.btn_more.setEnabled(True)
 
     def more_stocks(self):
+        self.label_72.setText("Stonks Page Loading!")
+        Chart.loading(self)
+
         symbol_list, names_list, percents_list = testgraph.screener_2(user_Buttons_budget.URL)
         print("User Picks\n", symbol_list, names_list, percents_list)
 
@@ -378,6 +381,7 @@ class user_Buttons_budget(QMainWindow):
         Losers = testgraph.topLosers()
         print(Losers)
 
+        self.label_72.setText("Stonks Page")
 
     def saved(self):
         profits = self.lineEdit_profits.text()
