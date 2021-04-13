@@ -7564,7 +7564,7 @@ QPushButton:hover
 </string>
                        </property>
                        <property name="currentIndex">
-                        <number>2</number>
+                        <number>3</number>
                        </property>
                        <widget class="QWidget" name="info_page">
                         <layout class="QVBoxLayout" name="verticalLayout_67">
@@ -15412,7 +15412,7 @@ QPushButton:hover
                      <widget class="QProgressBar" name="progressBar">
                       <property name="font">
                        <font>
-                        <pointsize>12</pointsize>
+                        <pointsize>15</pointsize>
                         <weight>75</weight>
                         <bold>true</bold>
                        </font>
@@ -15421,18 +15421,22 @@ QPushButton:hover
                        <string notr="true">QProgressBar {
 	
 	background-color: rgb(98, 114, 164);
-	color: rgb(200, 200, 200);
+	color: rgb(220, 220, 220);
 	border-style: none;
 	border-radius: 10px;
 	text-align: center;
 }
 QProgressBar::chunk{
 	border-radius: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0.511364, x2:1, y2:0.523, stop:0 rgba(254, 121, 199, 255), stop:1 rgba(170, 85, 255, 255));
-}</string>
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511364, x2:1, y2:0.523, stop:0 rgba(255, 118, 6, 120), stop:1 rgba(255, 155, 50, 246));
+
+}
+
+
+</string>
                       </property>
                       <property name="value">
-                       <number>50</number>
+                       <number>100</number>
                       </property>
                      </widget>
                     </item>
@@ -15478,6 +15482,8 @@ QProgressBar::chunk{
                           <font>
                            <family>century gothic</family>
                            <pointsize>21</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
                           </font>
                          </property>
                          <property name="styleSheet">
@@ -15542,6 +15548,8 @@ QProgressBar::chunk{
                           <font>
                            <family>century gothic</family>
                            <pointsize>21</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
                           </font>
                          </property>
                          <property name="styleSheet">

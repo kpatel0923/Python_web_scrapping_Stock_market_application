@@ -119,6 +119,18 @@ class Login(QMainWindow):
             self.stackedWidget.setCurrentWidget(self.user_page)
             self.btn_login_signup.setText("Logout")
 
+            saved = float(Login.current_user.getSaved())
+            goal = float(Login.current_user.getGoal())
+
+            per = float(saved) / float(goal) * 100
+            if saved >= goal:
+                self.progressBar.setValue(100)
+            elif saved <= 0:
+                self.progressBar.setValue(0)
+            else:
+                print(per)
+                self.progressBar.setValue(per)
+
             self.lineEdit_first_2.setText(Login.current_user.getFirst())
             self.lineEdit_last_2.setText(Login.current_user.getLast())
             self.lineEdit_useremail.setText(Login.current_user.getEmail())

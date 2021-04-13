@@ -631,23 +631,42 @@ class user_Buttons_budget(QMainWindow):
         profits = self.lineEdit_profits.text()
         loses = self.lineEdit_loses.text()
 
-        saved  = float(self.Saved.text())
-        goal =  float(self.Goal.text())
+        saved = float(self.Saved.text())
+        goal = float(self.Goal.text())
         print(f"Goal: {goal}, Saved: {saved}")
 
         if profits.isalnum() and loses.isalnum():
             total = float(profits) + (float(loses) * (-1))
             print(total)
 
-            if total != saved:
-                actions.DATABASE(f"update users set saved = '{total}' where email = '{email}' ")
-                self.Saved.setText(str(total))
-                print(f"Goal: {goal}, Saved: {saved}")
+            if total >= 0:
+                print("profit")
+                new = saved + total
+                actions.DATABASE(f"update users set saved = '{new}' where email = '{email}' ")
+                self.Saved.setText(str(new))
+                print(f"Goal: {goal}, Saved: {new}")
+                per = float(new) / float(goal) * 100
+                if saved >= goal:
+                    self.progressBar.setValue(100)
+                else:
+                    print(per)
+                    self.progressBar.setValue(per)
 
+            elif total < 0:
+                print("loss")
+                new = saved + total
+                actions.DATABASE(f"update users set saved = '{new}' where email = '{email}' ")
+                self.Saved.setText(str(new))
+                print(f"Goal: {goal}, Saved: {new}")
+                per = float(new) / float(goal) * 100
+                if saved <= 0:
+                    self.progressBar.setValue(0)
+                else:
+                    print(per)
+                    self.progressBar.setValue(per)
 
         else:
             print("invalid inputs")
-
 
     def what_if_price(self):
         symbol = self.lineEdit_symbol_2.text()
