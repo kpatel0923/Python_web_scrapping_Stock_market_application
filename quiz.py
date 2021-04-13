@@ -103,15 +103,15 @@ class quiz_Buttons(QMainWindow):
 
     def Q_2(self):
         if self.Q2_A.isChecked():
-            quiz_Buttons.score_2 = 5
+            quiz_Buttons.score_2 = 1
         elif self.Q2_B.isChecked():
-            quiz_Buttons.score_2 = 4
+            quiz_Buttons.score_2 = 2
         elif self.Q2_C.isChecked():
             quiz_Buttons.score_2 = 3
         elif self.Q2_D.isChecked():
-            quiz_Buttons.score_2 = 2
+            quiz_Buttons.score_2 = 4
         elif self.Q2_E.isChecked():
-            quiz_Buttons.score_2 = 1
+            quiz_Buttons.score_2 = 5
         else:
             quiz_Buttons.score_2 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_3)

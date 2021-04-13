@@ -519,6 +519,111 @@ class user_Buttons_budget(QMainWindow):
         self.label_percent_1_8.setText(percents_list[8])
         self.label_percent_1_9.setText(percents_list[9])
 
+        # Most Active from Finviz
+
+        symbol_list, names_list, percents_list = testgraph.screener_2("https://finviz.com/screener.ashx?v=111&s=ta_mostactive")
+        print("Most Active\n", symbol_list, names_list, percents_list)
+
+        self.label_sym_2_0.setText(symbol_list[0])
+        self.label_sym_2_1.setText(symbol_list[1])
+        self.label_sym_2_2.setText(symbol_list[2])
+        self.label_sym_2_3.setText(symbol_list[3])
+        self.label_sym_2_4.setText(symbol_list[4])
+        self.label_sym_2_5.setText(symbol_list[5])
+        self.label_sym_2_6.setText(symbol_list[6])
+        self.label_sym_2_7.setText(symbol_list[7])
+        self.label_sym_2_8.setText(symbol_list[8])
+        self.label_sym_2_9.setText(symbol_list[9])
+
+        self.label_name_2_0.setText(names_list[0])
+        self.label_name_2_1.setText(names_list[1])
+        self.label_name_2_2.setText(names_list[2])
+        self.label_name_2_3.setText(names_list[3])
+        self.label_name_2_4.setText(names_list[4])
+        self.label_name_2_5.setText(names_list[5])
+        self.label_name_2_6.setText(names_list[6])
+        self.label_name_2_7.setText(names_list[7])
+        self.label_name_2_8.setText(names_list[8])
+        self.label_name_2_9.setText(names_list[9])
+
+        percent_color = []
+        style_sheet_red = "color: rgb(255,0,0)"
+        style_sheet_green = "color: rgb(0,255,0)"
+
+        for percent in percents_list:
+            percent = percent.replace("%", "")
+            percent_color.append(float(percent))
+
+        if percent_color[0] < 0.0:
+            self.label_percent_2_0.setStyleSheet(style_sheet_red)
+            self.label_percent_2_0.setText(percents_list[0])
+        else:
+            self.label_percent_2_0.setStyleSheet(style_sheet_green)
+            self.label_percent_2_0.setText(percents_list[0])
+
+        if percent_color[1] < 0.0:
+            self.label_percent_2_1.setStyleSheet(style_sheet_red)
+            self.label_percent_2_1.setText(percents_list[1])
+        else:
+            self.label_percent_2_1.setStyleSheet(style_sheet_green)
+            self.label_percent_2_1.setText(percents_list[1])
+
+        if percent_color[2] < 0.0:
+            self.label_percent_2_2.setStyleSheet(style_sheet_red)
+            self.label_percent_2_2.setText(percents_list[2])
+        else:
+            self.label_percent_2_2.setStyleSheet(style_sheet_green)
+            self.label_percent_2_2.setText(percents_list[2])
+
+        if percent_color[3] < 0.0:
+            self.label_percent_2_3.setStyleSheet(style_sheet_red)
+            self.label_percent_2_3.setText(percents_list[3])
+        else:
+            self.label_percent_2_3.setStyleSheet(style_sheet_green)
+            self.label_percent_2_3.setText(percents_list[3])
+
+        if percent_color[4] < 0.0:
+            self.label_percent_2_4.setStyleSheet(style_sheet_red)
+            self.label_percent_2_4.setText(percents_list[4])
+        else:
+            self.label_percent_2_4.setStyleSheet(style_sheet_green)
+            self.label_percent_2_4.setText(percents_list[4])
+
+        if percent_color[5] < 0.0:
+            self.label_percent_2_5.setStyleSheet(style_sheet_red)
+            self.label_percent_2_5.setText(percents_list[5])
+        else:
+            self.label_percent_2_5.setStyleSheet(style_sheet_green)
+            self.label_percent_2_5.setText(percents_list[5])
+
+        if percent_color[6] < 0.0:
+            self.label_percent_2_6.setStyleSheet(style_sheet_red)
+            self.label_percent_2_6.setText(percents_list[6])
+        else:
+            self.label_percent_2_6.setStyleSheet(style_sheet_green)
+            self.label_percent_2_6.setText(percents_list[6])
+
+        if percent_color[7] < 0.0:
+            self.label_percent_2_7.setStyleSheet(style_sheet_red)
+            self.label_percent_2_7.setText(percents_list[7])
+        else:
+            self.label_percent_2_7.setStyleSheet(style_sheet_green)
+            self.label_percent_2_7.setText(percents_list[7])
+
+        if percent_color[8] < 0.0:
+            self.label_percent_2_8.setStyleSheet(style_sheet_red)
+            self.label_percent_2_8.setText(percents_list[8])
+        else:
+            self.label_percent_2_8.setStyleSheet(style_sheet_green)
+            self.label_percent_2_8.setText(percents_list[8])
+
+        if percent_color[9] < 0.0:
+            self.label_percent_2_9.setStyleSheet(style_sheet_red)
+            self.label_percent_2_9.setText(percents_list[9])
+        else:
+            self.label_percent_2_9.setStyleSheet(style_sheet_green)
+            self.label_percent_2_9.setText(percents_list[9])
+
         self.label_72.setText("Stonks Page")
 
     def saved(self):
