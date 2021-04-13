@@ -10806,7 +10806,7 @@ QPushButton:hover
                   <item>
                    <widget class="QStackedWidget" name="stackedWidget_4">
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="user_tops">
                      <layout class="QVBoxLayout" name="verticalLayout_77">
@@ -13686,7 +13686,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 <number>0</number>
                                </property>
                                <item row="0" column="0">
-                                <widget class="QLabel" name="label_sym_0_10">
+                                <widget class="QLabel" name="label_sym_0_0">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13699,7 +13699,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="0" column="1">
-                                <widget class="QLabel" name="label_name_0_10">
+                                <widget class="QLabel" name="label_name_0_0">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13709,7 +13709,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="1" column="0">
-                                <widget class="QLabel" name="label_sym_0_11">
+                                <widget class="QLabel" name="label_sym_0_1">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13722,7 +13722,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="0" column="2">
-                                <widget class="QLabel" name="label_percent_0_10">
+                                <widget class="QLabel" name="label_percent_0_0">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13735,7 +13735,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="1" column="1">
-                                <widget class="QLabel" name="label_name_0_11">
+                                <widget class="QLabel" name="label_name_0_1">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13745,7 +13745,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="1" column="2">
-                                <widget class="QLabel" name="label_percent_0_11">
+                                <widget class="QLabel" name="label_percent_0_1">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13758,7 +13758,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="2" column="0">
-                                <widget class="QLabel" name="label_sym_0_12">
+                                <widget class="QLabel" name="label_sym_0_2">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13771,7 +13771,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="3" column="0">
-                                <widget class="QLabel" name="label_sym_0_13">
+                                <widget class="QLabel" name="label_sym_0_3">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13784,7 +13784,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="2" column="2">
-                                <widget class="QLabel" name="label_percent_0_12">
+                                <widget class="QLabel" name="label_percent_0_2">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13797,7 +13797,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="2" column="1">
-                                <widget class="QLabel" name="label_name_0_12">
+                                <widget class="QLabel" name="label_name_0_2">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13807,7 +13807,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="4" column="0">
-                                <widget class="QLabel" name="label_sym_0_14">
+                                <widget class="QLabel" name="label_sym_0_4">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13820,7 +13820,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="3" column="2">
-                                <widget class="QLabel" name="label_percent_0_13">
+                                <widget class="QLabel" name="label_percent_0_3">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13833,7 +13833,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="3" column="1">
-                                <widget class="QLabel" name="label_name_0_13">
+                                <widget class="QLabel" name="label_name_0_3">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13843,7 +13843,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="5" column="1">
-                                <widget class="QLabel" name="label_name_0_14">
+                                <widget class="QLabel" name="label_name_0_4">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13853,7 +13853,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="5" column="0">
-                                <widget class="QLabel" name="label_sym_0_15">
+                                <widget class="QLabel" name="label_sym_0_5">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13866,7 +13866,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="4" column="1">
-                                <widget class="QLabel" name="label_name_0_15">
+                                <widget class="QLabel" name="label_name_0_5">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13876,7 +13876,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="4" column="2">
-                                <widget class="QLabel" name="label_percent_0_14">
+                                <widget class="QLabel" name="label_percent_0_4">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13889,7 +13889,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="5" column="2">
-                                <widget class="QLabel" name="label_percent_0_15">
+                                <widget class="QLabel" name="label_percent_0_5">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13902,7 +13902,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="6" column="0">
-                                <widget class="QLabel" name="label_sym_0_16">
+                                <widget class="QLabel" name="label_sym_0_6">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13915,7 +13915,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="6" column="1">
-                                <widget class="QLabel" name="label_name_0_16">
+                                <widget class="QLabel" name="label_name_0_6">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13925,7 +13925,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="7" column="0">
-                                <widget class="QLabel" name="label_sym_0_17">
+                                <widget class="QLabel" name="label_sym_0_7">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13938,7 +13938,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="7" column="1">
-                                <widget class="QLabel" name="label_name_0_17">
+                                <widget class="QLabel" name="label_name_0_7">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13948,7 +13948,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="6" column="2">
-                                <widget class="QLabel" name="label_percent_0_16">
+                                <widget class="QLabel" name="label_percent_0_6">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13961,7 +13961,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="7" column="2">
-                                <widget class="QLabel" name="label_percent_0_17">
+                                <widget class="QLabel" name="label_percent_0_7">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -13974,7 +13974,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="8" column="0">
-                                <widget class="QLabel" name="label_sym_0_18">
+                                <widget class="QLabel" name="label_sym_0_8">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13987,7 +13987,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="8" column="1">
-                                <widget class="QLabel" name="label_name_0_18">
+                                <widget class="QLabel" name="label_name_0_8">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -13997,7 +13997,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="9" column="1">
-                                <widget class="QLabel" name="label_name_0_19">
+                                <widget class="QLabel" name="label_name_0_9">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -14007,7 +14007,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="8" column="2">
-                                <widget class="QLabel" name="label_percent_0_18">
+                                <widget class="QLabel" name="label_percent_0_8">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -14020,7 +14020,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="9" column="0">
-                                <widget class="QLabel" name="label_sym_0_19">
+                                <widget class="QLabel" name="label_sym_0_9">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(255, 255, 255);</string>
                                  </property>
@@ -14033,7 +14033,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
                                 </widget>
                                </item>
                                <item row="9" column="2">
-                                <widget class="QLabel" name="label_percent_0_19">
+                                <widget class="QLabel" name="label_percent_0_9">
                                  <property name="styleSheet">
                                   <string notr="true">color: rgb(0, 255, 0);</string>
                                  </property>
@@ -15410,11 +15410,29 @@ QPushButton:hover
                     </item>
                     <item>
                      <widget class="QProgressBar" name="progressBar">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
                       <property name="styleSheet">
-                       <string notr="true">color: rgb(255, 255, 255);</string>
+                       <string notr="true">QProgressBar {
+	
+	background-color: rgb(98, 114, 164);
+	color: rgb(200, 200, 200);
+	border-style: none;
+	border-radius: 10px;
+	text-align: center;
+}
+QProgressBar::chunk{
+	border-radius: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.511364, x2:1, y2:0.523, stop:0 rgba(254, 121, 199, 255), stop:1 rgba(170, 85, 255, 255));
+}</string>
                       </property>
                       <property name="value">
-                       <number>24</number>
+                       <number>50</number>
                       </property>
                      </widget>
                     </item>
