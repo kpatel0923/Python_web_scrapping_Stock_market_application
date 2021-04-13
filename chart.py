@@ -120,6 +120,7 @@ class MatplotlibWidget(QMainWindow):
     def update_graph_time(self, stockPeriod):
         stockSymbol = self.lineEdit_symbol.text()
         stockTicker = yf.Ticker(stockSymbol)
+        Chart.loading(self)
 
         df = stockTicker.history(period=stockPeriod) # Placing stock data into a dataframe
         data = df['Close']

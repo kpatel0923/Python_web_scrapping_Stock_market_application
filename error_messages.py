@@ -17,6 +17,13 @@ class Login_Messages(QMainWindow):
         QWidget.__init__(self)
         self.setupUi(self)
 
+    def error(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Invalid Input(s)")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
 
 
 

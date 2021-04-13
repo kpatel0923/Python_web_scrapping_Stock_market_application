@@ -7,6 +7,7 @@ import re
 
 #files
 import actions
+from error_messages import *
 
 
 class User:
@@ -98,13 +99,18 @@ class Login(QMainWindow):
         person = actions.DATABASE(f"select * from users where email  == '{email}' and password == '{password}'")
 
         if not password.isalnum():
-            print("Invalid input(s)y")
+            #print("Invalid input(s)y")
+            Login_Messages.error(self)
 
         elif not re.search("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" , email):
-            print('Invalid input(s)')
+            #print('Invalid input(s)')
+            Login_Messages.error(self)
+
 
         elif not person:
-            print("Invalid login")
+            #print("Invalid login")
+            Login_Messages.error(self)
+
 
         else:
             print("success")
