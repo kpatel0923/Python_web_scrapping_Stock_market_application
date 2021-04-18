@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1393</width>
-    <height>894</height>
+    <width>1639</width>
+    <height>1015</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -334,7 +334,8 @@ QPushButton:hover {
 </string>
                    </property>
                    <property name="text">
-                    <string>....</string>
+                    <string>Recommends stocks based on your investment style
+Take the questionnaire to find out your risk levels in terms of investing in stocks</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -452,7 +453,7 @@ image: url(:/images/stock_icon_small.png);
 </string>
                    </property>
                    <property name="text">
-                    <string>....</string>
+                    <string>Fill out the monthly budgeting form to determine your cash flow to see if you are in a deficit or surplus</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -570,7 +571,7 @@ image: url(:/images/piggy_bank_icon_small.png);
 </string>
                    </property>
                    <property name="text">
-                    <string>....</string>
+                    <string>Make goals and update your financial performance to see how much progress you made towards your goal</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
