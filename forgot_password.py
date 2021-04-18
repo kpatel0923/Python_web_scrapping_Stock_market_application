@@ -5,6 +5,7 @@ import smtplib
 
 #files
 import actions
+from error_messages import *
 
 def send_email(code,user_email):
     # Email sender
@@ -42,9 +43,11 @@ class Password(QMainWindow):
 
         if not re.search("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)", Password.email):
             print('Invalid input(s)')
+            ForgotPass_Messages.error_1(self)
 
         elif not actions.DATABASE(f"select * from users where email  == '{Password.email}'"):
-             print('Not in Database')
+            print('Not in Database')
+            ForgotPass_Messages.error_2(self)
 
         else:
             # Email sender
@@ -61,6 +64,7 @@ class Password(QMainWindow):
         if code.isalnum:
             if int(code) != int(sent_code):
                 print("Invalid code")
+                ForgotPass_Messages.error_3(self)
             else:
                 self.stackedWidget.setCurrentWidget(self.password_reset_page)
         else:
@@ -80,6 +84,7 @@ class Password(QMainWindow):
 
         else:
             print("Passwords must match")
+            ForgotPass_Messages.error_4(self)
 
     def random_code(self):
         x = random.randint(1000, 9999)

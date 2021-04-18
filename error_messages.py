@@ -26,13 +26,10 @@ class Login_Messages(QMainWindow):
         x = msg.exec_()
 
 
-
-
 class Signup_Messages(QMainWindow):
     def __init__(self):
         QWidget.__init__(self)
         self.setupUi(self)
-
 
     def success(self):
         msg = QMessageBox()
@@ -76,11 +73,47 @@ class Signup_Messages(QMainWindow):
         x = msg.exec_()
 
 
-class Chart(QMainWindow):
+class ForgotPass_Messages(QMainWindow):
     def __init__(self):
         QWidget.__init__(self)
         self.setupUi(self)
 
+    def error_1(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Invalid Input(s)")
+        self.lbl_pass.setText("Invalid Input(s)")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
+    def error_2(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Email Not Found In Database")
+        self.lbl_pass.setText("Email Not Found In Database")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
+    def error_3(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Invalid Code")
+        self.lbl_pass.setText("Invalid Code")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
+    def error_4(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Passwords Must Match")
+        self.label_19.setText("Passwords Must Match")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
+class Chart(QMainWindow):
+    def __init__(self):
+        QWidget.__init__(self)
+        self.setupUi(self)
 
     def loading(self):
         msg = QMessageBox()
