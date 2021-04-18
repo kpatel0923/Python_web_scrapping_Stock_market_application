@@ -20,6 +20,7 @@ class Signup(QMainWindow):
         self.lineEdit_email_2.clear()
         self.lineEdit_password_2.clear()
         self.lineEdit_password_3.clear()
+        self.label_home_3.clear()
 
     def addNewUser(self):
         user_first = self.lineEdit_first.text()
@@ -53,8 +54,4 @@ class Signup(QMainWindow):
             actions.DATABASE(f" insert into users (email, first, last, password) values ( '{user_email}' , '{user_first}' , '{user_last}', '{user_password}' )  ")
             self.stackedWidget.setCurrentWidget(self.quiz_page)
             print(all_emails)
-
-    def quizScore(self):
-        user_first = self.lineEdit_first.text()
-        print(quiz_Buttons.score())
 

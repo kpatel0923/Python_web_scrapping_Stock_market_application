@@ -92,6 +92,7 @@ class Login(QMainWindow):
     def clear(self):
         self.lineEdit_email.clear()
         self.lineEdit_password.clear()
+        self.label_home.clear()
 
     def handleLogin(self):
         email = self.lineEdit_email.text()

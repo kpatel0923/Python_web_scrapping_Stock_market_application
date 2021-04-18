@@ -26,7 +26,6 @@ class MainApp(QMainWindow, ui):
         common_Buttons.home_screen(self)
         common_Buttons.login_screen(self)
         common_Buttons.signup_screen(self)
-        common_Buttons.test(self)
         common_Buttons.refresh(self)
 
         #The Login buttoms are listed here
@@ -47,6 +46,7 @@ class MainApp(QMainWindow, ui):
         user_Buttons_actions.what_if(self)
         user_Buttons_actions.top_stocks(self)
         user_Buttons_actions.info(self)
+        user_Buttons_actions.top_stocks(self)
 
 
 
