@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1639</width>
-    <height>1015</height>
+    <width>1393</width>
+    <height>894</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,42 +51,7 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">*{
-	font-family:century gothic;
-	fontsize:24px;
-}
-
-QFrame
-{
-	background:rgba(0,0,0,0.7);
-	border-radius:15px;
-	
-	
-}
-
-*{
-	
-}
-
-
-QLabel
-{
-	color:white;
-	background: transparent;
-}
-
-
-
-QLineEdit
-{
-	background:transparent;
-	border:none;
-	color: rgb(15, 15, 15);
-	border-bottom:1px solid  rgb(35, 35, 35);
-}
-
-
-
+       <string notr="true">background:rgba(0,0,0,0.7);
 </string>
       </property>
       <property name="frameShape">
@@ -148,6 +113,9 @@ QLineEdit
           <property name="contextMenuPolicy">
            <enum>Qt::NoContextMenu</enum>
           </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="styleSheet">
            <string notr="true">border-radius: 0px;
 </string>
@@ -162,7 +130,7 @@ QLineEdit
           <property name="iconSize">
            <size>
             <width>110</width>
-            <height>120</height>
+            <height>250</height>
            </size>
           </property>
          </widget>
@@ -173,11 +141,16 @@ QLineEdit
          <property name="font">
           <font>
            <family>century gothic</family>
-           <pointsize>24</pointsize>
+           <pointsize>25</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
          <property name="text">
-          <string>Trading with a budget</string>
+          <string>Trading with a Budget</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -189,7 +162,7 @@ QLineEdit
          <property name="font">
           <font>
            <family>century gothic</family>
-           <pointsize>12</pointsize>
+           <pointsize>14</pointsize>
           </font>
          </property>
          <property name="cursor">
@@ -290,7 +263,9 @@ QPushButton:hover {
                    <property name="font">
                     <font>
                      <family>century gothic</family>
-                     <pointsize>22</pointsize>
+                     <pointsize>21</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -324,7 +299,7 @@ QPushButton:hover {
                    <property name="font">
                     <font>
                      <family>century gothic</family>
-                     <pointsize>18</pointsize>
+                     <pointsize>17</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -334,11 +309,13 @@ QPushButton:hover {
 </string>
                    </property>
                    <property name="text">
-                    <string>Recommends stocks based on your investment style
-Take the questionnaire to find out your risk levels in terms of investing in stocks</string>
+                    <string>Recommends stocks based on your investment style. Take the questionnaire to find out your risk levels in terms of investing in stocks</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
                    </property>
                   </widget>
                  </item>
@@ -409,7 +386,9 @@ image: url(:/images/stock_icon_small.png);
                    <property name="font">
                     <font>
                      <family>century gothic</family>
-                     <pointsize>22</pointsize>
+                     <pointsize>21</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -443,7 +422,7 @@ image: url(:/images/stock_icon_small.png);
                    <property name="font">
                     <font>
                      <family>century gothic</family>
-                     <pointsize>18</pointsize>
+                     <pointsize>17</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -457,6 +436,9 @@ image: url(:/images/stock_icon_small.png);
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
                    </property>
                   </widget>
                  </item>
@@ -527,7 +509,9 @@ image: url(:/images/piggy_bank_icon_small.png);
                    <property name="font">
                     <font>
                      <family>century gothic</family>
-                     <pointsize>22</pointsize>
+                     <pointsize>21</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -561,7 +545,7 @@ image: url(:/images/piggy_bank_icon_small.png);
                    <property name="font">
                     <font>
                      <family>century gothic</family>
-                     <pointsize>18</pointsize>
+                     <pointsize>17</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -575,6 +559,9 @@ image: url(:/images/piggy_bank_icon_small.png);
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
                    </property>
                   </widget>
                  </item>

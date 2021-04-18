@@ -19,15 +19,8 @@ class MainApp(QMainWindow, ui):
         self.setupUi(self)
         title = "Trading with a Budget"
         self.setWindowTitle(title)
-
-
-        #Timer for the Indcies
-        #self.timer = QTimer(self)
-        #self.timer.timeout.connect(self.updateLabels)
-        #self.timer.start(5000)
-
-        #This is called to install any packages that a new user might be missing
-
+        self.btn_home.setToolTip(
+            "<html><head/><body><p><span style=\" color:#ffffff;\">Home</span></p></body></html>")
 
         #The common buttons to navigate the pages
         common_Buttons.home_screen(self)

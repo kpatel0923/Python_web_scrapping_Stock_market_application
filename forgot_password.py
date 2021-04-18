@@ -48,6 +48,7 @@ class Password(QMainWindow):
 
         else:
             # Email sender
+            self.lbl_pass.setText("Sending Email")
             Password.valid_code = Password.random_code(self)
             send_email(Password.valid_code, Password.email)
             self.lineEdit_code.setEnabled(True)
@@ -82,7 +83,6 @@ class Password(QMainWindow):
 
     def random_code(self):
         x = random.randint(1000, 9999)
-
         return x
 
 
