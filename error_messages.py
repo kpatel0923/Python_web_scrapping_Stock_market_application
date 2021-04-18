@@ -21,6 +21,7 @@ class Login_Messages(QMainWindow):
         msg = QMessageBox()
         msg.setWindowTitle("Error!")
         msg.setText("Invalid Input(s)")
+        self.label_home.setText("Invalid Input(s). Try again")
         # msg.setStandardButtons(msg.NoButton)
         x = msg.exec_()
 

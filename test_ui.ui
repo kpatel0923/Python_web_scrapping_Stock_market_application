@@ -96,6 +96,18 @@ QLineEdit
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
         <widget class="QFrame" name="frame">
          <property name="styleSheet">
@@ -118,9 +130,17 @@ QLineEdit
            <rect>
             <x>30</x>
             <y>0</y>
-            <width>111</width>
+            <width>141</width>
             <height>61</height>
            </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>century gothic</family>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
           </property>
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
@@ -141,8 +161,8 @@ QLineEdit
           </property>
           <property name="iconSize">
            <size>
-            <width>100</width>
-            <height>90</height>
+            <width>110</width>
+            <height>120</height>
            </size>
           </property>
          </widget>
@@ -225,7 +245,7 @@ QPushButton:hover {
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="home_page">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -415,91 +435,7 @@ QLineEdit
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QGridLayout" name="gridLayout">
-                 <item row="0" column="0">
-                  <widget class="QLineEdit" name="lineEdit_email">
-                   <property name="maximumSize">
-                    <size>
-                     <width>500</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <family>century gothic</family>
-                     <pointsize>20</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);
-border:1px solid  rgb(255, 255, 255);
-border-radius: 12px;
-</string>
-                   </property>
-                   <property name="placeholderText">
-                    <string>Email</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0">
-                  <widget class="QPushButton" name="btn_username">
-                   <property name="maximumSize">
-                    <size>
-                     <width>500</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <family>century gothic</family>
-                     <pointsize>9</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton
-{
-	background: transparent;
-	color: rgb(255, 255, 255);
-}
-
-QPushButton:hover {
-	color: rgb(0, 170, 255);
-}
-</string>
-                   </property>
-                   <property name="text">
-                    <string>Forgot username</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="2" column="0">
-                  <widget class="QLineEdit" name="lineEdit_password">
-                   <property name="maximumSize">
-                    <size>
-                     <width>500</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <family>century gothic</family>
-                     <pointsize>20</pointsize>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);
-border:1px solid  rgb(255, 255, 255);
-border-radius: 12px;
-</string>
-                   </property>
-                   <property name="echoMode">
-                    <enum>QLineEdit::Password</enum>
-                   </property>
-                   <property name="placeholderText">
-                    <string>Password</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="0">
                   <widget class="QPushButton" name="btn_password">
                    <property name="maximumSize">
                     <size>
@@ -531,6 +467,54 @@ QPushButton:hover {
                   </widget>
                  </item>
                  <item row="4" column="0">
+                  <widget class="QLabel" name="label_12">
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">	background:rgba(0,0,0,00);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Dont Have an Account with us? Create one today!</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLineEdit" name="lineEdit_password">
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>century gothic</family>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
+</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
                   <widget class="QPushButton" name="btn_login">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -575,27 +559,32 @@ QPushButton:hover
                    </property>
                   </widget>
                  </item>
-                 <item row="5" column="0">
-                  <widget class="QLabel" name="label_12">
+                 <item row="0" column="0">
+                  <widget class="QLineEdit" name="lineEdit_email">
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="font">
                     <font>
                      <family>century gothic</family>
-                     <pointsize>15</pointsize>
+                     <pointsize>20</pointsize>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">	background:rgba(0,0,0,00);
+                    <string notr="true">color: rgb(255, 255, 255);
+border:1px solid  rgb(255, 255, 255);
+border-radius: 12px;
 </string>
                    </property>
-                   <property name="text">
-                    <string>Dont Have an Account with us? Create one today!</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
+                   <property name="placeholderText">
+                    <string>Email</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="6" column="0">
+                 <item row="5" column="0">
                   <widget class="QPushButton" name="btn_signup">
                    <property name="minimumSize">
                     <size>
@@ -647,6 +636,9 @@ QPushButton:hover
                 </property>
                 <property name="text">
                  <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
                 </property>
                </widget>
               </item>
@@ -1772,7 +1764,7 @@ QPushButton:hover
 background-color: rgb(9, 9, 9);</string>
                           </property>
                           <property name="text">
-                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Welcome to the Stock &amp;amp; Budget Planner Quiz! This quiz will estimate &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;your risk tolerance with an eleven question assessment. After &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;answering and submitting your answers, results will return showing &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;whether you are generally conservative, moderate, or aggressive &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;pertaining to your financial habits. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;A maximum score of 47 would indicate you may have aggressive &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;financial tendancies, while receiving 11 points may show a more &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;conservative mindset with your money.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Enjoy! &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Welcome to the Stock &amp;amp; Budget Planner Quiz! This quiz will estimate &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;your risk tolerance with an eleven question assessment. After &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;answering and submitting your answers, results will return showing &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;whether you are generally conservative, moderate, or aggressive &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;pertaining to your financial habits. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;A maximum score of 47 would indicate you may have aggressive &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;financial tendancies, while receiving 11 points may show a more &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;conservative mindset with your money.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Enjoy! &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignCenter</set>
@@ -1914,9 +1906,19 @@ QPushButton:hover
                      </property>
                      <item>
                       <widget class="QFrame" name="frame_31">
+                       <property name="font">
+                        <font>
+                         <family>MS Shell Dlg 2</family>
+                         <pointsize>18</pointsize>
+                         <weight>50</weight>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -1929,7 +1931,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_5">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -1947,7 +1953,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q1_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -1959,7 +1969,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q1_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -1971,7 +1985,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q1_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -1983,7 +2001,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q1_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -1995,7 +2017,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q1_E">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2140,7 +2166,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_34">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -2153,7 +2180,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_6">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -2171,7 +2202,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q2_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2183,7 +2218,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q2_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2195,7 +2234,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q2_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2207,7 +2250,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q2_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2219,7 +2266,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q2_E">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2364,7 +2415,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_37">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -2377,7 +2429,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_7">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -2395,7 +2451,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q3_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2407,7 +2467,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q3_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2419,7 +2483,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q3_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2431,7 +2499,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q3_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2576,7 +2648,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_40">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -2589,7 +2662,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_8">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -2607,7 +2684,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q4_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2619,7 +2700,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q4_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2631,7 +2716,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q4_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2750,6 +2839,9 @@ QPushButton:hover
                  <layout class="QVBoxLayout" name="verticalLayout_39">
                   <item>
                    <widget class="QFrame" name="frame_42">
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
                     <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
                     </property>
@@ -2776,7 +2868,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_43">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -2789,7 +2882,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_9">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -2807,7 +2904,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q5_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2819,7 +2920,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q5_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2831,7 +2936,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q5_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -2976,7 +3085,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_46">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -2989,7 +3099,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_10">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -3007,7 +3121,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q6_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3019,7 +3137,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q6_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3031,7 +3153,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q6_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3043,7 +3169,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q6_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3188,7 +3318,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_49">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -3201,7 +3332,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_21">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -3219,7 +3354,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q7_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3231,7 +3370,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q7_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3243,7 +3386,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q7_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3255,7 +3402,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q7_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3267,7 +3418,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q7_E">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3412,7 +3567,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_52">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -3425,7 +3581,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_24">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -3443,7 +3603,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q8_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3455,7 +3619,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q8_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3467,7 +3635,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q8_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3479,7 +3651,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q8_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3491,7 +3667,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q8_E">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3636,7 +3816,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_55">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -3649,7 +3830,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_25">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -3667,7 +3852,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q9_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3679,7 +3868,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q9_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3691,7 +3884,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q9_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3703,7 +3900,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q9_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3715,7 +3916,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q9_E">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3860,7 +4065,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_58">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -3873,7 +4079,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_26">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -3891,7 +4101,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q10_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3903,7 +4117,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q10_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3915,7 +4133,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q10_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -3927,7 +4149,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q10_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -4072,7 +4298,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_61">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -4085,7 +4312,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_27">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -4103,7 +4334,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q11_A">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -4115,7 +4350,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q11_B">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -4127,7 +4366,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q11_C">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -4139,7 +4382,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QRadioButton" name="Q11_D">
                           <property name="font">
                            <font>
-                            <pointsize>11</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="text">
@@ -4284,7 +4531,8 @@ QPushButton:hover
                       <widget class="QFrame" name="frame_64">
                        <property name="styleSheet">
                         <string notr="true">background:rgba(0,0,0,0);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -4297,7 +4545,11 @@ color: rgb(255, 255, 255);</string>
                          <widget class="QLabel" name="label_31">
                           <property name="font">
                            <font>
-                            <pointsize>15</pointsize>
+                            <family>MS Shell Dlg 2</family>
+                            <pointsize>18</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
                            </font>
                           </property>
                           <property name="styleSheet">
@@ -6399,8 +6651,7 @@ QPushButton:hover
                                        </font>
                                       </property>
                                       <property name="styleSheet">
-                                       <string notr="true">color: rgb(255, 255, 255);
-	background:rgba(0,0,0,0);
+                                       <string notr="true">color: rgb(255, 0, 0);	background:rgba(0,0,0,0);
 
 </string>
                                       </property>
@@ -6467,8 +6718,7 @@ QPushButton:hover
                                        </font>
                                       </property>
                                       <property name="styleSheet">
-                                       <string notr="true">color: rgb(255, 255, 255);
-	background:rgba(0,0,0,0);
+                                       <string notr="true">color: rgb(0, 255, 0);	background:rgba(0,0,0,0);
 
 </string>
                                       </property>
