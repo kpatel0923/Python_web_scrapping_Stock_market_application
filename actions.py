@@ -43,9 +43,6 @@ class common_Buttons(QMainWindow):
         # PAGE signup
         self.btn_signup.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.signup_page))
 
-    def refresh(self):
-        # Refreshes the indices quotes
-        self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
 
 
 
@@ -123,6 +120,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_p2.clicked.connect(lambda: self.stackedWidget_4.setCurrentWidget(self.tops))
 
     def indicies(self):
+        self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
         self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, 'DJI'))
         self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^GSPC'))
         self.btn_NAS.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^IXIC'))

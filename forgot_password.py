@@ -38,6 +38,14 @@ class Password(QMainWindow):
         QMainWindow.__init__(self)
         self.setupUi(self)
 
+    def clear(self):
+        self.lineEdit_email_send.clear()
+        self.lineEdit_code.clear()
+        self.lineEdit_pass.clear()
+        self.lineEdit_pass_2.clear()
+        self.label_19.clear()
+        self.lbl_pass.clear()
+
     def handleSend(self):
         Password.email = self.lineEdit_email_send.text()
 
@@ -67,6 +75,7 @@ class Password(QMainWindow):
                 ForgotPass_Messages.error_3(self)
             else:
                 self.stackedWidget.setCurrentWidget(self.password_reset_page)
+                Password.clear(self)
         else:
             print("Enter valid code")
 
@@ -79,8 +88,10 @@ class Password(QMainWindow):
             actions.DATABASE(f"update users set password = '{password}' where email = '{Password.email}' ")
             if self.btn_login_signup.text() == "Logout":
                 self.stackedWidget.setCurrentWidget(self.user_page)
+                Password.clear(self)
             else:
                 self.stackedWidget.setCurrentWidget(self.login_page)
+                Password.clear(self)
 
         else:
             print("Passwords must match")
