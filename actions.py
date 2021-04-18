@@ -5,7 +5,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import sqlite3
 
-#files
+# files
 from quiz import *
 from login import *
 from signup import *
@@ -119,7 +119,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_p1.clicked.connect(lambda: self.stackedWidget_4.setCurrentWidget(self.user_tops))
         self.btn_p2.clicked.connect(lambda: self.stackedWidget_4.setCurrentWidget(self.tops))
 
-    def indicies(self):
+    def indices(self):
         self.btn_refresh.clicked.connect(lambda: RealTimeLabel.update_indices(self))
         self.btn_DOW.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, 'DJI'))
         self.btn_SP.clicked.connect(lambda: MatplotlibWidget.update_graph_btn(self, '^GSPC'))
