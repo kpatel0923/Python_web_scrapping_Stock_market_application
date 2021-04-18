@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import *
 #files
 import actions
 from quiz import *
+from error_messages import *
 
 class Signup(QMainWindow):
     def __init__(self):
@@ -32,15 +33,20 @@ class Signup(QMainWindow):
 
         if not (user_first.isalpha() and user_last.isalpha() and user_password.isalnum() and user_retype.isalnum()):
             print("Invalid input(s) *")
+            Signup_Messages.error_0(self)
 
         elif not re.search("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" , user_email):
-            print('Email bad')
+            print('Invalid Email')
+            Signup_Messages.error_1(self)
 
         elif user_password != user_retype:
             print("Passwords do not match")
+            Signup_Messages.error_2(self)
 
         elif user_email in [record[0] for record in all_emails]:
             print('Email already exists')
+            Signup_Messages.error_3(self)
+
 
         else:
             print('added')

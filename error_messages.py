@@ -21,7 +21,7 @@ class Login_Messages(QMainWindow):
         msg = QMessageBox()
         msg.setWindowTitle("Error!")
         msg.setText("Invalid Input(s)")
-        self.label_home.setText("Invalid Input(s). Try again")
+        self.label_home.setText("Invalid Input(s), Try again")
         # msg.setStandardButtons(msg.NoButton)
         x = msg.exec_()
 
@@ -41,11 +41,39 @@ class Signup_Messages(QMainWindow):
         # msg.setStandardButtons(msg.NoButton)
         x = msg.exec_()
 
-        # def closing():
+    def error_0(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Invalid Input(s)!")
+        # msg.setStandardButtons(msg.NoButton)
+        self.label_home_3.setText("Invalid Input(s) Please Check Fields")
 
-    #
-    # def close(self):
-    #     Signup_Messages.msg.close()
+        x = msg.exec_()
+
+    def error_1(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Invalid Email!")
+        # msg.setStandardButtons(msg.NoButton)
+        self.label_home_3.setText("Invalid Email")
+
+        x = msg.exec_()
+
+    def error_2(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Passwords Do Not Match!")
+        self.label_home_3.setText("Passwords Do Not Match")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
+    def error_3(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Email Already Exists!")
+        self.label_home_3.setText("Email Already Exists")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
 
 
 class Chart(QMainWindow):
