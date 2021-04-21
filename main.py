@@ -3,13 +3,9 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUiType
-import random
-from indices import *
 
-#files
+# files
 from actions import *
-from quiz import *
-from indices import *
 
 ui,_ = loadUiType('test_ui.ui')
 
@@ -31,22 +27,19 @@ class MainApp(QMainWindow, ui):
         login_Buttons.login(self)
         login_Buttons.reset_pass(self)
 
-
         #The Sign buttons are listed here
         sign_Buttons.signup(self)
 
         #These are the quiz buttons
         quiz_Buttons_actions.navigate(self)
 
-
         #The navigation buttons
         user_Buttons_actions.navigate(self)
-        user_Buttons_actions.indicies(self)
+        user_Buttons_actions.indices(self)
         user_Buttons_actions.what_if(self)
         user_Buttons_actions.top_stocks(self)
         user_Buttons_actions.info(self)
         user_Buttons_actions.top_stocks(self)
-
 
 
 def main():
