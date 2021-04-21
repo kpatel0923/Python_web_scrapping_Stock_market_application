@@ -42,6 +42,7 @@ class common_Buttons(QMainWindow):
     def signup_screen(self):
         # PAGE signup
         self.btn_signup.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.signup_page))
+        self.btn_back_signup.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.login_page))
 
 
 
@@ -111,6 +112,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_budget_info.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.budget_page))
         self.btn_change_password.clicked.connect(lambda: user_Buttons.pass_change(self))
         self.btn_retake.clicked.connect(lambda: user_Buttons.quiz(self))
+        self.btn_delete.clicked.connect(lambda: user_Buttons.delete(self))
 
 
         self.btn_refresh_2.clicked.connect(lambda: user_Buttons_budget.getting_stocks(self))
@@ -135,7 +137,6 @@ class user_Buttons_actions(QMainWindow):
     def top_stocks(self):
         # Testing the chart
         self.btn_submit.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
-        self.btn_1D.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1d'))
         self.btn_1W.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1wk'))
         self.btn_1M.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1mo'))
         self.btn_3M.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '3mo'))

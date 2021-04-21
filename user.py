@@ -28,6 +28,15 @@ class user_Buttons(QMainWindow):
         self.stackedWidget.setCurrentWidget(self.quiz_page)
         self.stackedWidget_3.setCurrentWidget(self.page_3)
 
+    def delete(self):
+        email = self.lineEdit_emailholder.text()
+        print(email)
+        warning = QMessageBox.warning(self, 'Delete', "Are you sure you want to delete?", QMessageBox.Yes | QMessageBox.No)
+        if warning == QMessageBox.Yes:
+            actions.DATABASE(f"delete from users where email = '{email}' ")
+            print('Success')
+            self.stackedWidget.setCurrentWidget(self.home_page)
+
 
 class user_Buttons_budget(QMainWindow):
 
@@ -56,6 +65,7 @@ class user_Buttons_budget(QMainWindow):
 
         expenses = float(e1) + float(e2) + float(e3) + float(e4) + float(e5)
         self.expenses.setText(str(expenses))
+        self.Goal.setText(str(goal))
         actions.DATABASE(f"update users set expenses = '{expenses}' where email = '{email}' ")
         actions.DATABASE(f"update users set account_size = '{acct_size}' where email = '{email}' ")
         actions.DATABASE(f"update users set goal = '{goal}' where email = '{email}' ")
@@ -646,7 +656,7 @@ class user_Buttons_budget(QMainWindow):
                 self.Saved.setText(str(new))
                 print(f"Goal: {goal}, Saved: {new}")
                 per = float(new) / float(goal) * 100
-                if saved >= goal:
+                if new >= goal:
                     self.progressBar.setValue(100)
                 else:
                     print(per)
@@ -659,7 +669,7 @@ class user_Buttons_budget(QMainWindow):
                 self.Saved.setText(str(new))
                 print(f"Goal: {goal}, Saved: {new}")
                 per = float(new) / float(goal) * 100
-                if saved <= 0:
+                if new <= 0:
                     self.progressBar.setValue(0)
                 else:
                     print(per)

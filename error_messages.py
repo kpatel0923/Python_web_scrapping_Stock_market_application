@@ -72,6 +72,14 @@ class Signup_Messages(QMainWindow):
         # msg.setStandardButtons(msg.NoButton)
         x = msg.exec_()
 
+    def error_4(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Success!")
+        msg.setText("Thank you for creating a new account! Please login to continue.")
+        self.label_home.setText("Thank you for creating a new account! Please login to continue.")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
 
 class ForgotPass_Messages(QMainWindow):
     def __init__(self):

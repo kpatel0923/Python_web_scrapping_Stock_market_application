@@ -123,12 +123,13 @@ class Login(QMainWindow):
             saved = float(Login.current_user.getSaved())
             goal = float(Login.current_user.getGoal())
 
-            per = float(saved) / float(goal) * 100
-            if saved >= goal:
-                self.progressBar.setValue(100)
-            elif saved <= 0:
+
+            if saved <= 0:
                 self.progressBar.setValue(0)
+            elif saved >= goal:
+                self.progressBar.setValue(100)
             else:
+                per = float(saved) / float(goal) * 100
                 print(per)
                 self.progressBar.setValue(per)
 

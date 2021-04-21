@@ -51,7 +51,6 @@ class Signup(QMainWindow):
         else:
             print('added')
             actions.DATABASE(f" insert into users (email, first, last, password) values ( '{user_email}' , '{user_first}' , '{user_last}', '{user_password}' )  ")
-            Signup.clear(self)
             self.stackedWidget.setCurrentWidget(self.quiz_page)
             print(all_emails)
 
