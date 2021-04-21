@@ -16,6 +16,12 @@ class user_Buttons(QMainWindow):
         self.setupUi(self)
 
 
+    def help(self):
+        if self.btn_login_signup.text() == "Logout":
+            self.stackedWidget.setCurrentWidget(self.user_page)
+        else:
+            self.stackedWidget.setCurrentWidget(self.home_page)
+
     def back_screen(self):
         self.stackedWidget_2.setCurrentWidget(self.chart_page)
         self.stackedWidget_3.setCurrentWidget(self.page_3)
@@ -47,6 +53,7 @@ class user_Buttons_budget(QMainWindow):
         self.setupUi(self)
 
     def income(self):
+        score = self.lineEdit_scoreholder.text()
         email = self.lineEdit_emailholder.text()
         primary = self.lineEdit_primary.text()
         secondary = self.lineEdit_secondary.text()
@@ -66,6 +73,8 @@ class user_Buttons_budget(QMainWindow):
         expenses = float(e1) + float(e2) + float(e3) + float(e4) + float(e5)
         self.expenses.setText(str(expenses))
         self.Goal.setText(str(goal))
+
+
         actions.DATABASE(f"update users set expenses = '{expenses}' where email = '{email}' ")
         actions.DATABASE(f"update users set account_size = '{acct_size}' where email = '{email}' ")
         actions.DATABASE(f"update users set goal = '{goal}' where email = '{email}' ")

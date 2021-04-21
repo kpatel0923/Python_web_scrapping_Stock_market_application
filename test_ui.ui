@@ -61,20 +61,14 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
        <item>
         <widget class="QFrame" name="frame">
+         <property name="maximumSize">
+          <size>
+           <width>320</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">QFrame
 {
@@ -159,6 +153,12 @@
        </item>
        <item>
         <widget class="QPushButton" name="btn_login_signup">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <family>century gothic</family>
@@ -184,6 +184,56 @@ QPushButton:hover {
           <string>Login/Sign up</string>
          </property>
         </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_help">
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>century gothic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background: transparent;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover {
+	color: rgb(0, 170, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Help</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>60</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </widget>
@@ -15666,6 +15716,269 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511364, x2:1, y2:0.523,
                      </widget>
                     </item>
                    </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="help_page">
+          <layout class="QVBoxLayout" name="verticalLayout_86">
+           <item>
+            <widget class="QFrame" name="frame_79">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_44">
+              <property name="spacing">
+               <number>1</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_107">
+                <property name="styleSheet">
+                 <string notr="true">background: rgba(0, 0, 0, 0.5);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_84">
+                 <item>
+                  <widget class="QFrame" name="frame_105">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_48">
+                    <item>
+                     <widget class="QPushButton" name="btn_back_6">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>century gothic</family>
+                        <pointsize>15</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton
+{
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255)
+}
+
+QPushButton:hover
+{
+	
+	
+	background-color: rgb(191, 0, 0);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt; Back</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="lbl_welcome_17">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>century gothic</family>
+                        <pointsize>21</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+	background:rgba(0,0,0,0);
+
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Welcome to the help page!</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea">
+                   <property name="styleSheet">
+                    <string notr="true"> QScrollBar:vertical {
+	border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgba(255, 155, 50, 246);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color:rgba(255, 118, 6, 120);
+
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgba(255, 118, 6, 120);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgba(141, 94, 19, 246);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color: rgba(255, 155, 50, 246);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgba(255, 155, 50, 246);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgba(141, 94, 19, 246);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgba(255, 155, 50, 246);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgba(255, 155, 50, 246);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+
+
+
+</string>
+                   </property>
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>1319</width>
+                      <height>1850</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_68">
+                     <item>
+                      <widget class="QLabel" name="lbl_welcome_18">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>999</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>99999</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>century gothic</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(255, 255, 255);
+	background:rgba(0,0,0,0);
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;a name=&quot;docs-internal-guid-b6d709f0-7fff-d992-9735-d7636530ec85&quot;/&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:24pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;T&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:24pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;rading with a Budget – Help Page&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Home Page&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;This program allows you to create an account and complete a questionnaire. The questionnaire will ask you finance related questions to determine your investing style. After taking the questionnaire, you will be given a score that will place you in a category. From there you can go to the User Page to look up stocks, charts, and view your recommended stocks based on your quiz score.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;This program also features a budgeting tool that allows you to enter your income and expenses to determine how much money you bring in and how much is going out. You can also set a savings goal and frequently update your information to see how much progress you've made.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Quiz&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;This quiz contains 11 questions. Use the Back button to go to the previous question. Use the Next button to go to the next question. You will be taken to the login screen at the end of the quiz. This quiz will determine your investing style such as your risk tolerance. After taking this quiz, you will receive personalized stocks based on your quiz score. These stocks are updated throughout the day and are taken from Yahoo Finance! and Finviz.com&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Trading with a Budget Chart Page&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;Within the “Enter Symbol” text field, type a known stock symbol and click the “Submit” button. The chart and relevant data will be displayed. Below the stock summary, the buttons “Expand”, and “Collapse” are shown. These buttons will display the full summary or reduce the company profile to an abbreviated summary, respectively. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; font-style:italic; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Indices &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;The major indices will be shown after the “Refresh” button is clicked. The “Indices” table will update only after the user clicks the “Refresh” button and will not update automatically.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; font-style:italic; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Top Stocks &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;The “Top Stocks” table shows eight stocks most relevant to the logged in user. These stocks are evaluated based off the user’s quiz results. The “Refresh” button will update the list; one or more stocks will be replaced. The “More” button will direct the user to the “Stonks Page” – See &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; font-style:italic; color:#ffffff; background-color:transparent;&quot;&gt;Stonks Page&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; font-style:italic; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Account Settings &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;Account Settings page gives the logged in user the ability to change or update their data – See &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; font-style:italic; color:#ffffff; background-color:transparent;&quot;&gt;Account Settings Page&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; font-style:italic; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;What If Tool&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;The “What If Tool” Button will direct the user to a page displaying various input fields for research – See &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; font-style:italic; color:#ffffff; background-color:transparent;&quot;&gt;What if Tool Page.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; font-style:italic; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Cash Flow &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;Calculates the user’s monthly income and expenses – See &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; font-style:italic; color:#ffffff; background-color:transparent;&quot;&gt;Account Settings Page.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; font-style:italic; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Money Saved &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;Shows the amount of money saved towards the user goal with progress bar – See &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; font-style:italic; color:#ffffff; background-color:transparent;&quot;&gt;Account Settings Page.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Stonks Page&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;The Stonks Page shows the Top Gainers, Top Losers, User Preferences, and Volume Leaders. Each heading displays the top ten stocks with the stock’s symbol, company name, and respective percentage gain or loss.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;The User Preferences table is an iteration of what is shown on the Top Stocks table from the Trading with a Budget Page.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;Account Settings Page&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;Account Settings page gives the logged in user the ability to change their password, personal information (first name, last name, email address), retake the quiz, or delete their account. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;The “Budget Info” page allows the user to input respective monthly income and expenses. “Profits/Loses” will update any gains or lose incurred with stock trades within the Cash Flow and Money Saved tables. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; text-decoration: underline; color:#ffffff; background-color:transparent;&quot;&gt;What If Page&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;The What If Page allows the user to input a stock symbol. Fields to the right will display the Current Price. Additional input values give the user the ability to enter the number of shares one would like to purchase and a price target for the stock. Once those values are Submitted, the remaining fields will show the Cost to purchase the number of shares and the percentage with the recorded target price.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; color:#ffffff; background-color:transparent;&quot;&gt;Below, a table shows relative percentage increments from the current share price. Much like using standard deviations or Fibonacci ratios, a user can choose a percentage of risk that a stock may experience and perform the appropriate trade once that condition occurs.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                       </property>
+                       <property name="wordWrap">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
                   </widget>
                  </item>
                 </layout>

@@ -34,6 +34,8 @@ class common_Buttons(QMainWindow):
     def home_screen(self):
         # PAGE home
         self.btn_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home_page))
+        self.btn_help.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.help_page))
+        self.btn_back_6.clicked.connect(lambda: user_Buttons.help(self))
 
     def login_screen(self):
         # PAGE login
