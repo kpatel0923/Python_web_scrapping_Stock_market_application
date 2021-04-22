@@ -81,40 +81,28 @@ class MatplotlibWidget(QMainWindow):
         else:
             self.frame_116.setEnabled(False)
             self.loading.setText("")
-            self.lbl_name.clear()
-            self.lbl_exchange.clear()
-            self.lbl_sector.clear()
-            self.lbl_industry.clear()
-            self.lbl_ask.clear()
-            self.lbl_bid.clear()
-            self.lbl_open.clear()
-            self.lbl_close.clear()
-            self.lbl_yield.clear()
-            self.lbl_pe.clear()
-            self.lbl_tenvol.clear()
-            self.lbl_vol.clear()
-            self.lbl_summary.clear()
+            self.lbl_name.setText("....")
+            self.lbl_exchange.setText("....")
+            self.lbl_sector.setText("....")
+            self.lbl_industry.setText("....")
+            self.lbl_ask.setText("....")
+            self.lbl_bid.setText("....")
+            self.lbl_open.setText("....")
+            self.lbl_close.setText("....")
+            self.lbl_yield.setText("....")
+            self.lbl_pe.setText("....")
+            self.lbl_tenvol.setText("....")
+            self.lbl_vol.setText("....")
+            self.lbl_summary.setText("....")
 
 
     def update_graph(self, stockPeriod):
         self.loading.setText("Loading")
         Chart.loading(self)
-        # self.statusbar = self.statusBar()
-        # self.statusbar.showMessage("Loading", 3000)
-
-        # self.loading_screen = LoadingScreen()
-        # self.movie = QMovie("giphy.gif")
-        # self.loading.setMovie(self.movie)
-        # self.movie.start()
         self.frame_116.setEnabled(True)
 
         if self.loading.text() == "Loading":
             MatplotlibWidget.chart(self, stockPeriod)
-
-        # Signup_Messages.close(self)
-
-            # self.loading_screen = LoadingScreen.closes(self)
-
 
 
     def update_graph_time(self, stockPeriod):
@@ -198,19 +186,19 @@ class MatplotlibWidget(QMainWindow):
         else:
             self.frame_116.setEnabled(False)
             self.loading.setText("")
-            self.lbl_name.clear()
-            self.lbl_exchange.clear()
-            self.lbl_sector.clear()
-            self.lbl_industry.clear()
-            self.lbl_ask.clear()
-            self.lbl_bid.clear()
-            self.lbl_open.clear()
-            self.lbl_close.clear()
-            self.lbl_yield.clear()
-            self.lbl_pe.clear()
-            self.lbl_tenvol.clear()
-            self.lbl_vol.clear()
-            self.lbl_summary.clear()
+            self.lbl_name.setText("....")
+            self.lbl_exchange.setText("....")
+            self.lbl_sector.setText("....")
+            self.lbl_industry.setText("....")
+            self.lbl_ask.setText("....")
+            self.lbl_bid.setText("....")
+            self.lbl_open.setText("....")
+            self.lbl_close.setText("....")
+            self.lbl_yield.setText("....")
+            self.lbl_pe.setText("....")
+            self.lbl_tenvol.setText("....")
+            self.lbl_vol.setText("....")
+            self.lbl_summary.setText("....")
 
 
     def more(self):

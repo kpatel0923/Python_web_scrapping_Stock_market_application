@@ -8,6 +8,7 @@ import re
 #files
 import actions
 from error_messages import *
+from user import *
 
 
 class User:
@@ -86,8 +87,12 @@ class Login(QMainWindow):
         self.setupUi(self)
 
     def loginPage(self):
-        self.stackedWidget.setCurrentWidget(self.login_page)
-        self.btn_login_signup.setText("Login/Sign up")
+        if self.btn_login_signup.text() == "Logout":
+            user_Buttons_budget.logout(self)
+
+        else:
+            self.stackedWidget.setCurrentWidget(self.login_page)
+
 
     def clear(self):
         self.lineEdit_email.clear()
