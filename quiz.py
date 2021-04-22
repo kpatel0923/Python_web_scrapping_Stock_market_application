@@ -69,6 +69,7 @@ class quiz_Buttons(QMainWindow):
             actions.DATABASE(f"update users set q6 = '{quiz_Buttons.score_6}' where email = '{user_email}' ")
             print(quiz_Buttons.total)
             self.lineEdit_scoreholder.setText(str(quiz_Buttons.total))
+            self.stackedWidget_quiz.setCurrentWidget(self.page_1)
             self.stackedWidget.setCurrentWidget(self.user_page)
         else:
             user_email = self.lineEdit_email_2.text()
@@ -78,6 +79,7 @@ class quiz_Buttons(QMainWindow):
             print(quiz_Buttons.total)
             Signup.clear(self)
             Signup_Messages.error_4(self)
+            self.stackedWidget_quiz.setCurrentWidget(self.page_1)
             self.stackedWidget.setCurrentWidget(self.login_page)
 
 
@@ -119,7 +121,6 @@ class quiz_Buttons(QMainWindow):
             quiz_Buttons.score_2 = 1
         self.stackedWidget_quiz.setCurrentWidget(self.Q_3)
         print("2", quiz_Buttons.score_2)
-
 
     def Q_3(self):
         if self.Q3_A.isChecked():

@@ -9,6 +9,7 @@ import testgraph
 from chart import *
 
 
+
 class user_Buttons(QMainWindow):
 
     def __init__(self):
@@ -37,11 +38,17 @@ class user_Buttons(QMainWindow):
     def delete(self):
         email = self.lineEdit_emailholder.text()
         print(email)
-        warning = QMessageBox.warning(self, 'Delete', "Are you sure you want to delete?", QMessageBox.Yes | QMessageBox.No)
-        if warning == QMessageBox.Yes:
-            actions.DATABASE(f"delete from users where email = '{email}' ")
-            print('Success')
-            self.stackedWidget.setCurrentWidget(self.home_page)
+        self.stackedWidget_3.setCurrentWidget(self.delete_page)
+        # warning = QMessageBox.warning(self, 'Delete', "Are you sure you want to delete?", QMessageBox.Yes | QMessageBox.No)
+        # if warning == QMessageBox.Yes:
+        self.btn_yes.clicked.connect(lambda: user_Buttons.delete_commands(self))
+        self.btn_no.clicked.connect(lambda: self.stackedWidget_3.setCurrentWidget(self.page_3))
+
+    def delete_commands(self):
+        email = self.lineEdit_emailholder.text()
+        actions.DATABASE(f"delete from users where email = '{email}' ")
+        print('Success')
+        user_Buttons_budget.logout(self)
 
 
 class user_Buttons_budget(QMainWindow):
@@ -71,6 +78,7 @@ class user_Buttons_budget(QMainWindow):
         goal = self.lineEdit_goal.text()
 
         expenses = float(e1) + float(e2) + float(e3) + float(e4) + float(e5)
+
         self.expenses.setText(str(expenses))
         self.Goal.setText(str(goal))
 
@@ -1046,7 +1054,6 @@ class user_Buttons_budget(QMainWindow):
         self.label_percent_2_8.setText("....")
         self.label_percent_2_9.setText("....")
 
-
     def logout(self):
             # Resetting default pages
             self.stackedWidget.setCurrentWidget(self.login_page)
@@ -1113,4 +1120,3 @@ class user_Buttons_budget(QMainWindow):
             user_Buttons_budget.clear_more(self)
 
             self.btn_login_signup.setText("Login/Sign up")
-
