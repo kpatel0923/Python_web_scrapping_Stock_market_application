@@ -255,16 +255,6 @@ class quiz_Buttons(QMainWindow):
         print("The total score is: ", quiz_Buttons.total)
         self.lcdNumber_13.display(quiz_Buttons.total)
 
-
-
-#
-    # def reset_Q_1(self):
-    #     quiz_Buttons.score_1 = 0
-    #     self.stackedWidget_quiz.setCurrentWidget(self.page_1)
-
-
-
-
     def process(self):
         score_list = [quiz_Buttons.score_1, quiz_Buttons.score_2, quiz_Buttons.score_3, quiz_Buttons.score_4, quiz_Buttons.score_5, quiz_Buttons.score_6, quiz_Buttons.score_7, quiz_Buttons.score_8, quiz_Buttons.score_9, quiz_Buttons.score_10, quiz_Buttons.score_11]
         print(score_list)
@@ -299,59 +289,3 @@ class quiz_Buttons(QMainWindow):
 
 
         # print(score_list)
-
-
-
-
-#
-# def Q_1(self):
-#     quiz_Buttons.score_1 = 0
-#     if self.Q1_A.isChecked():
-#         quiz_Buttons.score_1 += 10
-#         print(quiz_Buttons.score_1)
-#         self.stackedWidget_quiz.setCurrentWidget(self.Q_2)
-#     elif self.Q1_B.isChecked():
-#         quiz_Buttons.score_1 += 20
-#         print(quiz_Buttons.score_1)
-#         self.stackedWidget_quiz.setCurrentWidget(self.Q_2)
-#     elif self.Q1_C.isChecked():
-#         quiz_Buttons.score_1 += 30
-#         print(quiz_Buttons.score_1)
-#         self.stackedWidget_quiz.setCurrentWidget(self.Q_2)
-#     elif self.Q1_D.isChecked():
-#         quiz_Buttons.score_1 += 40
-#         print(quiz_Buttons.score_1)
-#         self.stackedWidget_quiz.setCurrentWidget(self.Q_2)
-#     elif self.Q1_E.isChecked():
-#         quiz_Buttons.score_1 += 50
-#         print(quiz_Buttons.score_1)
-#         self.stackedWidget_quiz.setCurrentWidget(self.Q_2)
-#
-#
-# def reset_Q_1(self):
-#     quiz_Buttons.score_1 = 0
-#     self.stackedWidget_quiz.setCurrentWidget(self.page_1)
-
-#
-
-
-# if text in ['10', '20', '30', '40']:
-#     if radioBtn.isChecked()
-#         quiz_Buttons.score_1 += quiz_Buttons.TEST[text]
-#
-# elif name == 'scores_2':
-#     pass
-#
-# elif name == 'scores_3':
-#     pass
-#
-# elif name == 'scores_4':
-#     pass
-# # 0 create a translator to translate records into values.
-# # 1 add it to global record
-# # 2 translate values from global record into values
-#         radioBtn = self.sender()
-#         text = radioBtn.text()
-#         self.Q1_A.toggled.connect
-#         # if radioBtn.isChecked():
-#         #     self.label2.setText("You live in " + radioBtn.text())

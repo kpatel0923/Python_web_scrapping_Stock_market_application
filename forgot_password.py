@@ -11,8 +11,8 @@ def send_email(code,user_email):
     # Email sender
     print("sending")
 
-    password = "Veerbest23"
-    sender = "bobdoe945@gmail.com"
+    password = "Teamafk123"
+    sender = "team2afk@gmail.com"
     rec = user_email
 
     SUBJECT = "Reset Password test"
@@ -59,11 +59,12 @@ class Password(QMainWindow):
 
         else:
             # Email sender
-            self.lbl_pass.setText("Sending Email")
+            ForgotPass_Messages.error_5(self)
             Password.valid_code = Password.random_code(self)
             send_email(Password.valid_code, Password.email)
             self.lineEdit_code.setEnabled(True)
             self.btn_continue.setEnabled(True)
+            self.lbl_pass.setText("Email Sent")
 
     def code(self):
         code = self.lineEdit_code.text()
@@ -76,6 +77,8 @@ class Password(QMainWindow):
             else:
                 self.stackedWidget.setCurrentWidget(self.password_reset_page)
                 Password.clear(self)
+                self.lineEdit_code.setEnabled(False)
+                self.btn_continue.setEnabled(False)
         else:
             print("Enter valid code")
 
@@ -89,9 +92,13 @@ class Password(QMainWindow):
             if self.btn_login_signup.text() == "Logout":
                 self.stackedWidget.setCurrentWidget(self.user_page)
                 Password.clear(self)
+                self.lineEdit_code.setEnabled(False)
+                self.btn_continue.setEnabled(False)
             else:
                 self.stackedWidget.setCurrentWidget(self.login_page)
                 Password.clear(self)
+                self.lineEdit_code.setEnabled(False)
+                self.btn_continue.setEnabled(False)
 
         else:
             print("Passwords must match")
@@ -105,5 +112,11 @@ class Password(QMainWindow):
     def screen(self):
         if self.btn_login_signup.text() == "Logout":
             self.stackedWidget.setCurrentWidget(self.user_page)
+            Password.clear(self)
+            self.lineEdit_code.setEnabled(False)
+            self.btn_continue.setEnabled(False)
         else:
             self.stackedWidget.setCurrentWidget(self.login_page)
+            Password.clear(self)
+            self.lineEdit_code.setEnabled(False)
+            self.btn_continue.setEnabled(False)
