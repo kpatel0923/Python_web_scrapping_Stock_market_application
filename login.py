@@ -110,12 +110,12 @@ class Login(QMainWindow):
 
         elif not re.search("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" , email):
             #print('Invalid input(s)')
-            Login_Messages.error(self)
+            Login_Messages.error_2(self)
 
 
         elif not person:
             #print("Invalid login")
-            Login_Messages.error(self)
+            Login_Messages.error_3(self)
 
 
         else:

@@ -138,7 +138,7 @@ class user_Buttons_actions(QMainWindow):
 
     def top_stocks(self):
         # Testing the chart
-        self.btn_submit.clicked.connect(lambda: MatplotlibWidget.update_graph(self, '1y'))
+        self.btn_submit.clicked.connect(lambda: MatplotlibWidget.chart(self, '1y'))
         self.btn_1W.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1wk'))
         self.btn_1M.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '1mo'))
         self.btn_3M.clicked.connect(lambda: MatplotlibWidget.update_graph_time(self, '3mo'))

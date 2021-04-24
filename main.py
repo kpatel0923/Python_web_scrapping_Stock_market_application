@@ -39,8 +39,6 @@ class MainApp(QMainWindow, ui):
         user_Buttons_actions.what_if(self)
         user_Buttons_actions.top_stocks(self)
         user_Buttons_actions.info(self)
-        user_Buttons_actions.top_stocks(self)
-
 
 def main():
     app = QApplication(sys.argv)

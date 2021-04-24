@@ -25,6 +25,22 @@ class Login_Messages(QMainWindow):
         # msg.setStandardButtons(msg.NoButton)
         x = msg.exec_()
 
+    def error_2(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Invalid Email format")
+        self.label_home.setText("Invalid Email format, Try again")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
+    def error_3(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Error!")
+        msg.setText("Credentials does not match database")
+        self.label_home.setText("The credentials you entered does not match our records, Try again")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
 
 class Signup_Messages(QMainWindow):
     def __init__(self):
@@ -138,3 +154,12 @@ class Chart(QMainWindow):
         msg.setText("Loading content!")
         # msg.setStandardButtons(msg.NoButton)
         x = msg.exec_()
+
+    def invalid(self):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Information)
+        msg.setWindowTitle("Invalid Ticker!")
+        msg.setText("Invalid Ticker!")
+        # msg.setStandardButtons(msg.NoButton)
+        x = msg.exec_()
+
