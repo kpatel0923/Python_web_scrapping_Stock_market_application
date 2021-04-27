@@ -162,4 +162,3 @@ class Chart(QMainWindow):
         msg.setText("Invalid Ticker!")
         # msg.setStandardButtons(msg.NoButton)
         x = msg.exec_()
-

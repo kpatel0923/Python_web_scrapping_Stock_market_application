@@ -103,13 +103,6 @@ class MatplotlibWidget(QMainWindow):
             self.loading.setText("Invalid Ticker")
             Chart.invalid(self)
 
-    #
-    # def update_graph(self, stockPeriod):
-    #
-    #     print(1)
-    #     MatplotlibWidget.chart(self, stockPeriod)
-    #     print(2)
-
 
     def update_graph_time(self, stockPeriod):
         stockSymbol = self.lineEdit_symbol.text()

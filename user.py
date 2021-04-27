@@ -7,8 +7,7 @@ import re
 
 import testgraph
 from chart import *
-
-
+from login import *
 
 class user_Buttons(QMainWindow):
 
@@ -60,12 +59,12 @@ class user_Buttons_budget(QMainWindow):
         self.setupUi(self)
 
     def income(self):
-        score = self.lineEdit_scoreholder.text()
         email = self.lineEdit_emailholder.text()
         primary = self.lineEdit_primary.text()
         secondary = self.lineEdit_secondary.text()
         income = float(primary) + float(secondary)
-        self.income.setText(str(income))
+        self.income.setText(str("{:,.2f}".format(income)))
+        self.lineEdit_income.setText(str(income))
         actions.DATABASE(f"update users set income = '{income}' where email = '{email}' ")
 
         e1 = self.lineEdit_rent.text()
@@ -75,17 +74,29 @@ class user_Buttons_budget(QMainWindow):
         e5 = self.lineEdit_other.text()
 
         acct_size = self.lineEdit_acct_size.text()
-        goal = self.lineEdit_goal.text()
+        goal = float(self.lineEdit_goal.text())
 
         expenses = float(e1) + float(e2) + float(e3) + float(e4) + float(e5)
 
-        self.expenses.setText(str(expenses))
-        self.Goal.setText(str(goal))
-
+        self.expenses.setText(str("{:,.2f}".format(expenses)))
+        self.lineEdit_expenses.setText(str(expenses))
+        self.lineEdit_goalholder.setText(str(goal))
+        self.Goal.setText(str("{:,.2f}".format(goal)))
 
         actions.DATABASE(f"update users set expenses = '{expenses}' where email = '{email}' ")
         actions.DATABASE(f"update users set account_size = '{acct_size}' where email = '{email}' ")
         actions.DATABASE(f"update users set goal = '{goal}' where email = '{email}' ")
+
+        saved = float(self.lineEdit_saved.text())
+
+        if saved <= 0:
+            self.progressBar.setValue(0)
+        elif saved >= goal:
+            self.progressBar.setValue(100)
+        else:
+            per = float(saved) / float(goal) * 100
+            print(per)
+            self.progressBar.setValue(per)
 
     def update(self):
         first = self.lineEdit_first_2.text()
@@ -656,8 +667,8 @@ class user_Buttons_budget(QMainWindow):
         profits = self.lineEdit_profits.text()
         loses = self.lineEdit_loses.text()
 
-        saved = float(self.Saved.text())
-        goal = float(self.Goal.text())
+        saved = float(self.lineEdit_saved.text())
+        goal = float(self.lineEdit_goalholder.text())
         print(f"Goal: {goal}, Saved: {saved}")
 
         if profits.isalnum() and loses.isalnum():
@@ -668,7 +679,7 @@ class user_Buttons_budget(QMainWindow):
                 print("profit")
                 new = saved + total
                 actions.DATABASE(f"update users set saved = '{new}' where email = '{email}' ")
-                self.Saved.setText(str(new))
+                self.Saved.setText(str("{:,.2f}".format(new)))
                 print(f"Goal: {goal}, Saved: {new}")
                 per = float(new) / float(goal) * 100
                 if new >= goal:
@@ -681,7 +692,7 @@ class user_Buttons_budget(QMainWindow):
                 print("loss")
                 new = saved + total
                 actions.DATABASE(f"update users set saved = '{new}' where email = '{email}' ")
-                self.Saved.setText(str(new))
+                self.Saved.setText(str("{:,.2f}".format(new)))
                 print(f"Goal: {goal}, Saved: {new}")
                 per = float(new) / float(goal) * 100
                 if new <= 0:
