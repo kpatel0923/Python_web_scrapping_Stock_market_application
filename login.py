@@ -148,14 +148,16 @@ class Login(QMainWindow):
             self.lineEdit_expenses.setText(str(Login.current_user.getExpenses()))
             self.lineEdit_saved.setText(str(Login.current_user.getSaved()))
 
-            self.income.setText(str("{:,.2f}".format(Login.current_user.getIncome())))
-            self.expenses.setText(str("{:,.2f}".format(Login.current_user.getExpenses())))
-            self.Saved.setText(str("{:,.2f}".format(Login.current_user.getSaved())))
-            self.Goal.setText(str("{:,.2f}".format(Login.current_user.getGoal())))
+            self.income.setText("$" + str("{:,.2f}".format(Login.current_user.getIncome())))
+            self.expenses.setText("$" + str("{:,.2f}".format(Login.current_user.getExpenses())))
+            self.Saved.setText("$" + str("{:,.2f}".format(Login.current_user.getSaved())))
+            self.Goal.setText("$" + str("{:,.2f}".format(Login.current_user.getGoal())))
 
             self.lineEdit_q6.setText(str(Login.current_user.getQ6()))
             print("Email: ", self.lineEdit_emailholder.text(), "Score: ", self.lineEdit_scoreholder.text())
             self.lbl_welcome.setText(f"Welcome: {Login.current_user.getFirst()}")
+
+            MatplotlibWidget.update_graph_btn(self, 'DJI')
             Login.clear(self)
 
 

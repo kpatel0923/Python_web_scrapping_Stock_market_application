@@ -147,6 +147,7 @@ class user_Buttons_actions(QMainWindow):
         self.btn_more_2.clicked.connect(lambda: MatplotlibWidget.more(self))
         self.btn_less.clicked.connect(lambda: MatplotlibWidget.less(self))
 
+
     def info(self):
         self.btn_income.clicked.connect(lambda: user_Buttons_budget.income(self))
         self.btn_update.clicked.connect(lambda: user_Buttons_budget.update(self))

@@ -63,7 +63,7 @@ class user_Buttons_budget(QMainWindow):
         primary = self.lineEdit_primary.text()
         secondary = self.lineEdit_secondary.text()
         income = float(primary) + float(secondary)
-        self.income.setText(str("{:,.2f}".format(income)))
+        self.income.setText("$" + str("{:,.2f}".format(income)))
         self.lineEdit_income.setText(str(income))
         actions.DATABASE(f"update users set income = '{income}' where email = '{email}' ")
 
@@ -78,10 +78,10 @@ class user_Buttons_budget(QMainWindow):
 
         expenses = float(e1) + float(e2) + float(e3) + float(e4) + float(e5)
 
-        self.expenses.setText(str("{:,.2f}".format(expenses)))
+        self.expenses.setText("$" + str("{:,.2f}".format(expenses)))
         self.lineEdit_expenses.setText(str(expenses))
         self.lineEdit_goalholder.setText(str(goal))
-        self.Goal.setText(str("{:,.2f}".format(goal)))
+        self.Goal.setText(str("$" + "{:,.2f}".format(goal)))
 
         actions.DATABASE(f"update users set expenses = '{expenses}' where email = '{email}' ")
         actions.DATABASE(f"update users set account_size = '{acct_size}' where email = '{email}' ")
@@ -679,7 +679,8 @@ class user_Buttons_budget(QMainWindow):
                 print("profit")
                 new = saved + total
                 actions.DATABASE(f"update users set saved = '{new}' where email = '{email}' ")
-                self.Saved.setText(str("{:,.2f}".format(new)))
+                self.Saved.setText("$" + str("{:,.2f}".format(new)))
+                self.lineEdit_saved.setText(str(new))
                 print(f"Goal: {goal}, Saved: {new}")
                 per = float(new) / float(goal) * 100
                 if new >= goal:
@@ -692,7 +693,8 @@ class user_Buttons_budget(QMainWindow):
                 print("loss")
                 new = saved + total
                 actions.DATABASE(f"update users set saved = '{new}' where email = '{email}' ")
-                self.Saved.setText(str("{:,.2f}".format(new)))
+                self.Saved.setText("$" + str("{:,.2f}".format(new)))
+                self.lineEdit_saved.setText(str(new))
                 print(f"Goal: {goal}, Saved: {new}")
                 per = float(new) / float(goal) * 100
                 if new <= 0:

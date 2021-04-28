@@ -40,6 +40,7 @@ class MainApp(QMainWindow, ui):
         user_Buttons_actions.top_stocks(self)
         user_Buttons_actions.info(self)
 
+
 def main():
     app = QApplication(sys.argv)
     window = MainApp()
